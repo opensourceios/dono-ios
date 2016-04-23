@@ -1,9 +1,13 @@
 language: objective-c
+os: osx
 osx_image: xcode7.3
 
-script:
-    - xcodebuild -workspace Dono.xcworkspace -scheme Dono -destination 'platform=iOS Simulator,name=iPhone 6,OS=9.3' test
+before_install:
+    - gem install xcpretty -N --no-ri --no-rdoc
 
-branches:
-  only:
-    - master
+script:
+    - set -o pipefail
+    - xcodebuild clean -workspace Dono.xcworkspace -scheme Dono -sdk iphonesimulator GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=YES GCC_GENERATE_TEST_COVERAGE_FILES=YES | xcpretty
+
+after_success:
+    - bash <(curl -s https://codecov.io/bash)
