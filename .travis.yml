@@ -7,7 +7,7 @@ before_install:
 
 script:
     - set -o pipefail
-    - xcodebuild clean -workspace Dono.xcworkspace -scheme Dono -sdk iphonesimulator GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=YES GCC_GENERATE_TEST_COVERAGE_FILES=YES | xcpretty
+    - xcodebuild clean test -workspace Dono.xcworkspace -scheme Dono -sdk iphonesimulator GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=YES GCC_GENERATE_TEST_COVERAGE_FILES=YES | xcpretty
 
 after_success:
     - bash <(curl -s https://codecov.io/bash)
