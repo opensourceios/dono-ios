@@ -1,0 +1,732 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E618F7541C88F780004604F0 /* BigInt.swift in Sources */ = {isa = PBXBuildFile; fileRef = E618F74C1C88F780004604F0 /* BigInt.swift */; };
+		E618F7571C88F780004604F0 /* Pasteboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E618F74F1C88F780004604F0 /* Pasteboard.swift */; };
+		E618F7581C88F780004604F0 /* PersistableKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = E618F7501C88F780004604F0 /* PersistableKey.swift */; };
+		E618F7591C88F780004604F0 /* PersistableServiceTags.swift in Sources */ = {isa = PBXBuildFile; fileRef = E618F7511C88F780004604F0 /* PersistableServiceTags.swift */; };
+		E618F75A1C88F780004604F0 /* StringWithAES.swift in Sources */ = {isa = PBXBuildFile; fileRef = E618F7521C88F780004604F0 /* StringWithAES.swift */; };
+		E618F75B1C88F780004604F0 /* OnePasswordsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E618F7531C88F780004604F0 /* OnePasswordsViewController.swift */; };
+		E6492B771C90C49100BA77EA /* MaterialButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6492B761C90C49100BA77EA /* MaterialButton.swift */; };
+		E6492B791C90C97600BA77EA /* NewServiceTagViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6492B781C90C97600BA77EA /* NewServiceTagViewController.swift */; };
+		E68EB1611C93452A001DC522 /* DodoDistrib.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68EB1601C93452A001DC522 /* DodoDistrib.swift */; };
+		E6B108C51CCABA390085E07D /* CryptoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6B108BC1CCAB8F30085E07D /* CryptoSwift.framework */; };
+		E6B108C61CCABA390085E07D /* CryptoSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E6B108BC1CCAB8F30085E07D /* CryptoSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E6CED9291C74DC1F00B7A642 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CED9281C74DC1F00B7A642 /* AppDelegate.swift */; };
+		E6CED92E1C74DC1F00B7A642 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6CED92C1C74DC1F00B7A642 /* Main.storyboard */; };
+		E6CED9301C74DC1F00B7A642 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6CED92F1C74DC1F00B7A642 /* Assets.xcassets */; };
+		E6CED9331C74DC1F00B7A642 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6CED9311C74DC1F00B7A642 /* LaunchScreen.storyboard */; };
+		E6CED93E1C74DC1F00B7A642 /* DonoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CED93D1C74DC1F00B7A642 /* DonoTests.swift */; };
+		E6CED9491C74DC1F00B7A642 /* DonoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CED9481C74DC1F00B7A642 /* DonoUITests.swift */; };
+		E6CED95B1C74E5C700B7A642 /* OnePasswords.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CED9581C74E5C700B7A642 /* OnePasswords.swift */; };
+		E6EB4BB81C90B23E009EE7EF /* KeyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EB4BB71C90B23E009EE7EF /* KeyViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E6B108BB1CCAB8F30085E07D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E6B108B31CCAB8F30085E07D /* CryptoSwift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 754BE45519693E190098E6F3;
+			remoteInfo = "CryptoSwift iOS";
+		};
+		E6B108BD1CCAB8F30085E07D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E6B108B31CCAB8F30085E07D /* CryptoSwift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5596BDBB1BC8F220007E38D5;
+			remoteInfo = "CryptoSwift watchOS";
+		};
+		E6B108BF1CCAB8F30085E07D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E6B108B31CCAB8F30085E07D /* CryptoSwift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 75DF77721BC8EB59006E9520;
+			remoteInfo = "CryptoSwift OSX";
+		};
+		E6B108C11CCAB8F30085E07D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E6B108B31CCAB8F30085E07D /* CryptoSwift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 75D614BF1BD844F2001358B2;
+			remoteInfo = "CryptoSwift tvOS";
+		};
+		E6B108C31CCAB8F30085E07D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E6B108B31CCAB8F30085E07D /* CryptoSwift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 754BE46019693E190098E6F3;
+			remoteInfo = CryptoSwiftTests;
+		};
+		E6B108C71CCABA390085E07D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E6B108B31CCAB8F30085E07D /* CryptoSwift.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 754BE45419693E190098E6F3;
+			remoteInfo = "CryptoSwift iOS";
+		};
+		E6CED93A1C74DC1F00B7A642 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E6CED91D1C74DC1F00B7A642 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E6CED9241C74DC1F00B7A642;
+			remoteInfo = "One Passwords";
+		};
+		E6CED9451C74DC1F00B7A642 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E6CED91D1C74DC1F00B7A642 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E6CED9241C74DC1F00B7A642;
+			remoteInfo = "One Passwords";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E618F7451C88E914004604F0 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E6B108C61CCABA390085E07D /* CryptoSwift.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		E618F74C1C88F780004604F0 /* BigInt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BigInt.swift; sourceTree = "<group>"; };
+		E618F74F1C88F780004604F0 /* Pasteboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pasteboard.swift; sourceTree = "<group>"; };
+		E618F7501C88F780004604F0 /* PersistableKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistableKey.swift; sourceTree = "<group>"; };
+		E618F7511C88F780004604F0 /* PersistableServiceTags.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistableServiceTags.swift; sourceTree = "<group>"; };
+		E618F7521C88F780004604F0 /* StringWithAES.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringWithAES.swift; sourceTree = "<group>"; };
+		E618F7531C88F780004604F0 /* OnePasswordsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnePasswordsViewController.swift; sourceTree = "<group>"; };
+		E6492B761C90C49100BA77EA /* MaterialButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialButton.swift; sourceTree = "<group>"; };
+		E6492B781C90C97600BA77EA /* NewServiceTagViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewServiceTagViewController.swift; sourceTree = "<group>"; };
+		E68EB1601C93452A001DC522 /* DodoDistrib.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DodoDistrib.swift; sourceTree = "<group>"; };
+		E6B108B31CCAB8F30085E07D /* CryptoSwift.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CryptoSwift.xcodeproj; path = CryptoSwift/CryptoSwift.xcodeproj; sourceTree = "<group>"; };
+		E6CED9251C74DC1F00B7A642 /* Dono.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dono.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6CED9281C74DC1F00B7A642 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E6CED92D1C74DC1F00B7A642 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E6CED92F1C74DC1F00B7A642 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E6CED9321C74DC1F00B7A642 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E6CED9341C74DC1F00B7A642 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E6CED9391C74DC1F00B7A642 /* Dono.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Dono.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6CED93D1C74DC1F00B7A642 /* DonoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonoTests.swift; sourceTree = "<group>"; };
+		E6CED93F1C74DC1F00B7A642 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E6CED9441C74DC1F00B7A642 /* Dono.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Dono.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6CED9481C74DC1F00B7A642 /* DonoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonoUITests.swift; sourceTree = "<group>"; };
+		E6CED94A1C74DC1F00B7A642 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E6CED9571C74E5C700B7A642 /* Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		E6CED9581C74E5C700B7A642 /* OnePasswords.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnePasswords.swift; sourceTree = "<group>"; };
+		E6EB4BB71C90B23E009EE7EF /* KeyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E6CED9221C74DC1F00B7A642 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6B108C51CCABA390085E07D /* CryptoSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6CED9361C74DC1F00B7A642 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6CED9411C74DC1F00B7A642 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E639428F1C8A251D001C87C1 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				E68EB1601C93452A001DC522 /* DodoDistrib.swift */,
+				E618F74F1C88F780004604F0 /* Pasteboard.swift */,
+				E6492B761C90C49100BA77EA /* MaterialButton.swift */,
+				E618F7521C88F780004604F0 /* StringWithAES.swift */,
+				E618F74C1C88F780004604F0 /* BigInt.swift */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		E63942901C8A254F001C87C1 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				E6CED9581C74E5C700B7A642 /* OnePasswords.swift */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		E63942911C8A2565001C87C1 /* VIewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				E618F7531C88F780004604F0 /* OnePasswordsViewController.swift */,
+				E6EB4BB71C90B23E009EE7EF /* KeyViewController.swift */,
+				E6492B781C90C97600BA77EA /* NewServiceTagViewController.swift */,
+			);
+			name = VIewControllers;
+			sourceTree = "<group>";
+		};
+		E63942921C8A2583001C87C1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E618F7501C88F780004604F0 /* PersistableKey.swift */,
+				E618F7511C88F780004604F0 /* PersistableServiceTags.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		E6B108B41CCAB8F30085E07D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E6B108BC1CCAB8F30085E07D /* CryptoSwift.framework */,
+				E6B108BE1CCAB8F30085E07D /* CryptoSwift.framework */,
+				E6B108C01CCAB8F30085E07D /* CryptoSwift.framework */,
+				E6B108C21CCAB8F30085E07D /* CryptoSwift.framework */,
+				E6B108C41CCAB8F30085E07D /* CryptoSwiftTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E6CED91C1C74DC1F00B7A642 = {
+			isa = PBXGroup;
+			children = (
+				E6B108B31CCAB8F30085E07D /* CryptoSwift.xcodeproj */,
+				E6CED9271C74DC1F00B7A642 /* Dono */,
+				E6CED93C1C74DC1F00B7A642 /* Dono Tests */,
+				E6CED9471C74DC1F00B7A642 /* Dono UITests */,
+				E6CED9261C74DC1F00B7A642 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E6CED9261C74DC1F00B7A642 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E6CED9251C74DC1F00B7A642 /* Dono.app */,
+				E6CED9391C74DC1F00B7A642 /* Dono.xctest */,
+				E6CED9441C74DC1F00B7A642 /* Dono.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E6CED9271C74DC1F00B7A642 /* Dono */ = {
+			isa = PBXGroup;
+			children = (
+				E63942921C8A2583001C87C1 /* Models */,
+				E63942911C8A2565001C87C1 /* VIewControllers */,
+				E63942901C8A254F001C87C1 /* Core */,
+				E639428F1C8A251D001C87C1 /* Utils */,
+				E6CED9571C74E5C700B7A642 /* Header.h */,
+				E6CED9281C74DC1F00B7A642 /* AppDelegate.swift */,
+				E6EFCF501C94742D00868B6B /* Storyboards */,
+				E6CED92F1C74DC1F00B7A642 /* Assets.xcassets */,
+				E6CED9341C74DC1F00B7A642 /* Info.plist */,
+			);
+			name = Dono;
+			path = "One Passwords";
+			sourceTree = "<group>";
+		};
+		E6CED93C1C74DC1F00B7A642 /* Dono Tests */ = {
+			isa = PBXGroup;
+			children = (
+				E6CED93D1C74DC1F00B7A642 /* DonoTests.swift */,
+				E6CED93F1C74DC1F00B7A642 /* Info.plist */,
+			);
+			name = "Dono Tests";
+			path = "One PasswordsTests";
+			sourceTree = "<group>";
+		};
+		E6CED9471C74DC1F00B7A642 /* Dono UITests */ = {
+			isa = PBXGroup;
+			children = (
+				E6CED9481C74DC1F00B7A642 /* DonoUITests.swift */,
+				E6CED94A1C74DC1F00B7A642 /* Info.plist */,
+			);
+			name = "Dono UITests";
+			path = "One PasswordsUITests";
+			sourceTree = "<group>";
+		};
+		E6EFCF501C94742D00868B6B /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				E6CED92C1C74DC1F00B7A642 /* Main.storyboard */,
+				E6CED9311C74DC1F00B7A642 /* LaunchScreen.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E6CED9241C74DC1F00B7A642 /* Dono */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E6CED94D1C74DC1F00B7A642 /* Build configuration list for PBXNativeTarget "Dono" */;
+			buildPhases = (
+				E6CED9211C74DC1F00B7A642 /* Sources */,
+				E6CED9221C74DC1F00B7A642 /* Frameworks */,
+				E6CED9231C74DC1F00B7A642 /* Resources */,
+				E618F7451C88E914004604F0 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E6B108C81CCABA390085E07D /* PBXTargetDependency */,
+			);
+			name = Dono;
+			productName = "One Passwords";
+			productReference = E6CED9251C74DC1F00B7A642 /* Dono.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E6CED9381C74DC1F00B7A642 /* DonoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E6CED9501C74DC1F00B7A642 /* Build configuration list for PBXNativeTarget "DonoTests" */;
+			buildPhases = (
+				E6CED9351C74DC1F00B7A642 /* Sources */,
+				E6CED9361C74DC1F00B7A642 /* Frameworks */,
+				E6CED9371C74DC1F00B7A642 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E6CED93B1C74DC1F00B7A642 /* PBXTargetDependency */,
+			);
+			name = DonoTests;
+			productName = "One PasswordsTests";
+			productReference = E6CED9391C74DC1F00B7A642 /* Dono.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E6CED9431C74DC1F00B7A642 /* DonoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E6CED9531C74DC1F00B7A642 /* Build configuration list for PBXNativeTarget "DonoUITests" */;
+			buildPhases = (
+				E6CED9401C74DC1F00B7A642 /* Sources */,
+				E6CED9411C74DC1F00B7A642 /* Frameworks */,
+				E6CED9421C74DC1F00B7A642 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E6CED9461C74DC1F00B7A642 /* PBXTargetDependency */,
+			);
+			name = DonoUITests;
+			productName = "One PasswordsUITests";
+			productReference = E6CED9441C74DC1F00B7A642 /* Dono.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E6CED91D1C74DC1F00B7A642 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Panos Sakkos";
+				TargetAttributes = {
+					E6CED9241C74DC1F00B7A642 = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 4X4KRZGEHS;
+					};
+					E6CED9381C74DC1F00B7A642 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = E6CED9241C74DC1F00B7A642;
+					};
+					E6CED9431C74DC1F00B7A642 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = E6CED9241C74DC1F00B7A642;
+					};
+				};
+			};
+			buildConfigurationList = E6CED9201C74DC1F00B7A642 /* Build configuration list for PBXProject "Dono" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E6CED91C1C74DC1F00B7A642;
+			productRefGroup = E6CED9261C74DC1F00B7A642 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = E6B108B41CCAB8F30085E07D /* Products */;
+					ProjectRef = E6B108B31CCAB8F30085E07D /* CryptoSwift.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				E6CED9241C74DC1F00B7A642 /* Dono */,
+				E6CED9381C74DC1F00B7A642 /* DonoTests */,
+				E6CED9431C74DC1F00B7A642 /* DonoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		E6B108BC1CCAB8F30085E07D /* CryptoSwift.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CryptoSwift.framework;
+			remoteRef = E6B108BB1CCAB8F30085E07D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E6B108BE1CCAB8F30085E07D /* CryptoSwift.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CryptoSwift.framework;
+			remoteRef = E6B108BD1CCAB8F30085E07D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E6B108C01CCAB8F30085E07D /* CryptoSwift.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CryptoSwift.framework;
+			remoteRef = E6B108BF1CCAB8F30085E07D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E6B108C21CCAB8F30085E07D /* CryptoSwift.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CryptoSwift.framework;
+			remoteRef = E6B108C11CCAB8F30085E07D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E6B108C41CCAB8F30085E07D /* CryptoSwiftTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = CryptoSwiftTests.xctest;
+			remoteRef = E6B108C31CCAB8F30085E07D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E6CED9231C74DC1F00B7A642 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6CED9331C74DC1F00B7A642 /* LaunchScreen.storyboard in Resources */,
+				E6CED9301C74DC1F00B7A642 /* Assets.xcassets in Resources */,
+				E6CED92E1C74DC1F00B7A642 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6CED9371C74DC1F00B7A642 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6CED9421C74DC1F00B7A642 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E6CED9211C74DC1F00B7A642 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E618F75B1C88F780004604F0 /* OnePasswordsViewController.swift in Sources */,
+				E618F7541C88F780004604F0 /* BigInt.swift in Sources */,
+				E6492B791C90C97600BA77EA /* NewServiceTagViewController.swift in Sources */,
+				E618F7581C88F780004604F0 /* PersistableKey.swift in Sources */,
+				E618F75A1C88F780004604F0 /* StringWithAES.swift in Sources */,
+				E6492B771C90C49100BA77EA /* MaterialButton.swift in Sources */,
+				E618F7571C88F780004604F0 /* Pasteboard.swift in Sources */,
+				E618F7591C88F780004604F0 /* PersistableServiceTags.swift in Sources */,
+				E6CED95B1C74E5C700B7A642 /* OnePasswords.swift in Sources */,
+				E6EB4BB81C90B23E009EE7EF /* KeyViewController.swift in Sources */,
+				E6CED9291C74DC1F00B7A642 /* AppDelegate.swift in Sources */,
+				E68EB1611C93452A001DC522 /* DodoDistrib.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6CED9351C74DC1F00B7A642 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6CED93E1C74DC1F00B7A642 /* DonoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6CED9401C74DC1F00B7A642 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6CED9491C74DC1F00B7A642 /* DonoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E6B108C81CCABA390085E07D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "CryptoSwift iOS";
+			targetProxy = E6B108C71CCABA390085E07D /* PBXContainerItemProxy */;
+		};
+		E6CED93B1C74DC1F00B7A642 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E6CED9241C74DC1F00B7A642 /* Dono */;
+			targetProxy = E6CED93A1C74DC1F00B7A642 /* PBXContainerItemProxy */;
+		};
+		E6CED9461C74DC1F00B7A642 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E6CED9241C74DC1F00B7A642 /* Dono */;
+			targetProxy = E6CED9451C74DC1F00B7A642 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E6CED92C1C74DC1F00B7A642 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E6CED92D1C74DC1F00B7A642 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E6CED9311C74DC1F00B7A642 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E6CED9321C74DC1F00B7A642 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E6CED94B1C74DC1F00B7A642 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E6CED94C1C74DC1F00B7A642 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E6CED94E1C74DC1F00B7A642 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = "One Passwords/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.psakkos.onepasswords;
+				PRODUCT_NAME = Dono;
+				PROVISIONING_PROFILE = "23e0afa4-255b-492c-a436-3b7285e64aeb";
+				SWIFT_INCLUDE_PATHS = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "One Passwords/Header.h";
+			};
+			name = Debug;
+		};
+		E6CED94F1C74DC1F00B7A642 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = "One Passwords/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.psakkos.onepasswords;
+				PRODUCT_NAME = Dono;
+				PROVISIONING_PROFILE = "23e0afa4-255b-492c-a436-3b7285e64aeb";
+				SWIFT_INCLUDE_PATHS = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "One Passwords/Header.h";
+			};
+			name = Release;
+		};
+		E6CED9511C74DC1F00B7A642 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "One PasswordsTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "OnePasswords.One-PasswordsTests";
+				PRODUCT_NAME = Dono;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dono.app/Dono";
+			};
+			name = Debug;
+		};
+		E6CED9521C74DC1F00B7A642 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "One PasswordsTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "OnePasswords.One-PasswordsTests";
+				PRODUCT_NAME = Dono;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dono.app/Dono";
+			};
+			name = Release;
+		};
+		E6CED9541C74DC1F00B7A642 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "One PasswordsUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "OnePasswords.One-PasswordsUITests";
+				PRODUCT_NAME = Dono;
+				TEST_TARGET_NAME = "One Passwords";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		E6CED9551C74DC1F00B7A642 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "One PasswordsUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "OnePasswords.One-PasswordsUITests";
+				PRODUCT_NAME = Dono;
+				TEST_TARGET_NAME = "One Passwords";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E6CED9201C74DC1F00B7A642 /* Build configuration list for PBXProject "Dono" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6CED94B1C74DC1F00B7A642 /* Debug */,
+				E6CED94C1C74DC1F00B7A642 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E6CED94D1C74DC1F00B7A642 /* Build configuration list for PBXNativeTarget "Dono" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6CED94E1C74DC1F00B7A642 /* Debug */,
+				E6CED94F1C74DC1F00B7A642 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E6CED9501C74DC1F00B7A642 /* Build configuration list for PBXNativeTarget "DonoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6CED9511C74DC1F00B7A642 /* Debug */,
+				E6CED9521C74DC1F00B7A642 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E6CED9531C74DC1F00B7A642 /* Build configuration list for PBXNativeTarget "DonoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6CED9541C74DC1F00B7A642 /* Debug */,
+				E6CED9551C74DC1F00B7A642 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E6CED91D1C74DC1F00B7A642 /* Project object */;
+}
