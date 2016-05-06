@@ -17,19 +17,20 @@ internal class PersistableServiceTags
 {
     var serviceTags = [String]()
     
-    internal func add(var serviceTag: String)
+    internal func add(var serviceTag: String) -> String
     {
+        serviceTag = self.canonical(serviceTag)
+        
         if (self.serviceTags.contains(serviceTag))
         {
-            return;
+            return "";
         }
-        
-        serviceTag = serviceTag.lowercaseString
-        serviceTag = serviceTag.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
         
         self.serviceTags.insert(serviceTag, atIndex: self.serviceTags.count);
         self.serviceTags.sortInPlace();
         saveServiceTags();
+        
+        return serviceTag
     }
     
     internal func getAll() -> [String]
@@ -68,6 +69,14 @@ internal class PersistableServiceTags
     internal func count() -> Int
     {
         return self.serviceTags.count;
+    }
+    
+    internal func canonical(var label: String) -> String
+    {
+        label = label.lowercaseString
+        label = label.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
+        
+        return label
     }
     
     private func saveServiceTags()

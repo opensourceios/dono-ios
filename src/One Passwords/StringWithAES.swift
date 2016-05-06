@@ -16,7 +16,7 @@ extension String
         let key = String(UIDevice.currentDevice().identifierForVendor!.UUIDString.characters.dropLast(4))
         let iv = String(UIDevice.currentDevice().identifierForVendor!.UUIDString.characters.dropLast(20))
         let data = self.dataUsingEncoding(NSUTF8StringEncoding)
-        let enc = try AES(key: key, iv: iv, blockMode:.CBC).encrypt(data!.arrayOfBytes(), padding: PKCS7())
+        let enc = try AES(key: key, iv: iv, blockMode:.CBC).encrypt(data!.arrayOfBytes())
         let encData = NSData(bytes: enc, length: Int(enc.count))
         let base64String: String = encData.base64EncodedStringWithOptions(NSDataBase64EncodingOptions(rawValue: 0))
         let result = String(base64String)
@@ -29,7 +29,7 @@ extension String
         let key = String(UIDevice.currentDevice().identifierForVendor!.UUIDString.characters.dropLast(4))
         let iv = String(UIDevice.currentDevice().identifierForVendor!.UUIDString.characters.dropLast(20))
         let data = NSData(base64EncodedString: self, options: NSDataBase64DecodingOptions(rawValue: 0))
-        let dec = try AES(key: key, iv: iv, blockMode:.CBC).decrypt(data!.arrayOfBytes(), padding: PKCS7())
+        let dec = try AES(key: key, iv: iv, blockMode:.CBC).decrypt(data!.arrayOfBytes())
         let decData = NSData(bytes: dec, length: Int(dec.count))
         
         if let result = NSString(data: decData, encoding: NSUTF8StringEncoding)

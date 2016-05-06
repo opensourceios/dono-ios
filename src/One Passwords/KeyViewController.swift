@@ -43,9 +43,26 @@ class KeyViewController : UIViewController
             return
         }
         
+        if (key == self.persistableKey.getKey())
+        {
+            return
+        }
+        
         self.persistableKey.setkey(key)
+        self.showAlert("Your Key was updated!")        
     }
     
+    private func showAlert(message: String)
+    {
+        self.view.dodo.topLayoutGuide = self.topLayoutGuide
+        self.view.dodo.style.label.color = UIColor.whiteColor()
+        self.view.dodo.style.bar.backgroundColor = DodoColor.fromHexString("#2196f3")
+        self.view.dodo.style.bar.hideAfterDelaySeconds = 2
+        self.view.dodo.style.bar.hideOnTap = true
+        
+        self.view.dodo.show(message);
+    }
+
     private func showError(message: String)
     {
         self.view.dodo.topLayoutGuide = self.topLayoutGuide
