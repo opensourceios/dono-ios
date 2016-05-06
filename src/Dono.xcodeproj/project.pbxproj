@@ -14,10 +14,10 @@
 		E618F75A1C88F780004604F0 /* StringWithAES.swift in Sources */ = {isa = PBXBuildFile; fileRef = E618F7521C88F780004604F0 /* StringWithAES.swift */; };
 		E618F75B1C88F780004604F0 /* OnePasswordsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E618F7531C88F780004604F0 /* OnePasswordsViewController.swift */; };
 		E6492B771C90C49100BA77EA /* MaterialButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6492B761C90C49100BA77EA /* MaterialButton.swift */; };
-		E6492B791C90C97600BA77EA /* NewServiceTagViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6492B781C90C97600BA77EA /* NewServiceTagViewController.swift */; };
+		E6492B791C90C97600BA77EA /* NewServicetagViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6492B781C90C97600BA77EA /* NewServicetagViewController.swift */; };
+		E68CD3071CDCF9060035CA3B /* CryptoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E68CD2FE1CDCF8E40035CA3B /* CryptoSwift.framework */; };
+		E68CD3081CDCF9060035CA3B /* CryptoSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E68CD2FE1CDCF8E40035CA3B /* CryptoSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E68EB1611C93452A001DC522 /* DodoDistrib.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68EB1601C93452A001DC522 /* DodoDistrib.swift */; };
-		E6B108C51CCABA390085E07D /* CryptoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6B108BC1CCAB8F30085E07D /* CryptoSwift.framework */; };
-		E6B108C61CCABA390085E07D /* CryptoSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E6B108BC1CCAB8F30085E07D /* CryptoSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E6CED9291C74DC1F00B7A642 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CED9281C74DC1F00B7A642 /* AppDelegate.swift */; };
 		E6CED92E1C74DC1F00B7A642 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6CED92C1C74DC1F00B7A642 /* Main.storyboard */; };
 		E6CED9301C74DC1F00B7A642 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6CED92F1C74DC1F00B7A642 /* Assets.xcassets */; };
@@ -29,44 +29,44 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		E6B108BB1CCAB8F30085E07D /* PBXContainerItemProxy */ = {
+		E68CD2FD1CDCF8E40035CA3B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = E6B108B31CCAB8F30085E07D /* CryptoSwift.xcodeproj */;
+			containerPortal = E68CD2F51CDCF8E40035CA3B /* CryptoSwift.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 754BE45519693E190098E6F3;
 			remoteInfo = "CryptoSwift iOS";
 		};
-		E6B108BD1CCAB8F30085E07D /* PBXContainerItemProxy */ = {
+		E68CD2FF1CDCF8E40035CA3B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = E6B108B31CCAB8F30085E07D /* CryptoSwift.xcodeproj */;
+			containerPortal = E68CD2F51CDCF8E40035CA3B /* CryptoSwift.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 5596BDBB1BC8F220007E38D5;
 			remoteInfo = "CryptoSwift watchOS";
 		};
-		E6B108BF1CCAB8F30085E07D /* PBXContainerItemProxy */ = {
+		E68CD3011CDCF8E40035CA3B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = E6B108B31CCAB8F30085E07D /* CryptoSwift.xcodeproj */;
+			containerPortal = E68CD2F51CDCF8E40035CA3B /* CryptoSwift.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 75DF77721BC8EB59006E9520;
 			remoteInfo = "CryptoSwift OSX";
 		};
-		E6B108C11CCAB8F30085E07D /* PBXContainerItemProxy */ = {
+		E68CD3031CDCF8E40035CA3B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = E6B108B31CCAB8F30085E07D /* CryptoSwift.xcodeproj */;
+			containerPortal = E68CD2F51CDCF8E40035CA3B /* CryptoSwift.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 75D614BF1BD844F2001358B2;
 			remoteInfo = "CryptoSwift tvOS";
 		};
-		E6B108C31CCAB8F30085E07D /* PBXContainerItemProxy */ = {
+		E68CD3051CDCF8E40035CA3B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = E6B108B31CCAB8F30085E07D /* CryptoSwift.xcodeproj */;
+			containerPortal = E68CD2F51CDCF8E40035CA3B /* CryptoSwift.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 754BE46019693E190098E6F3;
 			remoteInfo = CryptoSwiftTests;
 		};
-		E6B108C71CCABA390085E07D /* PBXContainerItemProxy */ = {
+		E68CD3091CDCF9060035CA3B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = E6B108B31CCAB8F30085E07D /* CryptoSwift.xcodeproj */;
+			containerPortal = E68CD2F51CDCF8E40035CA3B /* CryptoSwift.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = 754BE45419693E190098E6F3;
 			remoteInfo = "CryptoSwift iOS";
@@ -94,7 +94,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				E6B108C61CCABA390085E07D /* CryptoSwift.framework in Embed Frameworks */,
+				E68CD3081CDCF9060035CA3B /* CryptoSwift.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -109,9 +109,9 @@
 		E618F7521C88F780004604F0 /* StringWithAES.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringWithAES.swift; sourceTree = "<group>"; };
 		E618F7531C88F780004604F0 /* OnePasswordsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnePasswordsViewController.swift; sourceTree = "<group>"; };
 		E6492B761C90C49100BA77EA /* MaterialButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialButton.swift; sourceTree = "<group>"; };
-		E6492B781C90C97600BA77EA /* NewServiceTagViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewServiceTagViewController.swift; sourceTree = "<group>"; };
+		E6492B781C90C97600BA77EA /* NewServicetagViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewServicetagViewController.swift; sourceTree = "<group>"; };
+		E68CD2F51CDCF8E40035CA3B /* CryptoSwift.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CryptoSwift.xcodeproj; path = ../CryptoSwift/CryptoSwift.xcodeproj; sourceTree = "<group>"; };
 		E68EB1601C93452A001DC522 /* DodoDistrib.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DodoDistrib.swift; sourceTree = "<group>"; };
-		E6B108B31CCAB8F30085E07D /* CryptoSwift.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CryptoSwift.xcodeproj; path = CryptoSwift/CryptoSwift.xcodeproj; sourceTree = "<group>"; };
 		E6CED9251C74DC1F00B7A642 /* Dono.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dono.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6CED9281C74DC1F00B7A642 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E6CED92D1C74DC1F00B7A642 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -134,7 +134,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E6B108C51CCABA390085E07D /* CryptoSwift.framework in Frameworks */,
+				E68CD3071CDCF9060035CA3B /* CryptoSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -180,7 +180,7 @@
 			children = (
 				E618F7531C88F780004604F0 /* OnePasswordsViewController.swift */,
 				E6EB4BB71C90B23E009EE7EF /* KeyViewController.swift */,
-				E6492B781C90C97600BA77EA /* NewServiceTagViewController.swift */,
+				E6492B781C90C97600BA77EA /* NewServicetagViewController.swift */,
 			);
 			name = VIewControllers;
 			sourceTree = "<group>";
@@ -194,14 +194,14 @@
 			name = Models;
 			sourceTree = "<group>";
 		};
-		E6B108B41CCAB8F30085E07D /* Products */ = {
+		E68CD2F61CDCF8E40035CA3B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E6B108BC1CCAB8F30085E07D /* CryptoSwift.framework */,
-				E6B108BE1CCAB8F30085E07D /* CryptoSwift.framework */,
-				E6B108C01CCAB8F30085E07D /* CryptoSwift.framework */,
-				E6B108C21CCAB8F30085E07D /* CryptoSwift.framework */,
-				E6B108C41CCAB8F30085E07D /* CryptoSwiftTests.xctest */,
+				E68CD2FE1CDCF8E40035CA3B /* CryptoSwift.framework */,
+				E68CD3001CDCF8E40035CA3B /* CryptoSwift.framework */,
+				E68CD3021CDCF8E40035CA3B /* CryptoSwift.framework */,
+				E68CD3041CDCF8E40035CA3B /* CryptoSwift.framework */,
+				E68CD3061CDCF8E40035CA3B /* CryptoSwiftTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -209,7 +209,7 @@
 		E6CED91C1C74DC1F00B7A642 = {
 			isa = PBXGroup;
 			children = (
-				E6B108B31CCAB8F30085E07D /* CryptoSwift.xcodeproj */,
+				E68CD2F51CDCF8E40035CA3B /* CryptoSwift.xcodeproj */,
 				E6CED9271C74DC1F00B7A642 /* Dono */,
 				E6CED93C1C74DC1F00B7A642 /* Dono Tests */,
 				E6CED9471C74DC1F00B7A642 /* Dono UITests */,
@@ -288,7 +288,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				E6B108C81CCABA390085E07D /* PBXTargetDependency */,
+				E68CD30A1CDCF9060035CA3B /* PBXTargetDependency */,
 			);
 			name = Dono;
 			productName = "One Passwords";
@@ -368,8 +368,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = E6B108B41CCAB8F30085E07D /* Products */;
-					ProjectRef = E6B108B31CCAB8F30085E07D /* CryptoSwift.xcodeproj */;
+					ProductGroup = E68CD2F61CDCF8E40035CA3B /* Products */;
+					ProjectRef = E68CD2F51CDCF8E40035CA3B /* CryptoSwift.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -382,39 +382,39 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		E6B108BC1CCAB8F30085E07D /* CryptoSwift.framework */ = {
+		E68CD2FE1CDCF8E40035CA3B /* CryptoSwift.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = CryptoSwift.framework;
-			remoteRef = E6B108BB1CCAB8F30085E07D /* PBXContainerItemProxy */;
+			remoteRef = E68CD2FD1CDCF8E40035CA3B /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		E6B108BE1CCAB8F30085E07D /* CryptoSwift.framework */ = {
+		E68CD3001CDCF8E40035CA3B /* CryptoSwift.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = CryptoSwift.framework;
-			remoteRef = E6B108BD1CCAB8F30085E07D /* PBXContainerItemProxy */;
+			remoteRef = E68CD2FF1CDCF8E40035CA3B /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		E6B108C01CCAB8F30085E07D /* CryptoSwift.framework */ = {
+		E68CD3021CDCF8E40035CA3B /* CryptoSwift.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = CryptoSwift.framework;
-			remoteRef = E6B108BF1CCAB8F30085E07D /* PBXContainerItemProxy */;
+			remoteRef = E68CD3011CDCF8E40035CA3B /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		E6B108C21CCAB8F30085E07D /* CryptoSwift.framework */ = {
+		E68CD3041CDCF8E40035CA3B /* CryptoSwift.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = CryptoSwift.framework;
-			remoteRef = E6B108C11CCAB8F30085E07D /* PBXContainerItemProxy */;
+			remoteRef = E68CD3031CDCF8E40035CA3B /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		E6B108C41CCAB8F30085E07D /* CryptoSwiftTests.xctest */ = {
+		E68CD3061CDCF8E40035CA3B /* CryptoSwiftTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = CryptoSwiftTests.xctest;
-			remoteRef = E6B108C31CCAB8F30085E07D /* PBXContainerItemProxy */;
+			remoteRef = E68CD3051CDCF8E40035CA3B /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -453,7 +453,7 @@
 			files = (
 				E618F75B1C88F780004604F0 /* OnePasswordsViewController.swift in Sources */,
 				E618F7541C88F780004604F0 /* BigInt.swift in Sources */,
-				E6492B791C90C97600BA77EA /* NewServiceTagViewController.swift in Sources */,
+				E6492B791C90C97600BA77EA /* NewServicetagViewController.swift in Sources */,
 				E618F7581C88F780004604F0 /* PersistableKey.swift in Sources */,
 				E618F75A1C88F780004604F0 /* StringWithAES.swift in Sources */,
 				E6492B771C90C49100BA77EA /* MaterialButton.swift in Sources */,
@@ -485,10 +485,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		E6B108C81CCABA390085E07D /* PBXTargetDependency */ = {
+		E68CD30A1CDCF9060035CA3B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "CryptoSwift iOS";
-			targetProxy = E6B108C71CCABA390085E07D /* PBXContainerItemProxy */;
+			targetProxy = E68CD3091CDCF9060035CA3B /* PBXContainerItemProxy */;
 		};
 		E6CED93B1C74DC1F00B7A642 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -613,6 +613,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = "One Passwords/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.psakkos.onepasswords;
 				PRODUCT_NAME = Dono;
@@ -630,6 +631,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = "One Passwords/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.psakkos.onepasswords;
 				PRODUCT_NAME = Dono;

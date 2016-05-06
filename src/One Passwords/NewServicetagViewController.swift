@@ -33,14 +33,28 @@ class NewServiceTagViewController : UIViewController
 
     @IBAction func AddServiceTag(sender: AnyObject)
     {
-        let newServiceTag = self.newServiceTag.text!
+        var newServiceTag = self.newServiceTag.text!
         
-        self.persistableServiceTags.add(newServiceTag)
-        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate;
-        appDelegate.loadLabels()
+        newServiceTag = self.persistableServiceTags.add(newServiceTag)
+        
+        if (!newServiceTag.isEmpty)
+        {
+            let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate;
+            appDelegate.loadLabels()
+            
+            showAlert(newServiceTag + " was added to your Labels!")
+        }
+        else
+        {
+            var canonicalLabel = self.persistableServiceTags.canonical(self.newServiceTag.text!)
+
+            if (!canonicalLabel.isEmpty)
+            {
+                showError(canonicalLabel + " is already added to your Labels")
+            }
+        }
+        
         self.newServiceTag.text = ""
-        
-        showAlert(newServiceTag + " was added to your Labels!")
     }
     
     private func showAlert(message: String)
@@ -49,6 +63,17 @@ class NewServiceTagViewController : UIViewController
         self.view.dodo.style.label.color = UIColor.whiteColor()
         self.view.dodo.style.bar.backgroundColor = DodoColor.fromHexString("#2196f3")
         self.view.dodo.style.bar.hideAfterDelaySeconds = 2
+        self.view.dodo.style.bar.hideOnTap = true
+        
+        self.view.dodo.show(message);
+    }
+    
+    private func showError(message: String)
+    {
+        self.view.dodo.topLayoutGuide = self.topLayoutGuide
+        self.view.dodo.style.label.color = UIColor.whiteColor()
+        self.view.dodo.style.bar.backgroundColor = DodoColor.fromHexString("#f44336")
+        self.view.dodo.style.bar.hideAfterDelaySeconds = 5
         self.view.dodo.style.bar.hideOnTap = true
         
         self.view.dodo.show(message);
