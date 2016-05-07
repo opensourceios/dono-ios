@@ -6,8 +6,9 @@
 //  Copyright © 2016 Panos Sakkos. All rights reserved.
 //
 
-import Foundation
 import UIKit
+import Foundation
+import PasscodeLock
 
 class SettingsViewController : UIViewController
 {
@@ -17,6 +18,26 @@ class SettingsViewController : UIViewController
     
     @IBOutlet weak var rememberKey: UISwitch!
     
+    @IBOutlet weak var passcodeLock: UISwitch!
+    
+    private let configuration: PasscodeLockConfigurationType
+    
+    init(configuration: PasscodeLockConfigurationType)
+    {
+        self.configuration = configuration
+        
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder aDecoder: NSCoder)
+    {
+        let repository = UserDefaultsPasscodeRepository()
+        configuration = PasscodeLockConfiguration(repository: repository)
+        
+        super.init(coder: aDecoder)
+    }
+
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()
@@ -25,6 +46,11 @@ class SettingsViewController : UIViewController
         self.Open.action = #selector(SWRevealViewController.revealToggle(_:))
         
         self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+    }
+    
+    override func viewWillAppear(animated: Bool)
+    {
+        super.viewWillAppear(animated)
         
         self.updateViewWithSettings()
     }
@@ -32,16 +58,51 @@ class SettingsViewController : UIViewController
     @IBAction func rememberKeyValueChanged(sender: AnyObject)
     {
         self.settings.setRememberKeyValue(self.rememberKey.on)
-        
-        if (self.rememberKey.on == false)
+
+        let key = PersistableKey()
+
+        if (self.rememberKey.on)
+        {
+            key.save()
+        }
+        else
         {
             let key = PersistableKey()
             key.delete()
         }
     }
     
+    @IBAction func passcodeLockValueChanged(sender: AnyObject)
+    {
+        let passcodeVC: PasscodeLockViewController
+        
+        if (self.passcodeLock.on)
+        {
+            passcodeVC = PasscodeLockViewController(state: .SetPasscode, configuration: configuration)
+        }
+        else
+        {
+            passcodeVC = PasscodeLockViewController(state: .RemovePasscode, configuration: configuration)
+            
+            passcodeVC.successCallback = { lock in
+                
+                lock.repository.deletePasscode()
+            }
+        }
+        
+        presentViewController(passcodeVC, animated: true, completion: nil)
+    }
+
+    func updatePasscodeView()
+    {
+        let hasPasscode = configuration.repository.hasPasscode
+        
+        self.passcodeLock.on = hasPasscode
+    }
+    
     func updateViewWithSettings()
     {
         self.rememberKey.on = self.settings.getRememberKeyValue()
+        self.updatePasscodeView()
     }
 }
