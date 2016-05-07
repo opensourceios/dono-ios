@@ -51,6 +51,11 @@ internal class PersistableKey
         }
     }
     
+    internal func save()
+    {
+        self.saveKey()
+    }
+    
     private func loadKey()
     {
         do
