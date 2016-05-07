@@ -6,12 +6,14 @@
 //  Copyright © 2016 Panos Sakkos. All rights reserved.
 //
 
-import Foundation
 import UIKit
+import Foundation
 
-class NewServiceTagViewController : UIViewController
+class AddLabelViewController : UIViewController
 {
     var persistableServiceTags = PersistableServiceTags();
+    
+    @IBOutlet weak var Open: UIBarButtonItem!
     
     @IBOutlet weak var newServiceTag: UITextField!
     
@@ -22,8 +24,13 @@ class NewServiceTagViewController : UIViewController
         self.persistableServiceTags.getAll()
         
         self.newServiceTag.becomeFirstResponder();
-    }
         
+        self.Open.target = self.revealViewController()
+        self.Open.action = #selector(SWRevealViewController.revealToggle(_:))
+        
+        self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+    }
+    
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?)
     {
         super.touchesBegan(touches, withEvent: event)
@@ -46,7 +53,7 @@ class NewServiceTagViewController : UIViewController
         }
         else
         {
-            var canonicalLabel = self.persistableServiceTags.canonical(self.newServiceTag.text!)
+            let canonicalLabel = self.persistableServiceTags.canonical(self.newServiceTag.text!)
 
             if (!canonicalLabel.isEmpty)
             {

@@ -8,20 +8,11 @@
 
 import UIKit
 
-class OnePasswordsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UITextFieldDelegate, UISearchResultsUpdating
+class LabelsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UITextFieldDelegate, UISearchResultsUpdating
 {
 
-    @IBOutlet weak var plusButton: MaterialButton!
-    {
-        didSet
-        {
-            plusButton.layer.cornerRadius = plusButton.bounds.size.width / 2
-            plusButton.layer.shadowOffset = CGSizeMake(0, 10)
-            plusButton.layer.shadowRadius = 4
-            plusButton.layer.shadowOpacity = 0.2
-        }
-    }
-    
+    @IBOutlet weak var Open: UIBarButtonItem!
+        
     @IBOutlet weak var serviceTagsTable: UITableView!
     
     var persistableKey = PersistableKey()
@@ -37,6 +28,11 @@ class OnePasswordsViewController: UIViewController, UITableViewDataSource, UITab
         super.viewDidLoad()
         self.persistableServiceTags.getAll()
         self.setupTableView()
+        
+        self.Open.target = self.revealViewController()
+        self.Open.action = #selector(SWRevealViewController.revealToggle(_:))
+        
+        self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
     }
     
     override func viewDidAppear(animated: Bool)

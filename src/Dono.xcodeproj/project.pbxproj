@@ -12,12 +12,15 @@
 		E618F7581C88F780004604F0 /* PersistableKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = E618F7501C88F780004604F0 /* PersistableKey.swift */; };
 		E618F7591C88F780004604F0 /* PersistableServiceTags.swift in Sources */ = {isa = PBXBuildFile; fileRef = E618F7511C88F780004604F0 /* PersistableServiceTags.swift */; };
 		E618F75A1C88F780004604F0 /* StringWithAES.swift in Sources */ = {isa = PBXBuildFile; fileRef = E618F7521C88F780004604F0 /* StringWithAES.swift */; };
-		E618F75B1C88F780004604F0 /* OnePasswordsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E618F7531C88F780004604F0 /* OnePasswordsViewController.swift */; };
-		E6492B771C90C49100BA77EA /* MaterialButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6492B761C90C49100BA77EA /* MaterialButton.swift */; };
-		E6492B791C90C97600BA77EA /* NewServicetagViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6492B781C90C97600BA77EA /* NewServicetagViewController.swift */; };
+		E618F75B1C88F780004604F0 /* LabelsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E618F7531C88F780004604F0 /* LabelsViewController.swift */; };
+		E6492B791C90C97600BA77EA /* AddLabelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6492B781C90C97600BA77EA /* AddLabelViewController.swift */; };
 		E68CD3071CDCF9060035CA3B /* CryptoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E68CD2FE1CDCF8E40035CA3B /* CryptoSwift.framework */; };
 		E68CD3081CDCF9060035CA3B /* CryptoSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E68CD2FE1CDCF8E40035CA3B /* CryptoSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E68EB1611C93452A001DC522 /* DodoDistrib.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68EB1601C93452A001DC522 /* DodoDistrib.swift */; };
+		E6B3CEBA1CDD09390034A6EC /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6B3CEB91CDD09390034A6EC /* SWRevealViewController.m */; };
+		E6B3CEBC1CDD0E320034A6EC /* BackTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B3CEBB1CDD0E320034A6EC /* BackTableVC.swift */; };
+		E6B3CEBE1CDE02B60034A6EC /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B3CEBD1CDE02B60034A6EC /* SettingsViewController.swift */; };
+		E6B3CEC21CDE06AD0034A6EC /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B3CEC11CDE06AD0034A6EC /* Settings.swift */; };
 		E6CED9291C74DC1F00B7A642 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CED9281C74DC1F00B7A642 /* AppDelegate.swift */; };
 		E6CED92E1C74DC1F00B7A642 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6CED92C1C74DC1F00B7A642 /* Main.storyboard */; };
 		E6CED9301C74DC1F00B7A642 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6CED92F1C74DC1F00B7A642 /* Assets.xcassets */; };
@@ -107,11 +110,15 @@
 		E618F7501C88F780004604F0 /* PersistableKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistableKey.swift; sourceTree = "<group>"; };
 		E618F7511C88F780004604F0 /* PersistableServiceTags.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistableServiceTags.swift; sourceTree = "<group>"; };
 		E618F7521C88F780004604F0 /* StringWithAES.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringWithAES.swift; sourceTree = "<group>"; };
-		E618F7531C88F780004604F0 /* OnePasswordsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnePasswordsViewController.swift; sourceTree = "<group>"; };
-		E6492B761C90C49100BA77EA /* MaterialButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialButton.swift; sourceTree = "<group>"; };
-		E6492B781C90C97600BA77EA /* NewServicetagViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewServicetagViewController.swift; sourceTree = "<group>"; };
+		E618F7531C88F780004604F0 /* LabelsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelsViewController.swift; sourceTree = "<group>"; };
+		E6492B781C90C97600BA77EA /* AddLabelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddLabelViewController.swift; sourceTree = "<group>"; };
 		E68CD2F51CDCF8E40035CA3B /* CryptoSwift.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CryptoSwift.xcodeproj; path = ../CryptoSwift/CryptoSwift.xcodeproj; sourceTree = "<group>"; };
 		E68EB1601C93452A001DC522 /* DodoDistrib.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DodoDistrib.swift; sourceTree = "<group>"; };
+		E6B3CEB81CDD09390034A6EC /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		E6B3CEB91CDD09390034A6EC /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		E6B3CEBB1CDD0E320034A6EC /* BackTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackTableVC.swift; sourceTree = "<group>"; };
+		E6B3CEBD1CDE02B60034A6EC /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		E6B3CEC11CDE06AD0034A6EC /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		E6CED9251C74DC1F00B7A642 /* Dono.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dono.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6CED9281C74DC1F00B7A642 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E6CED92D1C74DC1F00B7A642 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -160,7 +167,6 @@
 			children = (
 				E68EB1601C93452A001DC522 /* DodoDistrib.swift */,
 				E618F74F1C88F780004604F0 /* Pasteboard.swift */,
-				E6492B761C90C49100BA77EA /* MaterialButton.swift */,
 				E618F7521C88F780004604F0 /* StringWithAES.swift */,
 				E618F74C1C88F780004604F0 /* BigInt.swift */,
 			);
@@ -178,9 +184,11 @@
 		E63942911C8A2565001C87C1 /* VIewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				E618F7531C88F780004604F0 /* OnePasswordsViewController.swift */,
+				E6B3CEBD1CDE02B60034A6EC /* SettingsViewController.swift */,
+				E618F7531C88F780004604F0 /* LabelsViewController.swift */,
 				E6EB4BB71C90B23E009EE7EF /* KeyViewController.swift */,
-				E6492B781C90C97600BA77EA /* NewServicetagViewController.swift */,
+				E6492B781C90C97600BA77EA /* AddLabelViewController.swift */,
+				E6B3CEBB1CDD0E320034A6EC /* BackTableVC.swift */,
 			);
 			name = VIewControllers;
 			sourceTree = "<group>";
@@ -190,6 +198,7 @@
 			children = (
 				E618F7501C88F780004604F0 /* PersistableKey.swift */,
 				E618F7511C88F780004604F0 /* PersistableServiceTags.swift */,
+				E6B3CEC11CDE06AD0034A6EC /* Settings.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -204,6 +213,16 @@
 				E68CD3061CDCF8E40035CA3B /* CryptoSwiftTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		E6B3CEB31CDD09030034A6EC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E6B3CEB81CDD09390034A6EC /* SWRevealViewController.h */,
+				E6B3CEB91CDD09390034A6EC /* SWRevealViewController.m */,
+				E6CED9571C74E5C700B7A642 /* Header.h */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		E6CED91C1C74DC1F00B7A642 = {
@@ -230,11 +249,11 @@
 		E6CED9271C74DC1F00B7A642 /* Dono */ = {
 			isa = PBXGroup;
 			children = (
+				E6B3CEB31CDD09030034A6EC /* Supporting Files */,
 				E63942921C8A2583001C87C1 /* Models */,
 				E63942911C8A2565001C87C1 /* VIewControllers */,
 				E63942901C8A254F001C87C1 /* Core */,
 				E639428F1C8A251D001C87C1 /* Utils */,
-				E6CED9571C74E5C700B7A642 /* Header.h */,
 				E6CED9281C74DC1F00B7A642 /* AppDelegate.swift */,
 				E6EFCF501C94742D00868B6B /* Storyboards */,
 				E6CED92F1C74DC1F00B7A642 /* Assets.xcassets */,
@@ -451,14 +470,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E618F75B1C88F780004604F0 /* OnePasswordsViewController.swift in Sources */,
+				E6B3CEBA1CDD09390034A6EC /* SWRevealViewController.m in Sources */,
+				E618F75B1C88F780004604F0 /* LabelsViewController.swift in Sources */,
 				E618F7541C88F780004604F0 /* BigInt.swift in Sources */,
-				E6492B791C90C97600BA77EA /* NewServicetagViewController.swift in Sources */,
+				E6492B791C90C97600BA77EA /* AddLabelViewController.swift in Sources */,
 				E618F7581C88F780004604F0 /* PersistableKey.swift in Sources */,
 				E618F75A1C88F780004604F0 /* StringWithAES.swift in Sources */,
-				E6492B771C90C49100BA77EA /* MaterialButton.swift in Sources */,
+				E6B3CEBC1CDD0E320034A6EC /* BackTableVC.swift in Sources */,
 				E618F7571C88F780004604F0 /* Pasteboard.swift in Sources */,
 				E618F7591C88F780004604F0 /* PersistableServiceTags.swift in Sources */,
+				E6B3CEC21CDE06AD0034A6EC /* Settings.swift in Sources */,
+				E6B3CEBE1CDE02B60034A6EC /* SettingsViewController.swift in Sources */,
 				E6CED95B1C74E5C700B7A642 /* OnePasswords.swift in Sources */,
 				E6EB4BB81C90B23E009EE7EF /* KeyViewController.swift in Sources */,
 				E6CED9291C74DC1F00B7A642 /* AppDelegate.swift in Sources */,

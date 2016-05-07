@@ -10,5 +10,6 @@
 #define Header_h
 
 #import <CommonCrypto/CommonCrypto.h>
+#import "SWRevealViewController.h"
 
 #endif /* Header_h */

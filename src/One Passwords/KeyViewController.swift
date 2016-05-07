@@ -11,16 +11,24 @@ import UIKit
 
 class KeyViewController : UIViewController
 {
+    var settings = Settings()
     var persistableKey = PersistableKey()
     
     @IBOutlet weak var keyTextField: UITextField!
     
+    @IBOutlet weak var Open: UIBarButtonItem!
+
     override func viewDidLoad()
     {
         super.viewDidLoad()
         
         self.keyTextField.text = self.persistableKey.getKey()
         self.keyTextField.becomeFirstResponder()
+        
+        self.Open.target = self.revealViewController()
+        self.Open.action = #selector(SWRevealViewController.revealToggle(_:))
+        
+        self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
     }
     
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?)
@@ -48,8 +56,9 @@ class KeyViewController : UIViewController
             return
         }
         
-        self.persistableKey.setkey(key)
-        self.showAlert("Your Key was updated!")        
+        self.persistableKey.setkey(key, remember: self.settings.getRememberKeyValue())
+
+        self.showAlert("Your Key was updated!")
     }
     
     private func showAlert(message: String)

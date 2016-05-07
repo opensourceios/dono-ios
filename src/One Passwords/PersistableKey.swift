@@ -13,26 +13,41 @@ let pathToKeyFile = docsFolder.stringByAppendingString(keyFileName);
 
 internal class PersistableKey
 {
-    static var Key = "";
+    static var Key = String();
     
     internal func getKey() -> String
     {
-        if (PersistableKey.Key != "")
+        if (!PersistableKey.Key.isEmpty)
         {
             return PersistableKey.Key;
         }
-        
-        loadKey();
-        
-        return PersistableKey.Key;
+        else
+        {
+            loadKey();
+            
+            return PersistableKey.Key;
+        }
     }
     
-    internal func setkey(key: String)
+    internal func setkey(key: String, remember: Bool)
     {
-        if (key != PersistableKey.Key)
+        PersistableKey.Key = key;
+            
+        if (remember)
         {
-            PersistableKey.Key = key;
             saveKey();
+        }
+    }
+    
+    internal func delete()
+    {
+        let fileManager = NSFileManager.defaultManager()
+        do
+        {
+            try fileManager.removeItemAtURL(NSURL(fileURLWithPath: pathToKeyFile))
+        }
+        catch
+        {
         }
     }
     
@@ -40,8 +55,8 @@ internal class PersistableKey
     {
         do
         {
-            let encryptedKey = try String(contentsOfFile: pathToKeyFile, encoding: NSUTF8StringEncoding);
-            PersistableKey.Key = try encryptedKey.aesDecrypt();
+            let encryptedKey = try String(contentsOfFile: pathToKeyFile, encoding: NSUTF8StringEncoding)
+            PersistableKey.Key = try encryptedKey.aesDecrypt()
         }
         catch
         {
