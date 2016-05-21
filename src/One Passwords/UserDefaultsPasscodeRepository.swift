@@ -9,38 +9,32 @@
 import Foundation
 import PasscodeLock
 
-class UserDefaultsPasscodeRepository: PasscodeRepositoryType {
+class UserDefaultsPasscodeRepository: PasscodeRepositoryType
+{
+    private let PasscodeKey = "dono.passcode"
     
-    private let passcodeKey = "dono.passcode"
-    
-    private lazy var defaults: NSUserDefaults = {
-        
-        return NSUserDefaults.standardUserDefaults()
-    }()
-    
-    var hasPasscode: Bool {
-        
-        if passcode != nil {
+    var hasPasscode: Bool
+    {
+        if (passcode != nil)
+        {
             return true
         }
         
         return false
     }
     
-    var passcode: [String]? {
-        
-        return defaults.valueForKey(passcodeKey) as? [String] ?? nil
+    var passcode: [String]?
+    {
+        return KeychainWrapper.standardKeychainAccess().objectForKey(PasscodeKey) as? [String] ?? nil
     }
     
-    func savePasscode(passcode: [String]) {
-        
-        defaults.setObject(passcode, forKey: passcodeKey)
-        defaults.synchronize()
+    func savePasscode(passcode: [String])
+    {
+        KeychainWrapper.standardKeychainAccess().setObject(passcode, forKey: PasscodeKey)
     }
     
-    func deletePasscode() {
-        
-        defaults.removeObjectForKey(passcodeKey)
-        defaults.synchronize()
+    func deletePasscode()
+    {
+        KeychainWrapper.standardKeychainAccess().removeObjectForKey(PasscodeKey)
     }
 }

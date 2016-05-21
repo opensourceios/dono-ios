@@ -8,12 +8,10 @@
 
 import Foundation
 
-let keyFileName = "/.key";
-let pathToKeyFile = docsFolder.stringByAppendingString(keyFileName);
-
 internal class PersistableKey
 {
     static var Key = String();
+    static var KeyKeychainKey = "dono.key"
     
     internal func getKey() -> String
     {
@@ -41,14 +39,7 @@ internal class PersistableKey
     
     internal func delete()
     {
-        let fileManager = NSFileManager.defaultManager()
-        do
-        {
-            try fileManager.removeItemAtURL(NSURL(fileURLWithPath: pathToKeyFile))
-        }
-        catch
-        {
-        }
+        KeychainWrapper.standardKeychainAccess().removeObjectForKey(PersistableKey.KeyKeychainKey)
     }
     
     internal func save()
@@ -60,8 +51,12 @@ internal class PersistableKey
     {
         do
         {
-            let encryptedKey = try String(contentsOfFile: pathToKeyFile, encoding: NSUTF8StringEncoding)
-            PersistableKey.Key = try encryptedKey.aesDecrypt()
+            let retrievedString: String? = KeychainWrapper.standardKeychainAccess().stringForKey(PersistableKey.KeyKeychainKey)
+
+            if (retrievedString != nil)
+            {
+                PersistableKey.Key = retrievedString!
+            }
         }
         catch
         {
@@ -72,8 +67,7 @@ internal class PersistableKey
     {
         do
         {
-            let encryptedKey = try PersistableKey.Key.aesEncrypt();
-            try encryptedKey.writeToFile(pathToKeyFile, atomically: false, encoding: NSUTF8StringEncoding);
+            KeychainWrapper.standardKeychainAccess().setString(PersistableKey.Key, forKey: PersistableKey.KeyKeychainKey)
         }
         catch
         {

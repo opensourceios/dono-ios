@@ -9,8 +9,8 @@
 import Foundation
 import PasscodeLock
 
-struct PasscodeLockConfiguration: PasscodeLockConfigurationType {
-    
+struct PasscodeLockConfiguration : PasscodeLockConfigurationType
+{    
     let repository: PasscodeRepositoryType
     let passcodeLength = 4
     var isTouchIDAllowed = true

@@ -17,6 +17,8 @@
 		E68CD3071CDCF9060035CA3B /* CryptoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E68CD2FE1CDCF8E40035CA3B /* CryptoSwift.framework */; };
 		E68CD3081CDCF9060035CA3B /* CryptoSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E68CD2FE1CDCF8E40035CA3B /* CryptoSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E68EB1611C93452A001DC522 /* DodoDistrib.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68EB1601C93452A001DC522 /* DodoDistrib.swift */; };
+		E6A8BCE31CEFAFB7004BADB8 /* KeychainWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A8BCE21CEFAFB7004BADB8 /* KeychainWrapper.swift */; };
+		E6A8BCED1CEFB0E5004BADB8 /* KeychainOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A8BCEC1CEFB0E5004BADB8 /* KeychainOptions.swift */; };
 		E6B3CEBA1CDD09390034A6EC /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6B3CEB91CDD09390034A6EC /* SWRevealViewController.m */; };
 		E6B3CEBC1CDD0E320034A6EC /* BackTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B3CEBB1CDD0E320034A6EC /* BackTableVC.swift */; };
 		E6B3CEBE1CDE02B60034A6EC /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B3CEBD1CDE02B60034A6EC /* SettingsViewController.swift */; };
@@ -161,6 +163,8 @@
 		E6492B781C90C97600BA77EA /* AddLabelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddLabelViewController.swift; sourceTree = "<group>"; };
 		E68CD2F51CDCF8E40035CA3B /* CryptoSwift.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CryptoSwift.xcodeproj; path = ../CryptoSwift/CryptoSwift.xcodeproj; sourceTree = "<group>"; };
 		E68EB1601C93452A001DC522 /* DodoDistrib.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DodoDistrib.swift; sourceTree = "<group>"; };
+		E6A8BCE21CEFAFB7004BADB8 /* KeychainWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainWrapper.swift; sourceTree = "<group>"; };
+		E6A8BCEC1CEFB0E5004BADB8 /* KeychainOptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainOptions.swift; sourceTree = "<group>"; };
 		E6B3CEB81CDD09390034A6EC /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		E6B3CEB91CDD09390034A6EC /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		E6B3CEBB1CDD0E320034A6EC /* BackTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackTableVC.swift; sourceTree = "<group>"; };
@@ -216,6 +220,8 @@
 		E639428F1C8A251D001C87C1 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				E6A8BCEC1CEFB0E5004BADB8 /* KeychainOptions.swift */,
+				E6A8BCE21CEFAFB7004BADB8 /* KeychainWrapper.swift */,
 				E68EB1601C93452A001DC522 /* DodoDistrib.swift */,
 				E618F74F1C88F780004604F0 /* Pasteboard.swift */,
 				E618F7521C88F780004604F0 /* StringWithAES.swift */,
@@ -585,8 +591,10 @@
 				E618F75A1C88F780004604F0 /* StringWithAES.swift in Sources */,
 				E6B3CEBC1CDD0E320034A6EC /* BackTableVC.swift in Sources */,
 				E618F7571C88F780004604F0 /* Pasteboard.swift in Sources */,
+				E6A8BCE31CEFAFB7004BADB8 /* KeychainWrapper.swift in Sources */,
 				E618F7591C88F780004604F0 /* PersistableServiceTags.swift in Sources */,
 				E6B3CEC21CDE06AD0034A6EC /* Settings.swift in Sources */,
+				E6A8BCED1CEFB0E5004BADB8 /* KeychainOptions.swift in Sources */,
 				E6B3CEBE1CDE02B60034A6EC /* SettingsViewController.swift in Sources */,
 				E6CED95B1C74E5C700B7A642 /* OnePasswords.swift in Sources */,
 				E6EB4BB81C90B23E009EE7EF /* KeyViewController.swift in Sources */,
