@@ -13,10 +13,10 @@ class LabelsViewController: UIViewController, UITableViewDataSource, UITableView
 
     @IBOutlet weak var Open: UIBarButtonItem!
         
-    @IBOutlet weak var serviceTagsTable: UITableView!
+    @IBOutlet weak var labelsTableView: UITableView!
     
     var persistableKey = PersistableKey()
-    var persistableServiceTags = PersistableServiceTags()
+    var persistableLabels = PersistableServiceTags()
     var op = OnePasswords()
     
     // TableView Search
@@ -26,7 +26,7 @@ class LabelsViewController: UIViewController, UITableViewDataSource, UITableView
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        self.persistableServiceTags.getAll()
+        self.persistableLabels.getAll()
         self.setupTableView()
         
         self.Open.target = self.revealViewController()
@@ -38,11 +38,11 @@ class LabelsViewController: UIViewController, UITableViewDataSource, UITableView
     override func viewDidAppear(animated: Bool)
     {
         super.viewDidAppear(animated)
-        self.persistableServiceTags.getAll()
-        self.serviceTagsTable.reloadData()
+        self.persistableLabels.getAll()
+        self.labelsTableView.reloadData()
     }
         
-    internal func getPassword(serviceTag: String)
+    internal func getPassword(label: String)
     {
         self.hideSearchAndKeyboard()
         
@@ -54,13 +54,13 @@ class LabelsViewController: UIViewController, UITableViewDataSource, UITableView
             return
         }
         
-        let d = self.op.computePassword(key, st: serviceTag)
+        let d = self.op.computePassword(key, st: label)
         copyToPasteboard(d)
 
-        self.showAlert("Your password for " + serviceTag + " is ready to be pasted!")
+        self.showAlert("Your password for " + label + " is ready to be pasted!")
 
-        self.persistableServiceTags.add(serviceTag)
-        self.serviceTagsTable.reloadData()
+        self.persistableLabels.add(label)
+        self.labelsTableView.reloadData()
     }
         
     // TableView data source
@@ -77,7 +77,7 @@ class LabelsViewController: UIViewController, UITableViewDataSource, UITableView
         }
         else
         {
-            return self.persistableServiceTags.count()
+            return self.persistableLabels.count()
         }
     }
     
@@ -91,7 +91,7 @@ class LabelsViewController: UIViewController, UITableViewDataSource, UITableView
         }
         else
         {
-            let serviceTag = self.persistableServiceTags.getAt(indexPath.row)
+            let serviceTag = self.persistableLabels.getAt(indexPath.row)
             cell.textLabel?.text = serviceTag
         }
         
@@ -111,10 +111,10 @@ class LabelsViewController: UIViewController, UITableViewDataSource, UITableView
         filteredTableData.removeAll(keepCapacity: false)
         
         let searchPredicate = NSPredicate(format: "SELF CONTAINS[c] %@", searchController.searchBar.text!)
-        let array = (self.persistableServiceTags.getAll() as NSArray).filteredArrayUsingPredicate(searchPredicate)
+        let array = (self.persistableLabels.getAll() as NSArray).filteredArrayUsingPredicate(searchPredicate)
         filteredTableData = array as! [String]
         
-        self.serviceTagsTable.reloadData()
+        self.labelsTableView.reloadData()
     }
     
     // TableView Delete Action
@@ -122,8 +122,8 @@ class LabelsViewController: UIViewController, UITableViewDataSource, UITableView
     {
         let deleteAction = UITableViewRowAction(style: .Normal, title: "Delete" , handler: { (action:UITableViewRowAction, indexPath:NSIndexPath) -> Void in
             
-            self.persistableServiceTags.deleteAt(indexPath.row);
-            self.serviceTagsTable.reloadData();
+            self.persistableLabels.deleteAt(indexPath.row);
+            self.labelsTableView.reloadData();
         })
         
         deleteAction.backgroundColor = UIColor.redColor()
@@ -173,11 +173,19 @@ class LabelsViewController: UIViewController, UITableViewDataSource, UITableView
             // White Cancel button
             (UIBarButtonItem.appearanceWhenContainedInInstancesOfClasses([UISearchBar.self])).tintColor = UIColor.whiteColor()
             
-            //self.serviceTagsTable.tableHeaderView = controller.searchBar
+            // Remove the white line that appears after dragging the cells down
+            controller.searchBar.layer.borderWidth = 1
+            controller.searchBar.layer.borderColor = DodoColor.fromHexString("#2196f3").CGColor
+            
+            self.labelsTableView.tableHeaderView = controller.searchBar
+            
+            // Remove black line from Navigation Bar
+            self.navigationController?.navigationBar.shadowImage = UIImage()
+            self.navigationController?.navigationBar.setBackgroundImage(UIImage(), forBarMetrics: .Default)
             
             return controller
         })()
         
-        self.serviceTagsTable.reloadData()
+        self.labelsTableView.reloadData()
     }
 }
