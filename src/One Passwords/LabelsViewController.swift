@@ -13,6 +13,8 @@ class LabelsViewController: UIViewController, UITableViewDataSource, UITableView
 
     @IBOutlet weak var Open: UIBarButtonItem!
         
+    @IBOutlet weak var lonelyLabel: UITableView!
+    
     @IBOutlet weak var labelsTableView: UITableView!
     
     var persistableKey = PersistableKey()
@@ -124,6 +126,7 @@ class LabelsViewController: UIViewController, UITableViewDataSource, UITableView
             
             self.persistableLabels.deleteAt(indexPath.row);
             self.labelsTableView.reloadData();
+            self.handleLonelyLabel()
         })
         
         deleteAction.backgroundColor = UIColor.redColor()
@@ -187,5 +190,16 @@ class LabelsViewController: UIViewController, UITableViewDataSource, UITableView
         })()
         
         self.labelsTableView.reloadData()
+        self.handleLonelyLabel()
+    }
+    
+    private func handleLonelyLabel()
+    {
+        if (self.persistableLabels.count() == 0)
+        {
+            self.lonelyLabel.hidden = false
+        }
+        
+        self.labelsTableView.hidden = !self.lonelyLabel.hidden
     }
 }
