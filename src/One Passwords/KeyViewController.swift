@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import Dodo
 
 class KeyViewController : UIViewController
 {
@@ -42,7 +43,7 @@ class KeyViewController : UIViewController
     {
         let key = self.keyTextField.text!
         
-        if (key.characters.count < OnePasswords.MIN_KEY_LENGTH)
+        if (key.characters.count < Dono.MIN_KEY_LENGTH)
         {
             showError("Your Key has to be longer than 16 characters")
 
@@ -59,27 +60,5 @@ class KeyViewController : UIViewController
         self.persistableKey.setkey(key, remember: self.settings.getRememberKeyValue())
 
         self.showAlert("Your Key was updated!")
-    }
-    
-    private func showAlert(message: String)
-    {
-        self.view.dodo.topLayoutGuide = self.topLayoutGuide
-        self.view.dodo.style.label.color = UIColor.whiteColor()
-        self.view.dodo.style.bar.backgroundColor = DodoColor.fromHexString("#2196f3")
-        self.view.dodo.style.bar.hideAfterDelaySeconds = 2
-        self.view.dodo.style.bar.hideOnTap = true
-        
-        self.view.dodo.show(message);
-    }
-
-    private func showError(message: String)
-    {
-        self.view.dodo.topLayoutGuide = self.topLayoutGuide
-        self.view.dodo.style.label.color = UIColor.whiteColor()
-        self.view.dodo.style.bar.backgroundColor = DodoColor.fromHexString("#f44336")
-        self.view.dodo.style.bar.hideAfterDelaySeconds = 5
-        self.view.dodo.style.bar.hideOnTap = true
-        
-        self.view.dodo.show(message);
     }
 }

@@ -1,0 +1,15 @@
+PODS:
+  - Dodo (2.2.1)
+  - PasscodeLock (1.0.2)
+
+DEPENDENCIES:
+  - Dodo (~> 2.2.1)
+  - PasscodeLock (~> 1.0.2)
+
+SPEC CHECKSUMS:
+  Dodo: 9c9a368ec6c869928429c691eecc926889882a2d
+  PasscodeLock: 4ae42c094224a01de3773fcd69ae33886394d959
+
+PODFILE CHECKSUM: b6cff16b5f5dc3c5c794cd0d5a7c9c3b41585b2e
+
+COCOAPODS: 1.0.0

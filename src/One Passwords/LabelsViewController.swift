@@ -6,11 +6,11 @@
 //  Copyright © 2016 Panos Sakkos. All rights reserved.
 //
 
+import Dodo
 import UIKit
 
-class LabelsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UITextFieldDelegate, UISearchResultsUpdating
-{
-
+class LabelsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UITextFieldDelegate, UISearchResultsUpdating {
+    
     @IBOutlet weak var Open: UIBarButtonItem!
         
     @IBOutlet weak var lonelyLabel: UITableView!
@@ -18,8 +18,8 @@ class LabelsViewController: UIViewController, UITableViewDataSource, UITableView
     @IBOutlet weak var labelsTableView: UITableView!
     
     var persistableKey = PersistableKey()
-    var persistableLabels = PersistableServiceTags()
-    var op = OnePasswords()
+    var persistableLabels = PersistableLabels()
+    var dono = Dono()
     
     // TableView Search
     var filteredTableData = [String]()
@@ -28,18 +28,22 @@ class LabelsViewController: UIViewController, UITableViewDataSource, UITableView
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        
         self.persistableLabels.getAll()
         self.setupTableView()
         
+        // Setup menu open button
         self.Open.target = self.revealViewController()
         self.Open.action = #selector(SWRevealViewController.revealToggle(_:))
         
+        // Setup swipe right gesture to open menu
         self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
     }
     
     override func viewDidAppear(animated: Bool)
     {
         super.viewDidAppear(animated)
+        
         self.persistableLabels.getAll()
         self.labelsTableView.reloadData()
     }
@@ -56,7 +60,7 @@ class LabelsViewController: UIViewController, UITableViewDataSource, UITableView
             return
         }
         
-        let d = self.op.computePassword(key, st: label)
+        let d = self.dono.computePassword(key, l: label)
         copyToPasteboard(d)
 
         self.showAlert("Your password for " + label + " is ready to be pasted!")
@@ -134,29 +138,6 @@ class LabelsViewController: UIViewController, UITableViewDataSource, UITableView
         return [deleteAction]
     }
     
-    // Helper Methods
-    private func showAlert(message: String)
-    {
-        self.view.dodo.topLayoutGuide = self.topLayoutGuide
-        self.view.dodo.style.label.color = UIColor.whiteColor()
-        self.view.dodo.style.bar.backgroundColor = DodoColor.fromHexString("#2196f3")
-        self.view.dodo.style.bar.hideAfterDelaySeconds = 3
-        self.view.dodo.style.bar.hideOnTap = true
-        
-        self.view.dodo.show(message);
-    }
-
-    private func showError(message: String)
-    {
-        self.view.dodo.topLayoutGuide = self.topLayoutGuide
-        self.view.dodo.style.label.color = UIColor.whiteColor()
-        self.view.dodo.style.bar.backgroundColor = DodoColor.fromHexString("#f44336")
-        self.view.dodo.style.bar.hideAfterDelaySeconds = 3
-        self.view.dodo.style.bar.hideOnTap = true
-        
-        self.view.dodo.show(message);
-    }
-
     private func hideSearchAndKeyboard()
     {
         self.resultSearchController.active = false
@@ -195,11 +176,16 @@ class LabelsViewController: UIViewController, UITableViewDataSource, UITableView
     
     private func handleLonelyLabel()
     {
+        self.persistableLabels.getAll()
         if (self.persistableLabels.count() == 0)
         {
             self.lonelyLabel.hidden = false
+            self.labelsTableView.hidden = true
         }
-        
-        self.labelsTableView.hidden = !self.lonelyLabel.hidden
+        else
+        {
+            self.lonelyLabel.hidden = true
+            self.labelsTableView.hidden = false
+        }
     }
 }

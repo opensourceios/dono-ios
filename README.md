@@ -4,5 +4,5 @@
 
 * [Dodo](https://github.com/marketplacer/Dodo)
 * [SwiftKeychainWrapper](https://github.com/jrendel/SwiftKeychainWrapper)
-* [SwiftPasscodeLock](https://github.com/yankodimitrov/SwiftPasscodeLock)
+* [SwiftPasscodeLock](https://github.com/velikanov/SwiftPasscodeLock)
 * [SWRevealViewController](https://github.com/John-Lluch/SWRevealViewController)

@@ -14,8 +14,8 @@ import Foundation
   import AppKit
 #endif
 
-/// Return string value currently on clipboard
 func getPasteboardContents() -> String? {
+    
   #if os(iOS)
     
     let pasteboard = UIPasteboard.generalPasteboard()
@@ -29,8 +29,8 @@ func getPasteboardContents() -> String? {
   #endif
 }
 
-/// Write a string value to the pasteboard
 func copyToPasteboard(text: String) {
+    
   #if os(iOS)
     
     let pasteboard = UIPasteboard.generalPasteboard()

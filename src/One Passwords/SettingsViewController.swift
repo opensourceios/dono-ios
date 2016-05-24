@@ -36,7 +36,6 @@ class SettingsViewController : UIViewController
         
         super.init(coder: aDecoder)
     }
-
     
     override func viewDidLoad()
     {
@@ -92,17 +91,10 @@ class SettingsViewController : UIViewController
         
         presentViewController(passcodeVC, animated: true, completion: nil)
     }
-
-    func updatePasscodeView()
-    {
-        let hasPasscode = configuration.repository.hasPasscode
-        
-        self.passcodeLock.on = hasPasscode
-    }
     
     func updateViewWithSettings()
     {
         self.rememberKey.on = self.settings.getRememberKeyValue()
-        self.updatePasscodeView()
+        self.passcodeLock.on = configuration.repository.hasPasscode
     }
 }
