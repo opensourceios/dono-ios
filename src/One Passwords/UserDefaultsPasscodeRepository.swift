@@ -8,6 +8,7 @@
 
 import Foundation
 import PasscodeLock
+import SwiftKeychainWrapper
 
 class UserDefaultsPasscodeRepository: PasscodeRepositoryType
 {
@@ -25,16 +26,16 @@ class UserDefaultsPasscodeRepository: PasscodeRepositoryType
     
     var passcode: [String]?
     {
-        return KeychainWrapper.standardKeychainAccess().objectForKey(PasscodeKey) as? [String] ?? nil
+        return KeychainWrapper.objectForKey(PasscodeKey) as? [String] ?? nil
     }
     
     func savePasscode(passcode: [String])
     {
-        KeychainWrapper.standardKeychainAccess().setObject(passcode, forKey: PasscodeKey)
+        KeychainWrapper.setObject(passcode, forKey: PasscodeKey)
     }
     
     func deletePasscode()
     {
-        KeychainWrapper.standardKeychainAccess().removeObjectForKey(PasscodeKey)
+        KeychainWrapper.removeObjectForKey(PasscodeKey)
     }
 }

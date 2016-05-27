@@ -9,6 +9,7 @@
 import UIKit
 import Foundation
 import PasscodeLock
+import SWRevealViewController
 
 class SettingsViewController : UIViewController
 {
@@ -36,7 +37,6 @@ class SettingsViewController : UIViewController
         
         super.init(coder: aDecoder)
     }
-
     
     override func viewDidLoad()
     {
@@ -79,6 +79,11 @@ class SettingsViewController : UIViewController
         if (self.passcodeLock.on)
         {
             passcodeVC = PasscodeLockViewController(state: .SetPasscode, configuration: configuration)
+
+            passcodeVC.successCallback = { lock in
+                
+                self.updateViewWithSettings()
+            }
         }
         else
         {
@@ -87,22 +92,17 @@ class SettingsViewController : UIViewController
             passcodeVC.successCallback = { lock in
                 
                 lock.repository.deletePasscode()
+
+                self.updateViewWithSettings()
             }
         }
         
-        presentViewController(passcodeVC, animated: true, completion: nil)
-    }
-
-    func updatePasscodeView()
-    {
-        let hasPasscode = configuration.repository.hasPasscode
-        
-        self.passcodeLock.on = hasPasscode
+        presentViewController(passcodeVC, animated: true, completion: { self.updateViewWithSettings() } )
     }
     
     func updateViewWithSettings()
     {
         self.rememberKey.on = self.settings.getRememberKeyValue()
-        self.updatePasscodeView()
+        self.passcodeLock.on = self.configuration.repository.hasPasscode
     }
 }

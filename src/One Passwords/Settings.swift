@@ -11,7 +11,6 @@ import Foundation
 class Settings
 {
     var REMEMBER_KEY_KEY = "rememberKey"
-    var PASSCODE_LOCK_KEY = "passcodeLockKey"
     
     func getRememberKeyValue() -> Bool
     {
@@ -23,17 +22,5 @@ class Settings
     {
         let defaults = NSUserDefaults.standardUserDefaults()
         defaults.setBool(value, forKey: REMEMBER_KEY_KEY)
-    }
-    
-    func getPasscodeLockValue() -> Bool
-    {
-        let defaults = NSUserDefaults.standardUserDefaults()
-        return defaults.boolForKey(PASSCODE_LOCK_KEY)
-    }
-    
-    func setPasscodeLockValue(value: Bool)
-    {
-        let defaults = NSUserDefaults.standardUserDefaults()
-        defaults.setBool(value, forKey: PASSCODE_LOCK_KEY)
-    }
+    }    
 }

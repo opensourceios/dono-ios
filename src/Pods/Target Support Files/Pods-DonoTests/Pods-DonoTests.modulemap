@@ -1,0 +1,6 @@
+framework module Pods_DonoTests {
+  umbrella header "Pods-DonoTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

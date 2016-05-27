@@ -1,0 +1,34 @@
+{
+  "name": "DonoCore",
+  "summary": "Dono password derivation",
+  "requires_arc": true,
+  "version": "0.1.0",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Panos Sakkos  ": "panos.sakkos@gmail.com"
+  },
+  "homepage": "https://github.com/dono-app/dono-pod",
+  "source": {
+    "git": "https://github.com/dono-app/dono-pod",
+    "tag": "{s.version}"
+  },
+  "frameworks": "Foundation",
+  "dependencies": {
+    "BigInt": [
+      "~> 1.3.0"
+    ],
+    "CryptoSwift": [
+      "~> 0.4.1"
+    ]
+  },
+  "source_files": "DonoCore/*.{swift}",
+  "platforms": {
+    "osx": null,
+    "ios": null,
+    "tvos": null,
+    "watchos": null
+  }
+}

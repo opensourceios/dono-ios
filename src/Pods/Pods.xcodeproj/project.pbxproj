@@ -1,0 +1,2359 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		006D42B96A79F67A56DB1B6571BDEF51 /* SecureBytes.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB563E55143CA963C47EE5927F6FAFF8 /* SecureBytes.swift */; };
+		011DE9FF4FCCCD1A96E0D0DB765DACB3 /* DodoButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7492CBA1BEFE647A91B7ABA6337A8926 /* DodoButtonView.swift */; };
+		015610A79F2857BCB55F198A40886A80 /* Dono.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A739E21F278C0E90E44C2A893CFB94 /* Dono.swift */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		01FCB52BE197C869A2CAD0E0848727C5 /* Rabbit+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E95208A1A82777E6D187E6542372AB6 /* Rabbit+Foundation.swift */; };
+		08C1938DA5D6B58DF0D7D48864881F83 /* CipherProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DBA25482BBB9A3361A0F746C40B8CE /* CipherProtocol.swift */; };
+		094DC915B110D6B7018ABA03A5C0A046 /* PasscodeLockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43677D1EAD4686A023406DA53D2D43D /* PasscodeLockViewController.swift */; };
+		09F8E39D750DAC30E313318C30788B2A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01DDBD4E83F8E99AF1647C052752DBA0 /* Foundation.framework */; };
+		0A2258B079C90FA54B04CD9C1E87093D /* PasscodeSignButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0835BE7E8121A6D5DB46AA158D1BBA8 /* PasscodeSignButton.swift */; };
+		0C561C5F4232E7D73E8873FB3B967A8D /* DodoInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E6064E07BA34FD065CF00FD1D7C366 /* DodoInterface.swift */; };
+		0D4362129DDF3D5E046EA4944EF95E65 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDF8A411574294E4B5C8C050DDEE29B /* Operators.swift */; };
+		0ED7D19B16C7F492A1B04EE62C195740 /* PasscodeRepositoryType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5C40EE4F9461F8ADFAFE4BE3F6EA79 /* PasscodeRepositoryType.swift */; };
+		10A3FE62FC9E4194EA4DC80F027630C1 /* SWRevealViewController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 209CF46A57C4684A831C1650C64A0642 /* SWRevealViewController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		10C0E741F36DB14E47BE57D57602C836 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01DDBD4E83F8E99AF1647C052752DBA0 /* Foundation.framework */; };
+		1167D7E6F8AF70E0EF4FBCC671D159FB /* DodoColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99F2C3B8045D4BE199E022CF78B3518 /* DodoColor.swift */; };
+		119F3B8E8C2457CDA7DAF8386211E422 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01DDBD4E83F8E99AF1647C052752DBA0 /* Foundation.framework */; };
+		160CC66B31612A4B1597E3351A737A4C /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C221D1286FBCC37E930A0AC76A7ECE /* SWRevealViewController.m */; };
+		1645B4FF92F66C970BAF9D92DEE0A3CE /* DodoAnimationsHide.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB423E7D40DD0EB7692B45284E8E0829 /* DodoAnimationsHide.swift */; };
+		16D54976470338197D432DD79688352C /* Pods-DonoUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FF9C4C0F02D52F84672C280741B13A9E /* Pods-DonoUITests-dummy.m */; };
+		16F96F3B98A173B8A36318C7B7331DB9 /* SpringAnimationCALayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4176C3797518AE7510C05A352E7549D4 /* SpringAnimationCALayer.swift */; };
+		17AACDA4176BF53122DEE26E111B25BA /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B9A9AE9FAE51D03045850BA66C65E7 /* Functions.swift */; };
+		1B2827EBB6685C875DA445AACF0E93C1 /* PasscodeLock.h in Headers */ = {isa = PBXBuildFile; fileRef = 93694A3440046DFEFC096B75A1B3A313 /* PasscodeLock.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1CDF4E750C28803C8BE85DA48DC65627 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01DDBD4E83F8E99AF1647C052752DBA0 /* Foundation.framework */; };
+		1DCC299F1DB74B1D602947C6E35EBED9 /* IntExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6455BFAAA0DD938BF97D48458CC5EE89 /* IntExtension.swift */; };
+		25D109AFDACC6AD7883FD2D328EFA126 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01DDBD4E83F8E99AF1647C052752DBA0 /* Foundation.framework */; };
+		263485C204BECDBA0E912CCD4805CF63 /* DodoBarOnTap.swift in Sources */ = {isa = PBXBuildFile; fileRef = A668D5CFD67734C18C6C615A783729DA /* DodoBarOnTap.swift */; };
+		26C42E9223143E4D1B780D05DBD32D38 /* Pods-Dono-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C7E658246B960AF6C634AACE372C70C /* Pods-Dono-dummy.m */; };
+		28F2159E12F8A2947FD64D93BDE0154B /* BigUInt Addition.swift in Sources */ = {isa = PBXBuildFile; fileRef = D536509CA44FD737D4E616B15D8D6631 /* BigUInt Addition.swift */; };
+		2A80FA3D90C1B2074AE7CDC5B5828E73 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01DDBD4E83F8E99AF1647C052752DBA0 /* Foundation.framework */; };
+		2A88D4C4F77418CB3B491578A178D6D1 /* Dodo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 68D0FC27169C0EC91EF5F2D1D68F8AC5 /* Dodo-dummy.m */; };
+		2C89799E9DF05D057466F438C46B193D /* HashProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680BEEEAF07D948CEC0C5D5297B1F3A2 /* HashProtocol.swift */; };
+		2F18AA2CC3416AEA6B7CAFBCEA74F58D /* PasscodeLockType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36CCD5B634F097953BC67EEA98F2ACD /* PasscodeLockType.swift */; };
+		2F939CF983F67EB2902CC7E05CC26D78 /* EnterPasscodeState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002D15446BD5FDBF4D10C8192AB67EA9 /* EnterPasscodeState.swift */; };
+		34BF3DA931833B571C0809C535BB656E /* PasscodeLock-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FB738534BD03F67E29CAF6FB4C2EC355 /* PasscodeLock-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		39148D23D5224E34F23101E605E6446E /* PasscodeLock-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E6643EFA7C0BEA51F7D7542C0F1D801 /* PasscodeLock-dummy.m */; };
+		3B4CC569F3655FD3FF70ED571D077004 /* Pods-DonoUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 311B68C82D8EDDCBAFB924CA58472562 /* Pods-DonoUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3CF89143D21FCE1C722D554B88E6FD62 /* ChaCha20.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6203FF14322AE450DFAF94D236172149 /* ChaCha20.swift */; };
+		3E163AA6138BFE7B2E0B334BFDCE6007 /* DodoAnimations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B96977797FF42DE79664FDF54468D95 /* DodoAnimations.swift */; };
+		3E4913CF67EFF54EBB1D2CDE956A2604 /* Pods-DonoTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F9EF4DDA322B78CF7B55F49082467D2D /* Pods-DonoTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3F00DF4B3BF9245D18C10E92F93F26F9 /* BigUInt Prime Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D5B40E0A06F785388AF5F4786D7643 /* BigUInt Prime Test.swift */; };
+		412E9E35991EAE804887C044DA945CFD /* CRC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2856643766085055C62999BFE958F6 /* CRC.swift */; };
+		414604A8FF3FB72FBF340519531FEEC3 /* Multiplatform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439038164A37212C5D38F8DE215DD776 /* Multiplatform.swift */; };
+		41B28B53451B9591805F973AB4E90807 /* CipherBlockMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BF8A8E8AF7DC4D92F9E93FF13922CB /* CipherBlockMode.swift */; };
+		42303C979E2E03843D563319E485DBDE /* SWRevealViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EACB5CA25B9F768CF6205648D1D99DD /* SWRevealViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		446623246B4A0179561843187D46AE99 /* IntegerConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AAB25CE88B5A1963DD00A54CEB73C6 /* IntegerConvertible.swift */; };
+		4715A472747706D3B189EBE61A88EBAB /* PasscodeLockPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EBD93512880C84E4F561AF6299687A5 /* PasscodeLockPresenter.swift */; };
+		490CBB4DB25D195443D8F31D579BD28D /* OFB.swift in Sources */ = {isa = PBXBuildFile; fileRef = B798FCC21B4D7CC3180E9148A98DCFB7 /* OFB.swift */; };
+		4A33BBDADA9FD85AFC561BEB97168F83 /* CSArrayType+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D060B6A4743254F19F53F5DC3D208FDE /* CSArrayType+Foundation.swift */; };
+		4A57FB905C657FE2C00F212F1817AF6E /* Pods-DonoTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E9B7D638BD662FB27C1595C4BB1176 /* Pods-DonoTests-dummy.m */; };
+		4A73FD15C96175B6558DDB35FA88486F /* Dodo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EA2D2D90C0F9B51036989DE706AA57 /* Dodo.swift */; };
+		4FEFEEB0555283FC547366E88AE4E440 /* BigInt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 395E678B10C58AC4B20B7599C22AF08B /* BigInt.framework */; };
+		53B7502B7F416C87F06616AAEEBFB99F /* PBKDF2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262D1BE2C99FF5FEBA5797C0706BE18A /* PBKDF2.swift */; };
+		548482C81BD72D94EEF6917FB97B94D6 /* DodoKeyboardListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD86BB924E4E3FC72F06901D2301949 /* DodoKeyboardListener.swift */; };
+		5530DCAE3CB98A3160BE63CEDA5C6689 /* BigUInt Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AAF94A75A28CDA3A03F3F6DD06836BD /* BigUInt Data.swift */; };
+		560EBDC6D4EA6B9D9AE968C916B22E9B /* TegAutolayoutConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA75F75AEDD1A8F8A75B030ED11097C /* TegAutolayoutConstraints.swift */; };
+		57A87932F040001DA12B681C3A656E9F /* BlockModeOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 950A88698054127D112A9F951EF5CBBC /* BlockModeOptions.swift */; };
+		57ED9F0ADD910FA52C306C2B4CB20738 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A954DE5B24761898CD993AFEE725BFC8 /* String+Extension.swift */; };
+		5A02FFB3A7C1E7DB1FD26B83BC116508 /* BigInt-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FBD7E40C79C148D7DD743A8D7A2BF0DD /* BigInt-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5B2DCA8A3F64844ED1F63C176188F2E7 /* BigInt-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 67059B55B33682B1CA33037E1EC38A99 /* BigInt-dummy.m */; };
+		5C07045A75721059EB40CABF801C8D63 /* Bitwise Hacks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A636BA32C52AB0F4EBAB196DEBCA368 /* Bitwise Hacks.swift */; };
+		5D0B5FF53A7881799D8425D95E49C25E /* UnderKeyboardDistrib.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4530236EED9B6F3A6DF0675BBE4E9FB /* UnderKeyboardDistrib.swift */; };
+		5D53018C315ECC0C56C6E1D3799FD019 /* BigUInt Division.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA67453BD9120B9CA6F883344E2D440 /* BigUInt Division.swift */; };
+		5D8C644A3CCC79B88B66353B9DC37284 /* SwiftKeychainWrapper-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 499751B01469C3D85E0293E6F6393811 /* SwiftKeychainWrapper-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5DD1E49FDA790842C206260F41903D0F /* DonoCore-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B35385A84FE2B6738353A0F2977F71A2 /* DonoCore-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5EEE09F092708456406028115BEF0CD4 /* BigUInt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E1C32136881D1E7F58FC759B155F82 /* BigUInt.swift */; };
+		5EF0BFB43EE92D1838A8CDFD252D52A3 /* MD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C1082C44CA3848D54F036924D39FB9 /* MD5.swift */; };
+		5F1750C6D7FEB5A5CEA7E3AEF2431E76 /* CryptoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10413D9FF49F8B2B1C6D704EAAC031F1 /* CryptoSwift.framework */; };
+		5F204C14A4E690D8878E630398EA9797 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3435E940D6B7E58F586127A390400ED5 /* CoreGraphics.framework */; };
+		5F4D35E6FE0D020D8E833454A229D585 /* SetPasscodeState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6530F37CB35F46E7A1847791F841D5B /* SetPasscodeState.swift */; };
+		60189F7AEDC4BD374DA8DD73BF0331FA /* PKCS5.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC66C426A6B8342AA3B51F8BFA1616D0 /* PKCS5.swift */; };
+		6038E28A5EA400E299135999065B125B /* DodoAnimationsShow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0E6787FCA5A2F4B44EAC29017EE704 /* DodoAnimationsShow.swift */; };
+		60CA9BB6066A71806902A1DD14D5492D /* DodoButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7BDEB1AED213D3A31D6395AFCEAD3B /* DodoButtonStyle.swift */; };
+		6123ADB98CC26A6548C591638658F13A /* NoPadding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B3C6F2E290F2CC76C579032A4F1A00 /* NoPadding.swift */; };
+		619F09B400F771BFF5FF4F208963A9FF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01DDBD4E83F8E99AF1647C052752DBA0 /* Foundation.framework */; };
+		6338A7A9CF93613D0DDAB480B4C5C95F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01DDBD4E83F8E99AF1647C052752DBA0 /* Foundation.framework */; };
+		688A401B2412607C7125E5FE11FBD22A /* UInt8Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26B6C39132CEF638C8DE76BD2605AB6 /* UInt8Extension.swift */; };
+		6A6E678BEA55565A227D9C327EE741C2 /* Array+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20A8D9885D10BA154122B2FA5648F49 /* Array+Extension.swift */; };
+		6C5CF2DB6D1FDE211439865998D4DCE8 /* BigUInt Radix Conversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C3A0E96B23EE290BED8AC9365A5DF8 /* BigUInt Radix Conversion.swift */; };
+		6EDB380414B0E5EF1258D480A0C8B701 /* ChangePasscodeState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CCA5D85BE419F7E951F112878BB13B /* ChangePasscodeState.swift */; };
+		708BE5E1A530CA6415F3EB0519BD9DF9 /* Dodo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A8AF4C1029E93840034549AEE0DBE4DA /* Dodo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		70E45B2088D8D9DCE5C64E5AE123C077 /* CSArrayType+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF3E22AC15861F4AD4075BC9EB5670B /* CSArrayType+Extensions.swift */; };
+		7232F12C592FAC62AB2A73DB44F97E87 /* Pods-Dono-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C848E2366269A9E95E09508E953C321B /* Pods-Dono-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		726B83F3234CEFA4A5431C1B56296AE6 /* BigUInt Shifts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C8BAAE53D03BC6CFF9254F51AC69FA /* BigUInt Shifts.swift */; };
+		7403CE2CFCB091FBF6E259C3901B4D90 /* BigUInt Multiplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98C499DFCDD050C5E3DA01E794CE4AB /* BigUInt Multiplication.swift */; };
+		75CA0880B0F24B00A4868D1166B0EAA3 /* ECB.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03B06BEAEEC9214BD8B098592415F85 /* ECB.swift */; };
+		76C014EF3D0886098F511FB736EE45AA /* ChaCha20+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276C87512BBAE5DA052B049A5A874BD4 /* ChaCha20+Foundation.swift */; };
+		77475E60BF8421309303F293C2E23888 /* BigUInt GCD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50AF40AE26BE31AD5A2F1DBF9506AF4E /* BigUInt GCD.swift */; };
+		77C731C891802EF2134703E5CA86067D /* DodoButtonDefaultStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F8B847BE3676BAABD566811691E1D3 /* DodoButtonDefaultStyles.swift */; };
+		7ABFB401D28569E422CE656F7B16D85E /* PasscodeLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41B8F314BC811AF187EE1155FB893DC /* PasscodeLock.swift */; };
+		7CDF187A123E46B599934B4E5D76AF2E /* DodoPresets.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5947FCA0B2D75A7C0FF66CB5D476D40 /* DodoPresets.swift */; };
+		7DFE127723C7743D88BA9AB0929A50BD /* BigUInt Subtraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160C9C4EB1601596457B74146DE3C266 /* BigUInt Subtraction.swift */; };
+		7E94320CC0F0DFDF94C3420AAC973C74 /* HMAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDB3A5BF9371DDCFC7EE6D6BF752A94 /* HMAC.swift */; };
+		8015C76DE8B09C84C4F402CA38728A87 /* SHA1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998F88D828DB64303AD143F865671E1D /* SHA1.swift */; };
+		8192FC92E17007088F59F37F060519F7 /* BigUInt Exponentiation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003E5E9702265F6D3445B6F3B6C0D368 /* BigUInt Exponentiation.swift */; };
+		8381DE35951E36B59817B35041227790 /* SWRevealViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C05747A694A863177290593752878FEA /* SWRevealViewController-dummy.m */; };
+		8463F5D4B1AB7436B42AC4F3567C206C /* BigInt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103B1B71488324B5F73D9442F91F8A5F /* BigInt.swift */; };
+		8789FD22015A5F4285610BDE63A220D9 /* BlockModeGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB81BEA3C4E196B8906528DD4C86A7D /* BlockModeGenerator.swift */; };
+		88453B96B5CFD6A445513F4918568C8A /* BigUInt Square Root.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F93828B2FB669D44A246DD93FC5E28 /* BigUInt Square Root.swift */; };
+		884ECCA456E6B461B6ECE56F9DE5CF46 /* SwiftKeychainWrapper-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AE80CF6683D3F55C0FAA0FA4A92E1996 /* SwiftKeychainWrapper-dummy.m */; };
+		89ADAE99C17212EB3821672355CF4B70 /* Rabbit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85DA86B3CC09225593A9CFC3DB3354DA /* Rabbit.swift */; };
+		8A23ABFB817043AEE905014E2C13981A /* DodoLabelStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6484124DFDFABCCF55310890A75D731 /* DodoLabelStyle.swift */; };
+		8A82B31B817A4C4F1C480231DF217CD9 /* UInt32Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2786D9EA84D686504AA7312B9177F613 /* UInt32Extension.swift */; };
+		8CB4F90922C249B3A859150BF616A4AD /* ArrayUInt8+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA2AA8FFD64D31270D572B1C5B16D0E /* ArrayUInt8+Foundation.swift */; };
+		948302E37AAB9EC8B812EB369543C8CF /* Utils+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBFD08076DD26E31F659628907EC6F1 /* Utils+Foundation.swift */; };
+		94C21E30D4C8975A8A782BAC99F53A92 /* PKCS7.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17268531BF77AA9A770B97A8AE8A263B /* PKCS7.swift */; };
+		94E79413E4699AE8AE49374B5CAF920E /* Padding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8F6217F1422DC1A69FC3BD7D62810B /* Padding.swift */; };
+		96CDB8A5F34B0375F261F7325E4C0EEE /* BytesSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29B7598F1908B7C4FF5CAB4B534B933 /* BytesSequence.swift */; };
+		99AAB26FC666C78B690E49D04DBB0F4A /* NSData+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E425BD0C28BF698C9D27A4D2D036FD /* NSData+Extension.swift */; };
+		9BF801BDE905EDD71F2FF86B98ED875E /* DodoBarDefaultStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608C38497E0800E5C7BB847C8C5A7800 /* DodoBarDefaultStyles.swift */; };
+		9C1919AF375FBF0A21E2824AC355F840 /* DodoMockMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00027B498218153EE275FA7BB922BFEC /* DodoMockMessage.swift */; };
+		9C7A22E7319835D1AAFC538D46D7648A /* BigUInt Hashing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84710A9BF7235154A1A1A7A281780866 /* BigUInt Hashing.swift */; };
+		9C8F8FE18EA8FFEFEDAA75118E04CD64 /* SwiftKeychainWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = D9B35D384F42649EA90467F043EBFDF7 /* SwiftKeychainWrapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9D254514F5CCD7F7922955D98357A0A0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01DDBD4E83F8E99AF1647C052752DBA0 /* Foundation.framework */; };
+		A085C96768DC6F001093AC8A49FBD00D /* Icons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54A5FC741BAE83C8C588B39D1FF35CD4 /* Icons.xcassets */; };
+		A132B0C3DD6EFB588393B2D4C49F7E74 /* CTR.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5036E0A894E64460FEA94A45A2825A /* CTR.swift */; };
+		A1BAD2EBC894677CC5F8DD88882115D5 /* BigDigit.swift in Sources */ = {isa = PBXBuildFile; fileRef = A126C529647B56354F471BBD3BA9C96C /* BigDigit.swift */; };
+		A3B06437EC5926482381251689914E76 /* PasscodeLockConfigurationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD5A3B76CDCD9104424913B00834E6E /* PasscodeLockConfigurationType.swift */; };
+		A9C83E29FA3ABC9275BCFA01C035B4E1 /* DodoMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C0F8ADBBD3F0FB286B8C1B0A317C6B /* DodoMock.swift */; };
+		AB6E356426075448DB2F4B9C7D757699 /* DodoButtonViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E58D41B83CEEF02C0C5F590C001926 /* DodoButtonViewDelegate.swift */; };
+		ABC8B99D20A5EC555D898AFBCB30DFF5 /* BigUInt Bitwise Ops.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17BF87FCAE92E24CFE743D54B3FD08BD /* BigUInt Bitwise Ops.swift */; };
+		ABDB1A6938F6EBAE33D6448C49033335 /* Generics.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4312A8D4FDA477DCF2507E5D8E8E6BE /* Generics.swift */; };
+		AE9ABF1468EEF702F5109CB34FB68748 /* SHA2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB2BC16E3123159A0525A7FA3CBD795 /* SHA2.swift */; };
+		AF6D510782C0E26296D850006AFBE110 /* String+LinuxFoundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122F8E398306FE9F1D0825F1838667A1 /* String+LinuxFoundation.swift */; };
+		B126C81E8C91CF669D0F7BF1761C9607 /* DodoButtonOnTap.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9947CAC425A1A4C7AE20856B5D56CE /* DodoButtonOnTap.swift */; };
+		B387995458AF0B6A16629D5743A37059 /* PasscodeLockStateType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE39279F011CFFB9A46600A69329E19 /* PasscodeLockStateType.swift */; };
+		B65773B0448A713786714269C30BB67C /* String+FoundationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48ABF55A30E1474056A20CB8D39323F5 /* String+FoundationExtension.swift */; };
+		BB01C77D60CF2BA328C155E7CFB17433 /* DodoTouchTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B9619127A5E65621EEFFD4D7AC02AB /* DodoTouchTarget.swift */; };
+		BB7AB73BF389EB1AB3295C2B002BF544 /* BigUInt Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52753F4BC8B324974BFE9114115D21E6 /* BigUInt Random.swift */; };
+		BE4D68C8C5B2736CAA7C58FEA6FF5BBE /* CFB.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9BFEF805229D9B0DEE5712D3084CC7 /* CFB.swift */; };
+		BF05E420ABE5BC7CE455FEF0326FC17B /* Bit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA0FB9411BF33560EF7CAC2DBAA0404 /* Bit.swift */; };
+		C29A0011318AADCE119A11FC60A485C3 /* AES.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC594550FA76D75A072EBE1DF3A1643F /* AES.swift */; };
+		C2A2EF86018AD2C9168572FCBD88B724 /* CryptoSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 96E151243ECFDF9AA4F1EEEDC44AD6C7 /* CryptoSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C502C4220F3FEA714A4ECE4889E2C893 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01DDBD4E83F8E99AF1647C052752DBA0 /* Foundation.framework */; };
+		C5B8E98BD2A28B6A3A3552521213C5A0 /* PCBC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD8C3908DD335F17754DE84C862276F /* PCBC.swift */; };
+		C6F792A9E2C5B5B351FB189B18171B95 /* DodoAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B0E8E8AA396243993C314D38CE5855 /* DodoAnimation.swift */; };
+		C8A868AED23A8EB9F03E8AE2EDEB2C83 /* MoaTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FDE0C635F1F4E32B8A36DF58BD5CE9 /* MoaTimer.swift */; };
+		CAF471615301BAB50BAE663EF2F98EF5 /* PasscodeLockView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4327CA0E8D111EF5DF8FE3292CCFDD1 /* PasscodeLockView.xib */; };
+		CB0DFE17987B4008A4E756014C9D264A /* DodoIcons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813E3AED9F171B6C8E0F64F6A0BA54D6 /* DodoIcons.swift */; };
+		CF7AEF1F982206CAF36E4BB0A1CCDB1F /* DodoToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C917209A074E5C9160B0928611144ABA /* DodoToolbar.swift */; };
+		D059E4147337AE1B5E49F75037268698 /* ShiftOperationsType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3040B06129AFF6FB82F492BEF6BCA4 /* ShiftOperationsType.swift */; };
+		D26784E8F871F07F1647D8A26C7D184D /* BlockCipher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668E46709DF936C96CA5BF0264FE1EC5 /* BlockCipher.swift */; };
+		D27905158A2997EECE6EBA494E1A714C /* DodoBarStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A74084CBA8A2AFBA3DC70B374FD3D9E /* DodoBarStyle.swift */; };
+		D3CEB23E162B167FB1D2BB458DE68D12 /* UIView+SwiftAlertBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647A727945CD4D2FF03C2D1C9AE61C6B /* UIView+SwiftAlertBar.swift */; };
+		D4339C0A8682C7ED413AC3B783AEDD71 /* CryptoSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B637FD2131E03F5A668C7F2F9A7D9C3 /* CryptoSwift-dummy.m */; };
+		D477D1D14744B7410CD250C6FE942EBA /* BigUInt Comparison.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C317DF131F63D6C262B79A34925EAA /* BigUInt Comparison.swift */; };
+		D7BF7FF41016D529569E6D151942E7A4 /* Authenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8957E28E3466F26124EDEB79DCC8A5 /* Authenticator.swift */; };
+		DDFC829237F8789C7E2BDB0CC064D48C /* Hash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5A4E1DA4076622AB25908C8ABB2043 /* Hash.swift */; };
+		E0111BB2402096122822D15CB1B72A89 /* ConfirmPasscodeState.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADA8065282CDF150041E51E8940D99C /* ConfirmPasscodeState.swift */; };
+		E317AD073741FDDBBF77D9D970D236B5 /* CBC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD72C20747DA35C4FB1D504EB0B61A9 /* CBC.swift */; };
+		E327271A07075056388C3AF118F00DBB /* Poly1305.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9727BA86E6596C9A42147B2DD185D7B5 /* Poly1305.swift */; };
+		E372FCEA5BFEEF4622E0EE642531FD05 /* KeychainWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB9F2CE9C74E8504E23B0A0A7095190 /* KeychainWrapper.swift */; };
+		EAC4CC44502358A00DA0AC03959A487F /* UInt64Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3C82B8AE4C5E17B3A41D10BD090B7F /* UInt64Extension.swift */; };
+		ED55FBE6583F3FF7B654F868A3B8C792 /* OnTap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0558A1B10F7FA82086864CC039C801B7 /* OnTap.swift */; };
+		EEA442FC4B39208978991B2F3934899C /* PasscodeLock.strings in Resources */ = {isa = PBXBuildFile; fileRef = DFDF38ACBC765895D2F89F87B19CCC4D /* PasscodeLock.strings */; };
+		F170870FC2FFC89E84F296D8B784B851 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5D8E5E1E51DF7F663A74650860F190 /* Utils.swift */; };
+		F1E66038537D98993633DB3320F8F5A1 /* PasscodeSignPlaceholderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6766D3D0F1E7FBE6BC117E9AA47D92 /* PasscodeSignPlaceholderView.swift */; };
+		F4BD78A2A1F22FCD33F781CB2CD0897D /* DonoCore-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 53971225FB8DF0443F5515E1D03165C3 /* DonoCore-dummy.m */; };
+		F80F05EE8A7021C1D7981ECA70C5807E /* DodoLabelDefaultStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825077BCAC29B824ED0DC46197CC5531 /* DodoLabelDefaultStyles.swift */; };
+		F9F2FD97B54CD1092D74CF9A63C7F611 /* AES+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F880C8945D91FFD87ED780262D9A561 /* AES+Foundation.swift */; };
+		FA28812BCD112CA60FB17A4347C7D718 /* DodoMockResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7242C6B3308ECBD4A32F2F366739BD88 /* DodoMockResults.swift */; };
+		FEC214AB314AA94CE1F82513D4B0186A /* DodoStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BFC751153BE170A8F36A6310E001640 /* DodoStyle.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		16C6F0BE62132A648DC8D721E119B179 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6FC05645E7F8E57E2FD197C4D1B2F874;
+			remoteInfo = DonoCore;
+		};
+		303C419AD3478CC19D38EBCDEB369706 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2A40BAC0F60288F9EE81B4B77874D321;
+			remoteInfo = PasscodeLock;
+		};
+		3B9458118B76CB6CE669864A2C010DD7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AF0A80A51C0CE9C374A0A4983DCD43A7;
+			remoteInfo = Dodo;
+		};
+		49D56C8D3624386A63EB7082CA7EF94A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 34C073D448A23CA3A97EA55CC489BD6F;
+			remoteInfo = CryptoSwift;
+		};
+		5CB982F4333D13CD8FEF736ED3163F63 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 314FFA1C2B82F6561AE370CA275F00D9;
+			remoteInfo = SwiftKeychainWrapper;
+		};
+		8754F949E2CC6C3C68E72D76EAE666EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C67FAE781FB518310F1E47F1520243DB;
+			remoteInfo = SWRevealViewController;
+		};
+		98C32F4C1B3241DAA56C698681F35728 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 34C073D448A23CA3A97EA55CC489BD6F;
+			remoteInfo = CryptoSwift;
+		};
+		C00AE217A08CF0271BA787436A183A04 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6A2C92139F75AF379383A31D30DF10FE;
+			remoteInfo = BigInt;
+		};
+		DED8025BEC93C63260BF279E534618C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6A2C92139F75AF379383A31D30DF10FE;
+			remoteInfo = BigInt;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00027B498218153EE275FA7BB922BFEC /* DodoMockMessage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DodoMockMessage.swift; path = Dodo/Mock/DodoMockMessage.swift; sourceTree = "<group>"; };
+		002BC5A64FCE2A1B488E81E8BFFF7DAA /* Pods_DonoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DonoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		002D15446BD5FDBF4D10C8192AB67EA9 /* EnterPasscodeState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EnterPasscodeState.swift; path = PasscodeLock/PasscodeLock/EnterPasscodeState.swift; sourceTree = "<group>"; };
+		003E5E9702265F6D3445B6F3B6C0D368 /* BigUInt Exponentiation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "BigUInt Exponentiation.swift"; path = "Sources/BigUInt Exponentiation.swift"; sourceTree = "<group>"; };
+		01DDBD4E83F8E99AF1647C052752DBA0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		034F09CAAF0B996A3F48F0CB4353C1FA /* Pods-DonoUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DonoUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		0558A1B10F7FA82086864CC039C801B7 /* OnTap.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OnTap.swift; path = Dodo/Utils/OnTap.swift; sourceTree = "<group>"; };
+		06A739E21F278C0E90E44C2A893CFB94 /* Dono.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Dono.swift; path = DonoCore/Dono.swift; sourceTree = "<group>"; };
+		07F8B847BE3676BAABD566811691E1D3 /* DodoButtonDefaultStyles.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DodoButtonDefaultStyles.swift; path = Dodo/Style/DodoButtonDefaultStyles.swift; sourceTree = "<group>"; };
+		0B96977797FF42DE79664FDF54468D95 /* DodoAnimations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DodoAnimations.swift; path = Dodo/Animators/DodoAnimations.swift; sourceTree = "<group>"; };
+		0D2856643766085055C62999BFE958F6 /* CRC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CRC.swift; path = Sources/CryptoSwift/CRC.swift; sourceTree = "<group>"; };
+		0D6766D3D0F1E7FBE6BC117E9AA47D92 /* PasscodeSignPlaceholderView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PasscodeSignPlaceholderView.swift; path = PasscodeLock/Views/PasscodeSignPlaceholderView.swift; sourceTree = "<group>"; };
+		0D7E1B5EC3B8C0BFBFDE933939DDA43B /* Dodo.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Dodo.xcconfig; sourceTree = "<group>"; };
+		0FE55AAA53E505D5DBF33EA2E8E8DF6F /* Pods-Dono.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Dono.modulemap"; sourceTree = "<group>"; };
+		103B1B71488324B5F73D9442F91F8A5F /* BigInt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BigInt.swift; path = Sources/BigInt.swift; sourceTree = "<group>"; };
+		10413D9FF49F8B2B1C6D704EAAC031F1 /* CryptoSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CryptoSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		122F8E398306FE9F1D0825F1838667A1 /* String+LinuxFoundation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+LinuxFoundation.swift"; path = "Sources/CryptoSwift/Foundation/String+LinuxFoundation.swift"; sourceTree = "<group>"; };
+		12B3C6F2E290F2CC76C579032A4F1A00 /* NoPadding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NoPadding.swift; path = Sources/CryptoSwift/NoPadding.swift; sourceTree = "<group>"; };
+		15A2623CC267CE716745B0A001638038 /* BigInt-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BigInt-prefix.pch"; sourceTree = "<group>"; };
+		160C9C4EB1601596457B74146DE3C266 /* BigUInt Subtraction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "BigUInt Subtraction.swift"; path = "Sources/BigUInt Subtraction.swift"; sourceTree = "<group>"; };
+		17268531BF77AA9A770B97A8AE8A263B /* PKCS7.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PKCS7.swift; path = Sources/CryptoSwift/PKCS7.swift; sourceTree = "<group>"; };
+		17BF87FCAE92E24CFE743D54B3FD08BD /* BigUInt Bitwise Ops.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "BigUInt Bitwise Ops.swift"; path = "Sources/BigUInt Bitwise Ops.swift"; sourceTree = "<group>"; };
+		1AA0FB9411BF33560EF7CAC2DBAA0404 /* Bit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Bit.swift; path = Sources/CryptoSwift/Bit.swift; sourceTree = "<group>"; };
+		1B723AC7958876491ADC4242DD78CBF5 /* Pods-DonoTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DonoTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		209CF46A57C4684A831C1650C64A0642 /* SWRevealViewController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SWRevealViewController-umbrella.h"; sourceTree = "<group>"; };
+		2453F012BC6EDE69A57C465837170035 /* Pods-DonoUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DonoUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		24AD1C5BE2C7F691BCCA7F88A2CF4A61 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2571A97024113B08158DF0957230899E /* SwiftKeychainWrapper-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftKeychainWrapper-prefix.pch"; sourceTree = "<group>"; };
+		25F6656FB59CEB2F569021F1B4BA506B /* DonoCore-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DonoCore-prefix.pch"; sourceTree = "<group>"; };
+		262D1BE2C99FF5FEBA5797C0706BE18A /* PBKDF2.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PBKDF2.swift; path = Sources/CryptoSwift/PKCS5/PBKDF2.swift; sourceTree = "<group>"; };
+		276C87512BBAE5DA052B049A5A874BD4 /* ChaCha20+Foundation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ChaCha20+Foundation.swift"; path = "Sources/CryptoSwift/Foundation/ChaCha20+Foundation.swift"; sourceTree = "<group>"; };
+		2786D9EA84D686504AA7312B9177F613 /* UInt32Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UInt32Extension.swift; path = Sources/CryptoSwift/UInt32Extension.swift; sourceTree = "<group>"; };
+		2C7E658246B960AF6C634AACE372C70C /* Pods-Dono-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Dono-dummy.m"; sourceTree = "<group>"; };
+		3042E350BCAB62D196BEC59E22161FF8 /* Pods-Dono-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Dono-acknowledgements.plist"; sourceTree = "<group>"; };
+		311B68C82D8EDDCBAFB924CA58472562 /* Pods-DonoUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DonoUITests-umbrella.h"; sourceTree = "<group>"; };
+		326196B6EAF5E22A40BAAE6CBF0C1099 /* Pods-Dono-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Dono-resources.sh"; sourceTree = "<group>"; };
+		3435E940D6B7E58F586127A390400ED5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		3773D9AE64EB30628AB53D1085CA82D7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		395E678B10C58AC4B20B7599C22AF08B /* BigInt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BigInt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DBFD08076DD26E31F659628907EC6F1 /* Utils+Foundation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Utils+Foundation.swift"; path = "Sources/CryptoSwift/Foundation/Utils+Foundation.swift"; sourceTree = "<group>"; };
+		3E4CCA228137188F0AD15DE5B35ECC4C /* BigInt.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = BigInt.modulemap; sourceTree = "<group>"; };
+		3E95208A1A82777E6D187E6542372AB6 /* Rabbit+Foundation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Rabbit+Foundation.swift"; path = "Sources/CryptoSwift/Foundation/Rabbit+Foundation.swift"; sourceTree = "<group>"; };
+		3EE39279F011CFFB9A46600A69329E19 /* PasscodeLockStateType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PasscodeLockStateType.swift; path = PasscodeLock/Protocols/PasscodeLockStateType.swift; sourceTree = "<group>"; };
+		3FD8C3908DD335F17754DE84C862276F /* PCBC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PCBC.swift; path = Sources/CryptoSwift/BlockMode/PCBC.swift; sourceTree = "<group>"; };
+		40E425BD0C28BF698C9D27A4D2D036FD /* NSData+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSData+Extension.swift"; path = "Sources/CryptoSwift/Foundation/NSData+Extension.swift"; sourceTree = "<group>"; };
+		40F93828B2FB669D44A246DD93FC5E28 /* BigUInt Square Root.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "BigUInt Square Root.swift"; path = "Sources/BigUInt Square Root.swift"; sourceTree = "<group>"; };
+		4176C3797518AE7510C05A352E7549D4 /* SpringAnimationCALayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpringAnimationCALayer.swift; path = Dodo/Utils/SpringAnimationCALayer.swift; sourceTree = "<group>"; };
+		439038164A37212C5D38F8DE215DD776 /* Multiplatform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Multiplatform.swift; path = Sources/CryptoSwift/Multiplatform.swift; sourceTree = "<group>"; };
+		48ABF55A30E1474056A20CB8D39323F5 /* String+FoundationExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+FoundationExtension.swift"; path = "Sources/CryptoSwift/Foundation/String+FoundationExtension.swift"; sourceTree = "<group>"; };
+		499751B01469C3D85E0293E6F6393811 /* SwiftKeychainWrapper-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftKeychainWrapper-umbrella.h"; sourceTree = "<group>"; };
+		4C050AC17C03D45A138979FD95A258DE /* SwiftKeychainWrapper.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftKeychainWrapper.xcconfig; sourceTree = "<group>"; };
+		4CB2BC16E3123159A0525A7FA3CBD795 /* SHA2.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SHA2.swift; path = Sources/CryptoSwift/SHA2.swift; sourceTree = "<group>"; };
+		4DA75F75AEDD1A8F8A75B030ED11097C /* TegAutolayoutConstraints.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TegAutolayoutConstraints.swift; path = Dodo/Utils/TegAutolayoutConstraints.swift; sourceTree = "<group>"; };
+		4F2AD8B793CC90661C5D78CF575EAD30 /* PasscodeLock.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = PasscodeLock.modulemap; sourceTree = "<group>"; };
+		4F5A4E1DA4076622AB25908C8ABB2043 /* Hash.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Hash.swift; path = Sources/CryptoSwift/Hash.swift; sourceTree = "<group>"; };
+		503FDF01DD1A2EBE76AA972F19D13819 /* SWRevealViewController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SWRevealViewController-prefix.pch"; sourceTree = "<group>"; };
+		50AF40AE26BE31AD5A2F1DBF9506AF4E /* BigUInt GCD.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "BigUInt GCD.swift"; path = "Sources/BigUInt GCD.swift"; sourceTree = "<group>"; };
+		52753F4BC8B324974BFE9114115D21E6 /* BigUInt Random.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "BigUInt Random.swift"; path = "Sources/BigUInt Random.swift"; sourceTree = "<group>"; };
+		52D045C0559336B060D839CA7DA0B16D /* Pods-Dono.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Dono.release.xcconfig"; sourceTree = "<group>"; };
+		53971225FB8DF0443F5515E1D03165C3 /* DonoCore-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DonoCore-dummy.m"; sourceTree = "<group>"; };
+		54A5FC741BAE83C8C588B39D1FF35CD4 /* Icons.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Icons.xcassets; path = Dodo/Icons/Icons.xcassets; sourceTree = "<group>"; };
+		54B9619127A5E65621EEFFD4D7AC02AB /* DodoTouchTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DodoTouchTarget.swift; path = Dodo/Helpers/DodoTouchTarget.swift; sourceTree = "<group>"; };
+		54C8BAAE53D03BC6CFF9254F51AC69FA /* BigUInt Shifts.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "BigUInt Shifts.swift"; path = "Sources/BigUInt Shifts.swift"; sourceTree = "<group>"; };
+		56F60B70C5BD7BACFA8AAA8CC2D5C78D /* CryptoSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CryptoSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		57C504560292894AE6204E4EC25278C5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5836D69DE694EB83E268CD4C9D4D3959 /* Pods-DonoTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DonoTests-resources.sh"; sourceTree = "<group>"; };
+		5851C54C3011E3B2BA4D618557FCA8C1 /* Pods_DonoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DonoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		58D5B40E0A06F785388AF5F4786D7643 /* BigUInt Prime Test.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "BigUInt Prime Test.swift"; path = "Sources/BigUInt Prime Test.swift"; sourceTree = "<group>"; };
+		5A74084CBA8A2AFBA3DC70B374FD3D9E /* DodoBarStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DodoBarStyle.swift; path = Dodo/Style/DodoBarStyle.swift; sourceTree = "<group>"; };
+		5B637FD2131E03F5A668C7F2F9A7D9C3 /* CryptoSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CryptoSwift-dummy.m"; sourceTree = "<group>"; };
+		608C38497E0800E5C7BB847C8C5A7800 /* DodoBarDefaultStyles.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DodoBarDefaultStyles.swift; path = Dodo/Style/DodoBarDefaultStyles.swift; sourceTree = "<group>"; };
+		6114B85183614152B7B6D02CBEADBF58 /* Pods-Dono-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Dono-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6203FF14322AE450DFAF94D236172149 /* ChaCha20.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChaCha20.swift; path = Sources/CryptoSwift/ChaCha20.swift; sourceTree = "<group>"; };
+		63B9A9AE9FAE51D03045850BA66C65E7 /* Functions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Functions.swift; path = PasscodeLock/Functions.swift; sourceTree = "<group>"; };
+		641C63A962658710BAB93B6A5104FAAE /* PasscodeLock.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PasscodeLock.xcconfig; sourceTree = "<group>"; };
+		6455BFAAA0DD938BF97D48458CC5EE89 /* IntExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IntExtension.swift; path = Sources/CryptoSwift/IntExtension.swift; sourceTree = "<group>"; };
+		647A727945CD4D2FF03C2D1C9AE61C6B /* UIView+SwiftAlertBar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+SwiftAlertBar.swift"; path = "Dodo/UIView+SwiftAlertBar.swift"; sourceTree = "<group>"; };
+		65A22161EEAA1F9FE599F1D36E944010 /* Pods-DonoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DonoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		668E46709DF936C96CA5BF0264FE1EC5 /* BlockCipher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BlockCipher.swift; path = Sources/CryptoSwift/BlockCipher.swift; sourceTree = "<group>"; };
+		66E1C32136881D1E7F58FC759B155F82 /* BigUInt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BigUInt.swift; path = Sources/BigUInt.swift; sourceTree = "<group>"; };
+		67059B55B33682B1CA33037E1EC38A99 /* BigInt-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BigInt-dummy.m"; sourceTree = "<group>"; };
+		6744721105E0BD3E31D4F3108CD09E84 /* Pods-DonoTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DonoTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		680BEEEAF07D948CEC0C5D5297B1F3A2 /* HashProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HashProtocol.swift; path = Sources/CryptoSwift/HashProtocol.swift; sourceTree = "<group>"; };
+		68D0FC27169C0EC91EF5F2D1D68F8AC5 /* Dodo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Dodo-dummy.m"; sourceTree = "<group>"; };
+		68FFC5D7A9EC50F12DD21EECE34CD8F4 /* Pods-DonoUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-DonoUITests.modulemap"; sourceTree = "<group>"; };
+		6AC584D47019681242775CAD33127BF8 /* DonoCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DonoCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D57DEB955D3E691B7E6B67291FA7CEF /* CryptoSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = CryptoSwift.modulemap; sourceTree = "<group>"; };
+		6EBD93512880C84E4F561AF6299687A5 /* PasscodeLockPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PasscodeLockPresenter.swift; path = PasscodeLock/PasscodeLockPresenter.swift; sourceTree = "<group>"; };
+		70FFE744FEA0AE301D36FA5B32B8DBAE /* Pods-DonoTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DonoTests-frameworks.sh"; sourceTree = "<group>"; };
+		7242C6B3308ECBD4A32F2F366739BD88 /* DodoMockResults.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DodoMockResults.swift; path = Dodo/Mock/DodoMockResults.swift; sourceTree = "<group>"; };
+		74243B8F0051D9DAEE5BE8187A590F1B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7492CBA1BEFE647A91B7ABA6337A8926 /* DodoButtonView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DodoButtonView.swift; path = Dodo/Buttons/DodoButtonView.swift; sourceTree = "<group>"; };
+		78AAB25CE88B5A1963DD00A54CEB73C6 /* IntegerConvertible.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IntegerConvertible.swift; path = Sources/CryptoSwift/IntegerConvertible.swift; sourceTree = "<group>"; };
+		7A3040B06129AFF6FB82F492BEF6BCA4 /* ShiftOperationsType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ShiftOperationsType.swift; path = Sources/ShiftOperationsType.swift; sourceTree = "<group>"; };
+		7A636BA32C52AB0F4EBAB196DEBCA368 /* Bitwise Hacks.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bitwise Hacks.swift"; path = "Sources/Bitwise Hacks.swift"; sourceTree = "<group>"; };
+		7A6F6DEC51115805AD75ABB37ADAF30C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7BFC751153BE170A8F36A6310E001640 /* DodoStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DodoStyle.swift; path = Dodo/Style/DodoStyle.swift; sourceTree = "<group>"; };
+		7DEE10033B1452AA21E8AFF7C42266B0 /* Dodo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Dodo.modulemap; sourceTree = "<group>"; };
+		7F880C8945D91FFD87ED780262D9A561 /* AES+Foundation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "AES+Foundation.swift"; path = "Sources/CryptoSwift/Foundation/AES+Foundation.swift"; sourceTree = "<group>"; };
+		813E3AED9F171B6C8E0F64F6A0BA54D6 /* DodoIcons.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DodoIcons.swift; path = Dodo/Icons/DodoIcons.swift; sourceTree = "<group>"; };
+		824D174392C6BBF616C2B1D1B72CE247 /* BigInt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BigInt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		825077BCAC29B824ED0DC46197CC5531 /* DodoLabelDefaultStyles.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DodoLabelDefaultStyles.swift; path = Dodo/Style/DodoLabelDefaultStyles.swift; sourceTree = "<group>"; };
+		838A609DE8DF13C30FA6C296347B5810 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84710A9BF7235154A1A1A7A281780866 /* BigUInt Hashing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "BigUInt Hashing.swift"; path = "Sources/BigUInt Hashing.swift"; sourceTree = "<group>"; };
+		85DA86B3CC09225593A9CFC3DB3354DA /* Rabbit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Rabbit.swift; path = Sources/CryptoSwift/Rabbit.swift; sourceTree = "<group>"; };
+		87E6064E07BA34FD065CF00FD1D7C366 /* DodoInterface.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DodoInterface.swift; path = Dodo/DodoInterface.swift; sourceTree = "<group>"; };
+		8A0E6787FCA5A2F4B44EAC29017EE704 /* DodoAnimationsShow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DodoAnimationsShow.swift; path = Dodo/Animators/DodoAnimationsShow.swift; sourceTree = "<group>"; };
+		8B5D8E5E1E51DF7F663A74650860F190 /* Utils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Utils.swift; path = Sources/CryptoSwift/Utils.swift; sourceTree = "<group>"; };
+		8D8957E28E3466F26124EDEB79DCC8A5 /* Authenticator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Authenticator.swift; path = Sources/CryptoSwift/Authenticator.swift; sourceTree = "<group>"; };
+		8E6643EFA7C0BEA51F7D7542C0F1D801 /* PasscodeLock-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PasscodeLock-dummy.m"; sourceTree = "<group>"; };
+		8E7BDEB1AED213D3A31D6395AFCEAD3B /* DodoButtonStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DodoButtonStyle.swift; path = Dodo/Style/DodoButtonStyle.swift; sourceTree = "<group>"; };
+		8FB9F2CE9C74E8504E23B0A0A7095190 /* KeychainWrapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeychainWrapper.swift; path = SwiftKeychainWrapper/KeychainWrapper.swift; sourceTree = "<group>"; };
+		90707E787B8D601B7AAB03F0629D5A95 /* BigInt.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BigInt.xcconfig; sourceTree = "<group>"; };
+		91FEE5CBB8BE1B296BA02BF2B366D0F0 /* SWRevealViewController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SWRevealViewController.modulemap; sourceTree = "<group>"; };
+		93694A3440046DFEFC096B75A1B3A313 /* PasscodeLock.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PasscodeLock.h; path = PasscodeLock/PasscodeLock.h; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		950A88698054127D112A9F951EF5CBBC /* BlockModeOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BlockModeOptions.swift; path = Sources/CryptoSwift/BlockMode/BlockModeOptions.swift; sourceTree = "<group>"; };
+		96C221D1286FBCC37E930A0AC76A7ECE /* SWRevealViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SWRevealViewController.m; path = SWRevealViewController/SWRevealViewController.m; sourceTree = "<group>"; };
+		96E151243ECFDF9AA4F1EEEDC44AD6C7 /* CryptoSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CryptoSwift-umbrella.h"; sourceTree = "<group>"; };
+		9727BA86E6596C9A42147B2DD185D7B5 /* Poly1305.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Poly1305.swift; path = Sources/CryptoSwift/Poly1305.swift; sourceTree = "<group>"; };
+		97BF8A8E8AF7DC4D92F9E93FF13922CB /* CipherBlockMode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CipherBlockMode.swift; path = Sources/CryptoSwift/BlockMode/CipherBlockMode.swift; sourceTree = "<group>"; };
+		994AE58B00EE552DDDD5A0A2DDA098C7 /* Pods_Dono.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dono.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		998F88D828DB64303AD143F865671E1D /* SHA1.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SHA1.swift; path = Sources/CryptoSwift/SHA1.swift; sourceTree = "<group>"; };
+		9AAF94A75A28CDA3A03F3F6DD06836BD /* BigUInt Data.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "BigUInt Data.swift"; path = "Sources/BigUInt Data.swift"; sourceTree = "<group>"; };
+		9B8F6217F1422DC1A69FC3BD7D62810B /* Padding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Padding.swift; path = Sources/CryptoSwift/Padding.swift; sourceTree = "<group>"; };
+		9BC009E1C74D86DD50DABA079FF9CCD3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C563DFFB9990421AC3997E00FA0B6D1 /* Pods-DonoUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DonoUITests-resources.sh"; sourceTree = "<group>"; };
+		9C5C40EE4F9461F8ADFAFE4BE3F6EA79 /* PasscodeRepositoryType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PasscodeRepositoryType.swift; path = PasscodeLock/Protocols/PasscodeRepositoryType.swift; sourceTree = "<group>"; };
+		9CF3E22AC15861F4AD4075BC9EB5670B /* CSArrayType+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CSArrayType+Extensions.swift"; path = "Sources/CryptoSwift/CSArrayType+Extensions.swift"; sourceTree = "<group>"; };
+		9D5FF55FAA2122854A1615F6E88D78C5 /* Pods-Dono-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Dono-frameworks.sh"; sourceTree = "<group>"; };
+		9DA67453BD9120B9CA6F883344E2D440 /* BigUInt Division.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "BigUInt Division.swift"; path = "Sources/BigUInt Division.swift"; sourceTree = "<group>"; };
+		9EACB5CA25B9F768CF6205648D1D99DD /* SWRevealViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SWRevealViewController.h; path = SWRevealViewController/SWRevealViewController.h; sourceTree = "<group>"; };
+		9EDB3A5BF9371DDCFC7EE6D6BF752A94 /* HMAC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HMAC.swift; path = Sources/CryptoSwift/HMAC.swift; sourceTree = "<group>"; };
+		A126C529647B56354F471BBD3BA9C96C /* BigDigit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BigDigit.swift; path = Sources/BigDigit.swift; sourceTree = "<group>"; };
+		A20A8D9885D10BA154122B2FA5648F49 /* Array+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Array+Extension.swift"; path = "Sources/CryptoSwift/Array+Extension.swift"; sourceTree = "<group>"; };
+		A26B6C39132CEF638C8DE76BD2605AB6 /* UInt8Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UInt8Extension.swift; path = Sources/CryptoSwift/UInt8Extension.swift; sourceTree = "<group>"; };
+		A41B8F314BC811AF187EE1155FB893DC /* PasscodeLock.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PasscodeLock.swift; path = PasscodeLock/PasscodeLock/PasscodeLock.swift; sourceTree = "<group>"; };
+		A4530236EED9B6F3A6DF0675BBE4E9FB /* UnderKeyboardDistrib.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UnderKeyboardDistrib.swift; path = Dodo/Utils/UnderKeyboardDistrib.swift; sourceTree = "<group>"; };
+		A4FD9C84E039EC054DF1949E38204A54 /* Pods-DonoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DonoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A5947FCA0B2D75A7C0FF66CB5D476D40 /* DodoPresets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DodoPresets.swift; path = Dodo/Style/DodoPresets.swift; sourceTree = "<group>"; };
+		A6530F37CB35F46E7A1847791F841D5B /* SetPasscodeState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SetPasscodeState.swift; path = PasscodeLock/PasscodeLock/SetPasscodeState.swift; sourceTree = "<group>"; };
+		A668D5CFD67734C18C6C615A783729DA /* DodoBarOnTap.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DodoBarOnTap.swift; path = Dodo/DodoBarOnTap.swift; sourceTree = "<group>"; };
+		A7B67BC935B33AAFE1717F2E0B49466F /* SwiftKeychainWrapper.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SwiftKeychainWrapper.modulemap; sourceTree = "<group>"; };
+		A8AF4C1029E93840034549AEE0DBE4DA /* Dodo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Dodo-umbrella.h"; sourceTree = "<group>"; };
+		A954DE5B24761898CD993AFEE725BFC8 /* String+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+Extension.swift"; path = "Sources/CryptoSwift/String+Extension.swift"; sourceTree = "<group>"; };
+		AAA367260C532BBE62120D6AB7F1542F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AADA8065282CDF150041E51E8940D99C /* ConfirmPasscodeState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConfirmPasscodeState.swift; path = PasscodeLock/PasscodeLock/ConfirmPasscodeState.swift; sourceTree = "<group>"; };
+		AB3C82B8AE4C5E17B3A41D10BD090B7F /* UInt64Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UInt64Extension.swift; path = Sources/CryptoSwift/UInt64Extension.swift; sourceTree = "<group>"; };
+		AC594550FA76D75A072EBE1DF3A1643F /* AES.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AES.swift; path = Sources/CryptoSwift/AES.swift; sourceTree = "<group>"; };
+		ACB81BEA3C4E196B8906528DD4C86A7D /* BlockModeGenerator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BlockModeGenerator.swift; path = Sources/CryptoSwift/BlockMode/BlockModeGenerator.swift; sourceTree = "<group>"; };
+		AE0E58AB0B587007DEE5798FF05A587F /* Pods-DonoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DonoTests.release.xcconfig"; sourceTree = "<group>"; };
+		AE2E75A5B49A1491C39F54A4F89BD401 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE80CF6683D3F55C0FAA0FA4A92E1996 /* SwiftKeychainWrapper-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftKeychainWrapper-dummy.m"; sourceTree = "<group>"; };
+		B0FDE0C635F1F4E32B8A36DF58BD5CE9 /* MoaTimer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MoaTimer.swift; path = Dodo/Utils/MoaTimer.swift; sourceTree = "<group>"; };
+		B225128EF1D56579712845E761BAD533 /* CryptoSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CryptoSwift-prefix.pch"; sourceTree = "<group>"; };
+		B27DEFC965840F7B61843A0D66D350B2 /* PasscodeLock.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PasscodeLock.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B35385A84FE2B6738353A0F2977F71A2 /* DonoCore-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DonoCore-umbrella.h"; sourceTree = "<group>"; };
+		B3C0F8ADBBD3F0FB286B8C1B0A317C6B /* DodoMock.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DodoMock.swift; path = Dodo/Mock/DodoMock.swift; sourceTree = "<group>"; };
+		B4312A8D4FDA477DCF2507E5D8E8E6BE /* Generics.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Generics.swift; path = Sources/CryptoSwift/Generics.swift; sourceTree = "<group>"; };
+		B43677D1EAD4686A023406DA53D2D43D /* PasscodeLockViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PasscodeLockViewController.swift; path = PasscodeLock/PasscodeLockViewController.swift; sourceTree = "<group>"; };
+		B798FCC21B4D7CC3180E9148A98DCFB7 /* OFB.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OFB.swift; path = Sources/CryptoSwift/BlockMode/OFB.swift; sourceTree = "<group>"; };
+		BAC2D23F2E5F4EB4F643A681057463FA /* DonoCore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DonoCore.xcconfig; sourceTree = "<group>"; };
+		BB563E55143CA963C47EE5927F6FAFF8 /* SecureBytes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SecureBytes.swift; path = Sources/CryptoSwift/SecureBytes.swift; sourceTree = "<group>"; };
+		BCD72C20747DA35C4FB1D504EB0B61A9 /* CBC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CBC.swift; path = Sources/CryptoSwift/BlockMode/CBC.swift; sourceTree = "<group>"; };
+		BCD86BB924E4E3FC72F06901D2301949 /* DodoKeyboardListener.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DodoKeyboardListener.swift; path = Dodo/DodoKeyboardListener.swift; sourceTree = "<group>"; };
+		BDD5A3B76CDCD9104424913B00834E6E /* PasscodeLockConfigurationType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PasscodeLockConfigurationType.swift; path = PasscodeLock/Protocols/PasscodeLockConfigurationType.swift; sourceTree = "<group>"; };
+		BE39811AFB259CF0754052A48B83911A /* CryptoSwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CryptoSwift.xcconfig; sourceTree = "<group>"; };
+		BEF1E346097E0E9B76AE62FBFF93CC69 /* Pods-DonoUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DonoUITests-frameworks.sh"; sourceTree = "<group>"; };
+		C05747A694A863177290593752878FEA /* SWRevealViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SWRevealViewController-dummy.m"; sourceTree = "<group>"; };
+		C5CCA5D85BE419F7E951F112878BB13B /* ChangePasscodeState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChangePasscodeState.swift; path = PasscodeLock/PasscodeLock/ChangePasscodeState.swift; sourceTree = "<group>"; };
+		C848E2366269A9E95E09508E953C321B /* Pods-Dono-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Dono-umbrella.h"; sourceTree = "<group>"; };
+		C917209A074E5C9160B0928611144ABA /* DodoToolbar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DodoToolbar.swift; path = Dodo/DodoToolbar.swift; sourceTree = "<group>"; };
+		C9EA2D2D90C0F9B51036989DE706AA57 /* Dodo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Dodo.swift; path = Dodo/Dodo.swift; sourceTree = "<group>"; };
+		CB5036E0A894E64460FEA94A45A2825A /* CTR.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CTR.swift; path = Sources/CryptoSwift/BlockMode/CTR.swift; sourceTree = "<group>"; };
+		CF2D41594E449BB1D665098E9EF3F7B7 /* Pods-DonoTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-DonoTests.modulemap"; sourceTree = "<group>"; };
+		CFA182804E7258AD1B4E46C6C23BFC7E /* SWRevealViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SWRevealViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFA2AA8FFD64D31270D572B1C5B16D0E /* ArrayUInt8+Foundation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ArrayUInt8+Foundation.swift"; path = "Sources/CryptoSwift/Foundation/ArrayUInt8+Foundation.swift"; sourceTree = "<group>"; };
+		D060B6A4743254F19F53F5DC3D208FDE /* CSArrayType+Foundation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CSArrayType+Foundation.swift"; path = "Sources/CryptoSwift/Foundation/CSArrayType+Foundation.swift"; sourceTree = "<group>"; };
+		D09D570DB70BCFB00B894E2C8C74B4E2 /* Pods-DonoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DonoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D0C317DF131F63D6C262B79A34925EAA /* BigUInt Comparison.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "BigUInt Comparison.swift"; path = "Sources/BigUInt Comparison.swift"; sourceTree = "<group>"; };
+		D13A4B61B9FB868455565DBC5F20A802 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1C1082C44CA3848D54F036924D39FB9 /* MD5.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MD5.swift; path = Sources/CryptoSwift/MD5.swift; sourceTree = "<group>"; };
+		D36CCD5B634F097953BC67EEA98F2ACD /* PasscodeLockType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PasscodeLockType.swift; path = PasscodeLock/Protocols/PasscodeLockType.swift; sourceTree = "<group>"; };
+		D3DBA25482BBB9A3361A0F746C40B8CE /* CipherProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CipherProtocol.swift; path = Sources/CryptoSwift/CipherProtocol.swift; sourceTree = "<group>"; };
+		D536509CA44FD737D4E616B15D8D6631 /* BigUInt Addition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "BigUInt Addition.swift"; path = "Sources/BigUInt Addition.swift"; sourceTree = "<group>"; };
+		D6D52A8C0F0D2C57E3024A9E2F94C8A0 /* PasscodeLock-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PasscodeLock-prefix.pch"; sourceTree = "<group>"; };
+		D719F79D3D63A659BC2344F3520FFEEC /* Pods-Dono.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Dono.debug.xcconfig"; sourceTree = "<group>"; };
+		D7C3A0E96B23EE290BED8AC9365A5DF8 /* BigUInt Radix Conversion.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "BigUInt Radix Conversion.swift"; path = "Sources/BigUInt Radix Conversion.swift"; sourceTree = "<group>"; };
+		D8E9B7D638BD662FB27C1595C4BB1176 /* Pods-DonoTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DonoTests-dummy.m"; sourceTree = "<group>"; };
+		D9B35D384F42649EA90467F043EBFDF7 /* SwiftKeychainWrapper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SwiftKeychainWrapper.h; path = SwiftKeychainWrapper/SwiftKeychainWrapper.h; sourceTree = "<group>"; };
+		DB9BFEF805229D9B0DEE5712D3084CC7 /* CFB.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CFB.swift; path = Sources/CryptoSwift/BlockMode/CFB.swift; sourceTree = "<group>"; };
+		DC66C426A6B8342AA3B51F8BFA1616D0 /* PKCS5.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PKCS5.swift; path = Sources/CryptoSwift/PKCS5/PKCS5.swift; sourceTree = "<group>"; };
+		DF6B97DB637020B4C661C2FF3EBAAFFB /* Dodo-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Dodo-prefix.pch"; sourceTree = "<group>"; };
+		DFDF38ACBC765895D2F89F87B19CCC4D /* PasscodeLock.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = PasscodeLock.strings; path = en.lproj/PasscodeLock.strings; sourceTree = "<group>"; };
+		E2757CE975BB70A9986259D23DC45877 /* DonoCore.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = DonoCore.modulemap; sourceTree = "<group>"; };
+		E4327CA0E8D111EF5DF8FE3292CCFDD1 /* PasscodeLockView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = PasscodeLockView.xib; path = PasscodeLock/Views/PasscodeLockView.xib; sourceTree = "<group>"; };
+		E5FD90EDADC676D3BB31396DE6F4538B /* SwiftKeychainWrapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftKeychainWrapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E98C499DFCDD050C5E3DA01E794CE4AB /* BigUInt Multiplication.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "BigUInt Multiplication.swift"; path = "Sources/BigUInt Multiplication.swift"; sourceTree = "<group>"; };
+		E9E58D41B83CEEF02C0C5F590C001926 /* DodoButtonViewDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DodoButtonViewDelegate.swift; path = Dodo/Buttons/DodoButtonViewDelegate.swift; sourceTree = "<group>"; };
+		EA9947CAC425A1A4C7AE20856B5D56CE /* DodoButtonOnTap.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DodoButtonOnTap.swift; path = Dodo/Buttons/DodoButtonOnTap.swift; sourceTree = "<group>"; };
+		ECDF8A411574294E4B5C8C050DDEE29B /* Operators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Operators.swift; path = Sources/CryptoSwift/Operators.swift; sourceTree = "<group>"; };
+		EFC1A04ADEDD3C7AA6B6C76222F02C89 /* SWRevealViewController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SWRevealViewController.xcconfig; sourceTree = "<group>"; };
+		F03B06BEAEEC9214BD8B098592415F85 /* ECB.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ECB.swift; path = Sources/CryptoSwift/BlockMode/ECB.swift; sourceTree = "<group>"; };
+		F0835BE7E8121A6D5DB46AA158D1BBA8 /* PasscodeSignButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PasscodeSignButton.swift; path = PasscodeLock/Views/PasscodeSignButton.swift; sourceTree = "<group>"; };
+		F29B7598F1908B7C4FF5CAB4B534B933 /* BytesSequence.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BytesSequence.swift; path = Sources/CryptoSwift/BytesSequence.swift; sourceTree = "<group>"; };
+		F6484124DFDFABCCF55310890A75D731 /* DodoLabelStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DodoLabelStyle.swift; path = Dodo/Style/DodoLabelStyle.swift; sourceTree = "<group>"; };
+		F6B0E8E8AA396243993C314D38CE5855 /* DodoAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DodoAnimation.swift; path = Dodo/Animators/DodoAnimation.swift; sourceTree = "<group>"; };
+		F92A4B0F7CBD60192674A876B827CCE0 /* Dodo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Dodo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F99F2C3B8045D4BE199E022CF78B3518 /* DodoColor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DodoColor.swift; path = Dodo/Utils/DodoColor.swift; sourceTree = "<group>"; };
+		F9EF4DDA322B78CF7B55F49082467D2D /* Pods-DonoTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DonoTests-umbrella.h"; sourceTree = "<group>"; };
+		FB423E7D40DD0EB7692B45284E8E0829 /* DodoAnimationsHide.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DodoAnimationsHide.swift; path = Dodo/Animators/DodoAnimationsHide.swift; sourceTree = "<group>"; };
+		FB738534BD03F67E29CAF6FB4C2EC355 /* PasscodeLock-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PasscodeLock-umbrella.h"; sourceTree = "<group>"; };
+		FBD7E40C79C148D7DD743A8D7A2BF0DD /* BigInt-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BigInt-umbrella.h"; sourceTree = "<group>"; };
+		FF9C4C0F02D52F84672C280741B13A9E /* Pods-DonoUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DonoUITests-dummy.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0471492A746C36B6FBFC2978DD1414B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10C0E741F36DB14E47BE57D57602C836 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C6EF1213489C2C1AB440346FD097608 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09F8E39D750DAC30E313318C30788B2A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FAF3C94FF227C650281512012CAB801 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				619F09B400F771BFF5FF4F208963A9FF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28DDE5510998CFC2D8914FBBDBE5159E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6338A7A9CF93613D0DDAB480B4C5C95F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75C5356F5547E47C8FB4DA874B4CAA9D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FEFEEB0555283FC547366E88AE4E440 /* BigInt.framework in Frameworks */,
+				5F1750C6D7FEB5A5CEA7E3AEF2431E76 /* CryptoSwift.framework in Frameworks */,
+				25D109AFDACC6AD7883FD2D328EFA126 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85DA011DE96BDE78D6B7E545FEEA7DB1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F204C14A4E690D8878E630398EA9797 /* CoreGraphics.framework in Frameworks */,
+				2A80FA3D90C1B2074AE7CDC5B5828E73 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB8FD979214DBEA8F1F72F2AF7269FAA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				119F3B8E8C2457CDA7DAF8386211E422 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E64F6E5EF6DE89425AEE3D7CE93CE7AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CDF4E750C28803C8BE85DA48DC65627 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFDCEE3A0161F476CDBB7D49A83B32CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D254514F5CCD7F7922955D98357A0A0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCC8FF6BA5350EAF5FEC497F88A3B38A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C502C4220F3FEA714A4ECE4889E2C893 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1063319341E4798279FF6717356B98EA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C8F92E91998CB419B16ACE9AC3BE8045 /* PasscodeLock.strings */,
+				E4327CA0E8D111EF5DF8FE3292CCFDD1 /* PasscodeLockView.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		15D9B33F6250362577DFB746C332144D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				824D174392C6BBF616C2B1D1B72CE247 /* BigInt.framework */,
+				56F60B70C5BD7BACFA8AAA8CC2D5C78D /* CryptoSwift.framework */,
+				F92A4B0F7CBD60192674A876B827CCE0 /* Dodo.framework */,
+				6AC584D47019681242775CAD33127BF8 /* DonoCore.framework */,
+				B27DEFC965840F7B61843A0D66D350B2 /* PasscodeLock.framework */,
+				994AE58B00EE552DDDD5A0A2DDA098C7 /* Pods_Dono.framework */,
+				002BC5A64FCE2A1B488E81E8BFFF7DAA /* Pods_DonoTests.framework */,
+				5851C54C3011E3B2BA4D618557FCA8C1 /* Pods_DonoUITests.framework */,
+				E5FD90EDADC676D3BB31396DE6F4538B /* SwiftKeychainWrapper.framework */,
+				CFA182804E7258AD1B4E46C6C23BFC7E /* SWRevealViewController.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1A589257D4516D716DBEB5194CCDF703 /* SWRevealViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9EACB5CA25B9F768CF6205648D1D99DD /* SWRevealViewController.h */,
+				96C221D1286FBCC37E930A0AC76A7ECE /* SWRevealViewController.m */,
+				7DCDAF64EE52B5CC029E82D2030140E2 /* Support Files */,
+			);
+			path = SWRevealViewController;
+			sourceTree = "<group>";
+		};
+		1BF3A305086F747FE8D3530A07CA261E /* Pods-DonoTests */ = {
+			isa = PBXGroup;
+			children = (
+				74243B8F0051D9DAEE5BE8187A590F1B /* Info.plist */,
+				CF2D41594E449BB1D665098E9EF3F7B7 /* Pods-DonoTests.modulemap */,
+				1B723AC7958876491ADC4242DD78CBF5 /* Pods-DonoTests-acknowledgements.markdown */,
+				6744721105E0BD3E31D4F3108CD09E84 /* Pods-DonoTests-acknowledgements.plist */,
+				D8E9B7D638BD662FB27C1595C4BB1176 /* Pods-DonoTests-dummy.m */,
+				70FFE744FEA0AE301D36FA5B32B8DBAE /* Pods-DonoTests-frameworks.sh */,
+				5836D69DE694EB83E268CD4C9D4D3959 /* Pods-DonoTests-resources.sh */,
+				F9EF4DDA322B78CF7B55F49082467D2D /* Pods-DonoTests-umbrella.h */,
+				D09D570DB70BCFB00B894E2C8C74B4E2 /* Pods-DonoTests.debug.xcconfig */,
+				AE0E58AB0B587007DEE5798FF05A587F /* Pods-DonoTests.release.xcconfig */,
+			);
+			name = "Pods-DonoTests";
+			path = "Target Support Files/Pods-DonoTests";
+			sourceTree = "<group>";
+		};
+		1C0C12DBAAD30E7C0667699D586737EA /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9BC009E1C74D86DD50DABA079FF9CCD3 /* Info.plist */,
+				4F2AD8B793CC90661C5D78CF575EAD30 /* PasscodeLock.modulemap */,
+				641C63A962658710BAB93B6A5104FAAE /* PasscodeLock.xcconfig */,
+				8E6643EFA7C0BEA51F7D7542C0F1D801 /* PasscodeLock-dummy.m */,
+				D6D52A8C0F0D2C57E3024A9E2F94C8A0 /* PasscodeLock-prefix.pch */,
+				FB738534BD03F67E29CAF6FB4C2EC355 /* PasscodeLock-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/PasscodeLock";
+			sourceTree = "<group>";
+		};
+		2953C8D223DBD8F6E188EB54F49EC6B5 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3435E940D6B7E58F586127A390400ED5 /* CoreGraphics.framework */,
+				01DDBD4E83F8E99AF1647C052752DBA0 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		46415C40BB8D36AC5C27DD5431032275 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E2757CE975BB70A9986259D23DC45877 /* DonoCore.modulemap */,
+				BAC2D23F2E5F4EB4F643A681057463FA /* DonoCore.xcconfig */,
+				53971225FB8DF0443F5515E1D03165C3 /* DonoCore-dummy.m */,
+				25F6656FB59CEB2F569021F1B4BA506B /* DonoCore-prefix.pch */,
+				B35385A84FE2B6738353A0F2977F71A2 /* DonoCore-umbrella.h */,
+				AE2E75A5B49A1491C39F54A4F89BD401 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/DonoCore";
+			sourceTree = "<group>";
+		};
+		4BC68300A680F32E202D4F119201E485 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3E4CCA228137188F0AD15DE5B35ECC4C /* BigInt.modulemap */,
+				90707E787B8D601B7AAB03F0629D5A95 /* BigInt.xcconfig */,
+				67059B55B33682B1CA33037E1EC38A99 /* BigInt-dummy.m */,
+				15A2623CC267CE716745B0A001638038 /* BigInt-prefix.pch */,
+				FBD7E40C79C148D7DD743A8D7A2BF0DD /* BigInt-umbrella.h */,
+				838A609DE8DF13C30FA6C296347B5810 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/BigInt";
+			sourceTree = "<group>";
+		};
+		52EC38F22F7C38593D0C06D51BFC4075 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				910405E80C6B3D896FE206534FD5962C /* Pods-Dono */,
+				1BF3A305086F747FE8D3530A07CA261E /* Pods-DonoTests */,
+				9FF5047F1F7378D1CFD1CCAAE022B068 /* Pods-DonoUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		5775640CA94F9C05E7B4834A7EB0C6DB /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7DEE10033B1452AA21E8AFF7C42266B0 /* Dodo.modulemap */,
+				0D7E1B5EC3B8C0BFBFDE933939DDA43B /* Dodo.xcconfig */,
+				68D0FC27169C0EC91EF5F2D1D68F8AC5 /* Dodo-dummy.m */,
+				DF6B97DB637020B4C661C2FF3EBAAFFB /* Dodo-prefix.pch */,
+				A8AF4C1029E93840034549AEE0DBE4DA /* Dodo-umbrella.h */,
+				24AD1C5BE2C7F691BCCA7F88A2CF4A61 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Dodo";
+			sourceTree = "<group>";
+		};
+		5A08D7BF56726ACB162AE7769A8F52F7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				54A5FC741BAE83C8C588B39D1FF35CD4 /* Icons.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		67CFB06048DCABC9D0C6F9F53032FD72 /* CryptoSwift */ = {
+			isa = PBXGroup;
+			children = (
+				AC594550FA76D75A072EBE1DF3A1643F /* AES.swift */,
+				7F880C8945D91FFD87ED780262D9A561 /* AES+Foundation.swift */,
+				A20A8D9885D10BA154122B2FA5648F49 /* Array+Extension.swift */,
+				CFA2AA8FFD64D31270D572B1C5B16D0E /* ArrayUInt8+Foundation.swift */,
+				8D8957E28E3466F26124EDEB79DCC8A5 /* Authenticator.swift */,
+				1AA0FB9411BF33560EF7CAC2DBAA0404 /* Bit.swift */,
+				668E46709DF936C96CA5BF0264FE1EC5 /* BlockCipher.swift */,
+				ACB81BEA3C4E196B8906528DD4C86A7D /* BlockModeGenerator.swift */,
+				950A88698054127D112A9F951EF5CBBC /* BlockModeOptions.swift */,
+				F29B7598F1908B7C4FF5CAB4B534B933 /* BytesSequence.swift */,
+				BCD72C20747DA35C4FB1D504EB0B61A9 /* CBC.swift */,
+				DB9BFEF805229D9B0DEE5712D3084CC7 /* CFB.swift */,
+				6203FF14322AE450DFAF94D236172149 /* ChaCha20.swift */,
+				276C87512BBAE5DA052B049A5A874BD4 /* ChaCha20+Foundation.swift */,
+				97BF8A8E8AF7DC4D92F9E93FF13922CB /* CipherBlockMode.swift */,
+				D3DBA25482BBB9A3361A0F746C40B8CE /* CipherProtocol.swift */,
+				0D2856643766085055C62999BFE958F6 /* CRC.swift */,
+				9CF3E22AC15861F4AD4075BC9EB5670B /* CSArrayType+Extensions.swift */,
+				D060B6A4743254F19F53F5DC3D208FDE /* CSArrayType+Foundation.swift */,
+				CB5036E0A894E64460FEA94A45A2825A /* CTR.swift */,
+				F03B06BEAEEC9214BD8B098592415F85 /* ECB.swift */,
+				B4312A8D4FDA477DCF2507E5D8E8E6BE /* Generics.swift */,
+				4F5A4E1DA4076622AB25908C8ABB2043 /* Hash.swift */,
+				680BEEEAF07D948CEC0C5D5297B1F3A2 /* HashProtocol.swift */,
+				9EDB3A5BF9371DDCFC7EE6D6BF752A94 /* HMAC.swift */,
+				78AAB25CE88B5A1963DD00A54CEB73C6 /* IntegerConvertible.swift */,
+				6455BFAAA0DD938BF97D48458CC5EE89 /* IntExtension.swift */,
+				D1C1082C44CA3848D54F036924D39FB9 /* MD5.swift */,
+				439038164A37212C5D38F8DE215DD776 /* Multiplatform.swift */,
+				12B3C6F2E290F2CC76C579032A4F1A00 /* NoPadding.swift */,
+				40E425BD0C28BF698C9D27A4D2D036FD /* NSData+Extension.swift */,
+				B798FCC21B4D7CC3180E9148A98DCFB7 /* OFB.swift */,
+				ECDF8A411574294E4B5C8C050DDEE29B /* Operators.swift */,
+				9B8F6217F1422DC1A69FC3BD7D62810B /* Padding.swift */,
+				262D1BE2C99FF5FEBA5797C0706BE18A /* PBKDF2.swift */,
+				3FD8C3908DD335F17754DE84C862276F /* PCBC.swift */,
+				DC66C426A6B8342AA3B51F8BFA1616D0 /* PKCS5.swift */,
+				17268531BF77AA9A770B97A8AE8A263B /* PKCS7.swift */,
+				9727BA86E6596C9A42147B2DD185D7B5 /* Poly1305.swift */,
+				85DA86B3CC09225593A9CFC3DB3354DA /* Rabbit.swift */,
+				3E95208A1A82777E6D187E6542372AB6 /* Rabbit+Foundation.swift */,
+				BB563E55143CA963C47EE5927F6FAFF8 /* SecureBytes.swift */,
+				998F88D828DB64303AD143F865671E1D /* SHA1.swift */,
+				4CB2BC16E3123159A0525A7FA3CBD795 /* SHA2.swift */,
+				A954DE5B24761898CD993AFEE725BFC8 /* String+Extension.swift */,
+				48ABF55A30E1474056A20CB8D39323F5 /* String+FoundationExtension.swift */,
+				122F8E398306FE9F1D0825F1838667A1 /* String+LinuxFoundation.swift */,
+				2786D9EA84D686504AA7312B9177F613 /* UInt32Extension.swift */,
+				AB3C82B8AE4C5E17B3A41D10BD090B7F /* UInt64Extension.swift */,
+				A26B6C39132CEF638C8DE76BD2605AB6 /* UInt8Extension.swift */,
+				8B5D8E5E1E51DF7F663A74650860F190 /* Utils.swift */,
+				3DBFD08076DD26E31F659628907EC6F1 /* Utils+Foundation.swift */,
+				9B379BEF37CBFD0C5CDA6CE6031D3AE4 /* Support Files */,
+			);
+			path = CryptoSwift;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				F2F8D4F8215B45922B5BFE35046CE74D /* Frameworks */,
+				984607E5C42E5FB6F78B8D90A6CA0039 /* Pods */,
+				15D9B33F6250362577DFB746C332144D /* Products */,
+				52EC38F22F7C38593D0C06D51BFC4075 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		7DCDAF64EE52B5CC029E82D2030140E2 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				AAA367260C532BBE62120D6AB7F1542F /* Info.plist */,
+				91FEE5CBB8BE1B296BA02BF2B366D0F0 /* SWRevealViewController.modulemap */,
+				EFC1A04ADEDD3C7AA6B6C76222F02C89 /* SWRevealViewController.xcconfig */,
+				C05747A694A863177290593752878FEA /* SWRevealViewController-dummy.m */,
+				503FDF01DD1A2EBE76AA972F19D13819 /* SWRevealViewController-prefix.pch */,
+				209CF46A57C4684A831C1650C64A0642 /* SWRevealViewController-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SWRevealViewController";
+			sourceTree = "<group>";
+		};
+		82902CAA0E861F9D2A76CBEBD36354A4 /* SwiftKeychainWrapper */ = {
+			isa = PBXGroup;
+			children = (
+				8FB9F2CE9C74E8504E23B0A0A7095190 /* KeychainWrapper.swift */,
+				D9B35D384F42649EA90467F043EBFDF7 /* SwiftKeychainWrapper.h */,
+				B16F6F34CD84E8DDDE01BED3A01D6567 /* Support Files */,
+			);
+			path = SwiftKeychainWrapper;
+			sourceTree = "<group>";
+		};
+		910405E80C6B3D896FE206534FD5962C /* Pods-Dono */ = {
+			isa = PBXGroup;
+			children = (
+				7A6F6DEC51115805AD75ABB37ADAF30C /* Info.plist */,
+				0FE55AAA53E505D5DBF33EA2E8E8DF6F /* Pods-Dono.modulemap */,
+				6114B85183614152B7B6D02CBEADBF58 /* Pods-Dono-acknowledgements.markdown */,
+				3042E350BCAB62D196BEC59E22161FF8 /* Pods-Dono-acknowledgements.plist */,
+				2C7E658246B960AF6C634AACE372C70C /* Pods-Dono-dummy.m */,
+				9D5FF55FAA2122854A1615F6E88D78C5 /* Pods-Dono-frameworks.sh */,
+				326196B6EAF5E22A40BAAE6CBF0C1099 /* Pods-Dono-resources.sh */,
+				C848E2366269A9E95E09508E953C321B /* Pods-Dono-umbrella.h */,
+				D719F79D3D63A659BC2344F3520FFEEC /* Pods-Dono.debug.xcconfig */,
+				52D045C0559336B060D839CA7DA0B16D /* Pods-Dono.release.xcconfig */,
+			);
+			name = "Pods-Dono";
+			path = "Target Support Files/Pods-Dono";
+			sourceTree = "<group>";
+		};
+		984607E5C42E5FB6F78B8D90A6CA0039 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D00646684FEA1EFFF846BD09497AC7FB /* BigInt */,
+				67CFB06048DCABC9D0C6F9F53032FD72 /* CryptoSwift */,
+				B6FEC2AF5D7E7F527DC11DA8033DA03F /* Dodo */,
+				AD0A62E6180E26233687087F8EFFA22A /* DonoCore */,
+				FEDB40D01E2931A82906E8D2F28423C9 /* PasscodeLock */,
+				82902CAA0E861F9D2A76CBEBD36354A4 /* SwiftKeychainWrapper */,
+				1A589257D4516D716DBEB5194CCDF703 /* SWRevealViewController */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9B379BEF37CBFD0C5CDA6CE6031D3AE4 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6D57DEB955D3E691B7E6B67291FA7CEF /* CryptoSwift.modulemap */,
+				BE39811AFB259CF0754052A48B83911A /* CryptoSwift.xcconfig */,
+				5B637FD2131E03F5A668C7F2F9A7D9C3 /* CryptoSwift-dummy.m */,
+				B225128EF1D56579712845E761BAD533 /* CryptoSwift-prefix.pch */,
+				96E151243ECFDF9AA4F1EEEDC44AD6C7 /* CryptoSwift-umbrella.h */,
+				D13A4B61B9FB868455565DBC5F20A802 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/CryptoSwift";
+			sourceTree = "<group>";
+		};
+		9FF5047F1F7378D1CFD1CCAAE022B068 /* Pods-DonoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				57C504560292894AE6204E4EC25278C5 /* Info.plist */,
+				68FFC5D7A9EC50F12DD21EECE34CD8F4 /* Pods-DonoUITests.modulemap */,
+				2453F012BC6EDE69A57C465837170035 /* Pods-DonoUITests-acknowledgements.markdown */,
+				034F09CAAF0B996A3F48F0CB4353C1FA /* Pods-DonoUITests-acknowledgements.plist */,
+				FF9C4C0F02D52F84672C280741B13A9E /* Pods-DonoUITests-dummy.m */,
+				BEF1E346097E0E9B76AE62FBFF93CC69 /* Pods-DonoUITests-frameworks.sh */,
+				9C563DFFB9990421AC3997E00FA0B6D1 /* Pods-DonoUITests-resources.sh */,
+				311B68C82D8EDDCBAFB924CA58472562 /* Pods-DonoUITests-umbrella.h */,
+				65A22161EEAA1F9FE599F1D36E944010 /* Pods-DonoUITests.debug.xcconfig */,
+				A4FD9C84E039EC054DF1949E38204A54 /* Pods-DonoUITests.release.xcconfig */,
+			);
+			name = "Pods-DonoUITests";
+			path = "Target Support Files/Pods-DonoUITests";
+			sourceTree = "<group>";
+		};
+		AD0A62E6180E26233687087F8EFFA22A /* DonoCore */ = {
+			isa = PBXGroup;
+			children = (
+				06A739E21F278C0E90E44C2A893CFB94 /* Dono.swift */,
+				46415C40BB8D36AC5C27DD5431032275 /* Support Files */,
+			);
+			path = DonoCore;
+			sourceTree = "<group>";
+		};
+		B16F6F34CD84E8DDDE01BED3A01D6567 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3773D9AE64EB30628AB53D1085CA82D7 /* Info.plist */,
+				A7B67BC935B33AAFE1717F2E0B49466F /* SwiftKeychainWrapper.modulemap */,
+				4C050AC17C03D45A138979FD95A258DE /* SwiftKeychainWrapper.xcconfig */,
+				AE80CF6683D3F55C0FAA0FA4A92E1996 /* SwiftKeychainWrapper-dummy.m */,
+				2571A97024113B08158DF0957230899E /* SwiftKeychainWrapper-prefix.pch */,
+				499751B01469C3D85E0293E6F6393811 /* SwiftKeychainWrapper-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftKeychainWrapper";
+			sourceTree = "<group>";
+		};
+		B6FEC2AF5D7E7F527DC11DA8033DA03F /* Dodo */ = {
+			isa = PBXGroup;
+			children = (
+				C9EA2D2D90C0F9B51036989DE706AA57 /* Dodo.swift */,
+				F6B0E8E8AA396243993C314D38CE5855 /* DodoAnimation.swift */,
+				0B96977797FF42DE79664FDF54468D95 /* DodoAnimations.swift */,
+				FB423E7D40DD0EB7692B45284E8E0829 /* DodoAnimationsHide.swift */,
+				8A0E6787FCA5A2F4B44EAC29017EE704 /* DodoAnimationsShow.swift */,
+				608C38497E0800E5C7BB847C8C5A7800 /* DodoBarDefaultStyles.swift */,
+				A668D5CFD67734C18C6C615A783729DA /* DodoBarOnTap.swift */,
+				5A74084CBA8A2AFBA3DC70B374FD3D9E /* DodoBarStyle.swift */,
+				07F8B847BE3676BAABD566811691E1D3 /* DodoButtonDefaultStyles.swift */,
+				EA9947CAC425A1A4C7AE20856B5D56CE /* DodoButtonOnTap.swift */,
+				8E7BDEB1AED213D3A31D6395AFCEAD3B /* DodoButtonStyle.swift */,
+				7492CBA1BEFE647A91B7ABA6337A8926 /* DodoButtonView.swift */,
+				E9E58D41B83CEEF02C0C5F590C001926 /* DodoButtonViewDelegate.swift */,
+				F99F2C3B8045D4BE199E022CF78B3518 /* DodoColor.swift */,
+				813E3AED9F171B6C8E0F64F6A0BA54D6 /* DodoIcons.swift */,
+				87E6064E07BA34FD065CF00FD1D7C366 /* DodoInterface.swift */,
+				BCD86BB924E4E3FC72F06901D2301949 /* DodoKeyboardListener.swift */,
+				825077BCAC29B824ED0DC46197CC5531 /* DodoLabelDefaultStyles.swift */,
+				F6484124DFDFABCCF55310890A75D731 /* DodoLabelStyle.swift */,
+				B3C0F8ADBBD3F0FB286B8C1B0A317C6B /* DodoMock.swift */,
+				00027B498218153EE275FA7BB922BFEC /* DodoMockMessage.swift */,
+				7242C6B3308ECBD4A32F2F366739BD88 /* DodoMockResults.swift */,
+				A5947FCA0B2D75A7C0FF66CB5D476D40 /* DodoPresets.swift */,
+				7BFC751153BE170A8F36A6310E001640 /* DodoStyle.swift */,
+				C917209A074E5C9160B0928611144ABA /* DodoToolbar.swift */,
+				54B9619127A5E65621EEFFD4D7AC02AB /* DodoTouchTarget.swift */,
+				B0FDE0C635F1F4E32B8A36DF58BD5CE9 /* MoaTimer.swift */,
+				0558A1B10F7FA82086864CC039C801B7 /* OnTap.swift */,
+				4176C3797518AE7510C05A352E7549D4 /* SpringAnimationCALayer.swift */,
+				4DA75F75AEDD1A8F8A75B030ED11097C /* TegAutolayoutConstraints.swift */,
+				647A727945CD4D2FF03C2D1C9AE61C6B /* UIView+SwiftAlertBar.swift */,
+				A4530236EED9B6F3A6DF0675BBE4E9FB /* UnderKeyboardDistrib.swift */,
+				5A08D7BF56726ACB162AE7769A8F52F7 /* Resources */,
+				5775640CA94F9C05E7B4834A7EB0C6DB /* Support Files */,
+			);
+			path = Dodo;
+			sourceTree = "<group>";
+		};
+		D00646684FEA1EFFF846BD09497AC7FB /* BigInt */ = {
+			isa = PBXGroup;
+			children = (
+				A126C529647B56354F471BBD3BA9C96C /* BigDigit.swift */,
+				103B1B71488324B5F73D9442F91F8A5F /* BigInt.swift */,
+				66E1C32136881D1E7F58FC759B155F82 /* BigUInt.swift */,
+				D536509CA44FD737D4E616B15D8D6631 /* BigUInt Addition.swift */,
+				17BF87FCAE92E24CFE743D54B3FD08BD /* BigUInt Bitwise Ops.swift */,
+				D0C317DF131F63D6C262B79A34925EAA /* BigUInt Comparison.swift */,
+				9AAF94A75A28CDA3A03F3F6DD06836BD /* BigUInt Data.swift */,
+				9DA67453BD9120B9CA6F883344E2D440 /* BigUInt Division.swift */,
+				003E5E9702265F6D3445B6F3B6C0D368 /* BigUInt Exponentiation.swift */,
+				50AF40AE26BE31AD5A2F1DBF9506AF4E /* BigUInt GCD.swift */,
+				84710A9BF7235154A1A1A7A281780866 /* BigUInt Hashing.swift */,
+				E98C499DFCDD050C5E3DA01E794CE4AB /* BigUInt Multiplication.swift */,
+				58D5B40E0A06F785388AF5F4786D7643 /* BigUInt Prime Test.swift */,
+				D7C3A0E96B23EE290BED8AC9365A5DF8 /* BigUInt Radix Conversion.swift */,
+				52753F4BC8B324974BFE9114115D21E6 /* BigUInt Random.swift */,
+				54C8BAAE53D03BC6CFF9254F51AC69FA /* BigUInt Shifts.swift */,
+				40F93828B2FB669D44A246DD93FC5E28 /* BigUInt Square Root.swift */,
+				160C9C4EB1601596457B74146DE3C266 /* BigUInt Subtraction.swift */,
+				7A636BA32C52AB0F4EBAB196DEBCA368 /* Bitwise Hacks.swift */,
+				7A3040B06129AFF6FB82F492BEF6BCA4 /* ShiftOperationsType.swift */,
+				4BC68300A680F32E202D4F119201E485 /* Support Files */,
+			);
+			path = BigInt;
+			sourceTree = "<group>";
+		};
+		F2F8D4F8215B45922B5BFE35046CE74D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				395E678B10C58AC4B20B7599C22AF08B /* BigInt.framework */,
+				10413D9FF49F8B2B1C6D704EAAC031F1 /* CryptoSwift.framework */,
+				2953C8D223DBD8F6E188EB54F49EC6B5 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FEDB40D01E2931A82906E8D2F28423C9 /* PasscodeLock */ = {
+			isa = PBXGroup;
+			children = (
+				C5CCA5D85BE419F7E951F112878BB13B /* ChangePasscodeState.swift */,
+				AADA8065282CDF150041E51E8940D99C /* ConfirmPasscodeState.swift */,
+				002D15446BD5FDBF4D10C8192AB67EA9 /* EnterPasscodeState.swift */,
+				63B9A9AE9FAE51D03045850BA66C65E7 /* Functions.swift */,
+				93694A3440046DFEFC096B75A1B3A313 /* PasscodeLock.h */,
+				A41B8F314BC811AF187EE1155FB893DC /* PasscodeLock.swift */,
+				BDD5A3B76CDCD9104424913B00834E6E /* PasscodeLockConfigurationType.swift */,
+				6EBD93512880C84E4F561AF6299687A5 /* PasscodeLockPresenter.swift */,
+				3EE39279F011CFFB9A46600A69329E19 /* PasscodeLockStateType.swift */,
+				D36CCD5B634F097953BC67EEA98F2ACD /* PasscodeLockType.swift */,
+				B43677D1EAD4686A023406DA53D2D43D /* PasscodeLockViewController.swift */,
+				9C5C40EE4F9461F8ADFAFE4BE3F6EA79 /* PasscodeRepositoryType.swift */,
+				F0835BE7E8121A6D5DB46AA158D1BBA8 /* PasscodeSignButton.swift */,
+				0D6766D3D0F1E7FBE6BC117E9AA47D92 /* PasscodeSignPlaceholderView.swift */,
+				A6530F37CB35F46E7A1847791F841D5B /* SetPasscodeState.swift */,
+				1063319341E4798279FF6717356B98EA /* Resources */,
+				1C0C12DBAAD30E7C0667699D586737EA /* Support Files */,
+			);
+			path = PasscodeLock;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		058E3ED57E6C7D9650E874D06C07D521 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10A3FE62FC9E4194EA4DC80F027630C1 /* SWRevealViewController-umbrella.h in Headers */,
+				42303C979E2E03843D563319E485DBDE /* SWRevealViewController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2FAFBDEC4C8ACC6518AC24AECA2B2C40 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A02FFB3A7C1E7DB1FD26B83BC116508 /* BigInt-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		319B38D4A9432AAC068E8358446223EF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				708BE5E1A530CA6415F3EB0519BD9DF9 /* Dodo-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		397B013A7D658F3FC9E30AE541EE390C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E4913CF67EFF54EBB1D2CDE956A2604 /* Pods-DonoTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5294A4F161A1FC64EFF603A87C75F43A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DD1E49FDA790842C206260F41903D0F /* DonoCore-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88263A845D9BCC39F54D071A02169D21 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34BF3DA931833B571C0809C535BB656E /* PasscodeLock-umbrella.h in Headers */,
+				1B2827EBB6685C875DA445AACF0E93C1 /* PasscodeLock.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A45BDF78D2C3DF52016DA1FE994053E9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7232F12C592FAC62AB2A73DB44F97E87 /* Pods-Dono-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6969C7316D1A1441EF90BED2F01CF03 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2A2EF86018AD2C9168572FCBD88B724 /* CryptoSwift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8367797EF93C1FA22CF82AEB7D3E1D9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B4CC569F3655FD3FF70ED571D077004 /* Pods-DonoUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F06A41E9D7BB35453157E8AADBA55FB1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D8C644A3CCC79B88B66353B9DC37284 /* SwiftKeychainWrapper-umbrella.h in Headers */,
+				9C8F8FE18EA8FFEFEDAA75118E04CD64 /* SwiftKeychainWrapper.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0184E5E98A871521843E7BCAD3668AE1 /* Pods-Dono */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6BF5BB89A3737201B394382CE66ACFA /* Build configuration list for PBXNativeTarget "Pods-Dono" */;
+			buildPhases = (
+				53FA6BD6762B52BDD6FA32C993008DEA /* Sources */,
+				EFDCEE3A0161F476CDBB7D49A83B32CA /* Frameworks */,
+				A45BDF78D2C3DF52016DA1FE994053E9 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A49867FF772A63155B61A6C05084730B /* PBXTargetDependency */,
+				6AF2485E3D12E0C72AABAB191ADE42F7 /* PBXTargetDependency */,
+				EC44A244A4732119FB0CDC27B8FCF003 /* PBXTargetDependency */,
+				B2196D4B6DFD4EE8E02A89D4C325FAEC /* PBXTargetDependency */,
+				6A12D76C835F44EDFC4BC97B7EC57991 /* PBXTargetDependency */,
+				7497D019BA607C2A112460A4F679F278 /* PBXTargetDependency */,
+				55AFDE6F8604D0EE4E86DF14EA4A9EEB /* PBXTargetDependency */,
+			);
+			name = "Pods-Dono";
+			productName = "Pods-Dono";
+			productReference = 994AE58B00EE552DDDD5A0A2DDA098C7 /* Pods_Dono.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		1CCC2A6FEB52351D53D7B7951A9B62EA /* Pods-DonoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2CE2D93D29C8179D9EFA3EFAB29A86B1 /* Build configuration list for PBXNativeTarget "Pods-DonoTests" */;
+			buildPhases = (
+				1E59BEE7E2D8579AA583885DAA256FF7 /* Sources */,
+				28DDE5510998CFC2D8914FBBDBE5159E /* Frameworks */,
+				397B013A7D658F3FC9E30AE541EE390C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-DonoTests";
+			productName = "Pods-DonoTests";
+			productReference = 002BC5A64FCE2A1B488E81E8BFFF7DAA /* Pods_DonoTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		2A40BAC0F60288F9EE81B4B77874D321 /* PasscodeLock */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84FC78FD9691329B21E9B6EAA84E3FE4 /* Build configuration list for PBXNativeTarget "PasscodeLock" */;
+			buildPhases = (
+				67D5E78DD3559AE455DBAB0BD820215C /* Sources */,
+				FCC8FF6BA5350EAF5FEC497F88A3B38A /* Frameworks */,
+				88263A845D9BCC39F54D071A02169D21 /* Headers */,
+				DAB396DE077927D3C6E2759C9FADDB40 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PasscodeLock;
+			productName = PasscodeLock;
+			productReference = B27DEFC965840F7B61843A0D66D350B2 /* PasscodeLock.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		314FFA1C2B82F6561AE370CA275F00D9 /* SwiftKeychainWrapper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 47C8051CD506CE17ECCF7632D5AD3F56 /* Build configuration list for PBXNativeTarget "SwiftKeychainWrapper" */;
+			buildPhases = (
+				821DA97C88214C488E3A9CE2D78F7810 /* Sources */,
+				DB8FD979214DBEA8F1F72F2AF7269FAA /* Frameworks */,
+				F06A41E9D7BB35453157E8AADBA55FB1 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftKeychainWrapper;
+			productName = SwiftKeychainWrapper;
+			productReference = E5FD90EDADC676D3BB31396DE6F4538B /* SwiftKeychainWrapper.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		34C073D448A23CA3A97EA55CC489BD6F /* CryptoSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 94E0D3F3995439C8804EED0103E8E680 /* Build configuration list for PBXNativeTarget "CryptoSwift" */;
+			buildPhases = (
+				559CEC90AB05D8F48D10F4D0C132C778 /* Sources */,
+				0C6EF1213489C2C1AB440346FD097608 /* Frameworks */,
+				B6969C7316D1A1441EF90BED2F01CF03 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CryptoSwift;
+			productName = CryptoSwift;
+			productReference = 56F60B70C5BD7BACFA8AAA8CC2D5C78D /* CryptoSwift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5113ED3F511F6A1636C468FFD4CA27F5 /* Pods-DonoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 30F686D91DC1C66F21D9FED2310344DD /* Build configuration list for PBXNativeTarget "Pods-DonoUITests" */;
+			buildPhases = (
+				8A6D53E24645D05FF8818166BE67D7A4 /* Sources */,
+				0471492A746C36B6FBFC2978DD1414B8 /* Frameworks */,
+				E8367797EF93C1FA22CF82AEB7D3E1D9 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-DonoUITests";
+			productName = "Pods-DonoUITests";
+			productReference = 5851C54C3011E3B2BA4D618557FCA8C1 /* Pods_DonoUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6A2C92139F75AF379383A31D30DF10FE /* BigInt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C676AF50F4F5DDF06A668476E2F3DE0D /* Build configuration list for PBXNativeTarget "BigInt" */;
+			buildPhases = (
+				4FB10141AC7173FB62537B8F179C1E44 /* Sources */,
+				E64F6E5EF6DE89425AEE3D7CE93CE7AC /* Frameworks */,
+				2FAFBDEC4C8ACC6518AC24AECA2B2C40 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BigInt;
+			productName = BigInt;
+			productReference = 824D174392C6BBF616C2B1D1B72CE247 /* BigInt.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6FC05645E7F8E57E2FD197C4D1B2F874 /* DonoCore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BBF13199CC75B18384A2BDC99B6FB3EE /* Build configuration list for PBXNativeTarget "DonoCore" */;
+			buildPhases = (
+				F1B7612D8CDF6F91A1ED23D499558038 /* Sources */,
+				75C5356F5547E47C8FB4DA874B4CAA9D /* Frameworks */,
+				5294A4F161A1FC64EFF603A87C75F43A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1A36F91DE5D1754BAA5BB6A03E170959 /* PBXTargetDependency */,
+				CBF2DFF796FFB3AD3C131116036E2DF5 /* PBXTargetDependency */,
+			);
+			name = DonoCore;
+			productName = DonoCore;
+			productReference = 6AC584D47019681242775CAD33127BF8 /* DonoCore.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		AF0A80A51C0CE9C374A0A4983DCD43A7 /* Dodo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 970394859346784B7A207479F0AE589E /* Build configuration list for PBXNativeTarget "Dodo" */;
+			buildPhases = (
+				FA11B7ADA8CA645977900D1FF71B20CD /* Sources */,
+				1FAF3C94FF227C650281512012CAB801 /* Frameworks */,
+				9D585C2DFA0CD96F72381B929DCF8965 /* Resources */,
+				319B38D4A9432AAC068E8358446223EF /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Dodo;
+			productName = Dodo;
+			productReference = F92A4B0F7CBD60192674A876B827CCE0 /* Dodo.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C67FAE781FB518310F1E47F1520243DB /* SWRevealViewController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5735D6BC44101A24E0F801C3AF9718FC /* Build configuration list for PBXNativeTarget "SWRevealViewController" */;
+			buildPhases = (
+				587FF2BC82905C1270BA370E60DA3A5E /* Sources */,
+				85DA011DE96BDE78D6B7E545FEEA7DB1 /* Frameworks */,
+				058E3ED57E6C7D9650E874D06C07D521 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SWRevealViewController;
+			productName = SWRevealViewController;
+			productReference = CFA182804E7258AD1B4E46C6C23BFC7E /* SWRevealViewController.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 15D9B33F6250362577DFB746C332144D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6A2C92139F75AF379383A31D30DF10FE /* BigInt */,
+				34C073D448A23CA3A97EA55CC489BD6F /* CryptoSwift */,
+				AF0A80A51C0CE9C374A0A4983DCD43A7 /* Dodo */,
+				6FC05645E7F8E57E2FD197C4D1B2F874 /* DonoCore */,
+				2A40BAC0F60288F9EE81B4B77874D321 /* PasscodeLock */,
+				0184E5E98A871521843E7BCAD3668AE1 /* Pods-Dono */,
+				1CCC2A6FEB52351D53D7B7951A9B62EA /* Pods-DonoTests */,
+				5113ED3F511F6A1636C468FFD4CA27F5 /* Pods-DonoUITests */,
+				314FFA1C2B82F6561AE370CA275F00D9 /* SwiftKeychainWrapper */,
+				C67FAE781FB518310F1E47F1520243DB /* SWRevealViewController */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9D585C2DFA0CD96F72381B929DCF8965 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A085C96768DC6F001093AC8A49FBD00D /* Icons.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAB396DE077927D3C6E2759C9FADDB40 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEA442FC4B39208978991B2F3934899C /* PasscodeLock.strings in Resources */,
+				CAF471615301BAB50BAE663EF2F98EF5 /* PasscodeLockView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1E59BEE7E2D8579AA583885DAA256FF7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A57FB905C657FE2C00F212F1817AF6E /* Pods-DonoTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FB10141AC7173FB62537B8F179C1E44 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1BAD2EBC894677CC5F8DD88882115D5 /* BigDigit.swift in Sources */,
+				5B2DCA8A3F64844ED1F63C176188F2E7 /* BigInt-dummy.m in Sources */,
+				8463F5D4B1AB7436B42AC4F3567C206C /* BigInt.swift in Sources */,
+				28F2159E12F8A2947FD64D93BDE0154B /* BigUInt Addition.swift in Sources */,
+				ABC8B99D20A5EC555D898AFBCB30DFF5 /* BigUInt Bitwise Ops.swift in Sources */,
+				D477D1D14744B7410CD250C6FE942EBA /* BigUInt Comparison.swift in Sources */,
+				5530DCAE3CB98A3160BE63CEDA5C6689 /* BigUInt Data.swift in Sources */,
+				5D53018C315ECC0C56C6E1D3799FD019 /* BigUInt Division.swift in Sources */,
+				8192FC92E17007088F59F37F060519F7 /* BigUInt Exponentiation.swift in Sources */,
+				77475E60BF8421309303F293C2E23888 /* BigUInt GCD.swift in Sources */,
+				9C7A22E7319835D1AAFC538D46D7648A /* BigUInt Hashing.swift in Sources */,
+				7403CE2CFCB091FBF6E259C3901B4D90 /* BigUInt Multiplication.swift in Sources */,
+				3F00DF4B3BF9245D18C10E92F93F26F9 /* BigUInt Prime Test.swift in Sources */,
+				6C5CF2DB6D1FDE211439865998D4DCE8 /* BigUInt Radix Conversion.swift in Sources */,
+				BB7AB73BF389EB1AB3295C2B002BF544 /* BigUInt Random.swift in Sources */,
+				726B83F3234CEFA4A5431C1B56296AE6 /* BigUInt Shifts.swift in Sources */,
+				88453B96B5CFD6A445513F4918568C8A /* BigUInt Square Root.swift in Sources */,
+				7DFE127723C7743D88BA9AB0929A50BD /* BigUInt Subtraction.swift in Sources */,
+				5EEE09F092708456406028115BEF0CD4 /* BigUInt.swift in Sources */,
+				5C07045A75721059EB40CABF801C8D63 /* Bitwise Hacks.swift in Sources */,
+				D059E4147337AE1B5E49F75037268698 /* ShiftOperationsType.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53FA6BD6762B52BDD6FA32C993008DEA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26C42E9223143E4D1B780D05DBD32D38 /* Pods-Dono-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		559CEC90AB05D8F48D10F4D0C132C778 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9F2FD97B54CD1092D74CF9A63C7F611 /* AES+Foundation.swift in Sources */,
+				C29A0011318AADCE119A11FC60A485C3 /* AES.swift in Sources */,
+				6A6E678BEA55565A227D9C327EE741C2 /* Array+Extension.swift in Sources */,
+				8CB4F90922C249B3A859150BF616A4AD /* ArrayUInt8+Foundation.swift in Sources */,
+				D7BF7FF41016D529569E6D151942E7A4 /* Authenticator.swift in Sources */,
+				BF05E420ABE5BC7CE455FEF0326FC17B /* Bit.swift in Sources */,
+				D26784E8F871F07F1647D8A26C7D184D /* BlockCipher.swift in Sources */,
+				8789FD22015A5F4285610BDE63A220D9 /* BlockModeGenerator.swift in Sources */,
+				57A87932F040001DA12B681C3A656E9F /* BlockModeOptions.swift in Sources */,
+				96CDB8A5F34B0375F261F7325E4C0EEE /* BytesSequence.swift in Sources */,
+				E317AD073741FDDBBF77D9D970D236B5 /* CBC.swift in Sources */,
+				BE4D68C8C5B2736CAA7C58FEA6FF5BBE /* CFB.swift in Sources */,
+				76C014EF3D0886098F511FB736EE45AA /* ChaCha20+Foundation.swift in Sources */,
+				3CF89143D21FCE1C722D554B88E6FD62 /* ChaCha20.swift in Sources */,
+				41B28B53451B9591805F973AB4E90807 /* CipherBlockMode.swift in Sources */,
+				08C1938DA5D6B58DF0D7D48864881F83 /* CipherProtocol.swift in Sources */,
+				412E9E35991EAE804887C044DA945CFD /* CRC.swift in Sources */,
+				D4339C0A8682C7ED413AC3B783AEDD71 /* CryptoSwift-dummy.m in Sources */,
+				70E45B2088D8D9DCE5C64E5AE123C077 /* CSArrayType+Extensions.swift in Sources */,
+				4A33BBDADA9FD85AFC561BEB97168F83 /* CSArrayType+Foundation.swift in Sources */,
+				A132B0C3DD6EFB588393B2D4C49F7E74 /* CTR.swift in Sources */,
+				75CA0880B0F24B00A4868D1166B0EAA3 /* ECB.swift in Sources */,
+				ABDB1A6938F6EBAE33D6448C49033335 /* Generics.swift in Sources */,
+				DDFC829237F8789C7E2BDB0CC064D48C /* Hash.swift in Sources */,
+				2C89799E9DF05D057466F438C46B193D /* HashProtocol.swift in Sources */,
+				7E94320CC0F0DFDF94C3420AAC973C74 /* HMAC.swift in Sources */,
+				446623246B4A0179561843187D46AE99 /* IntegerConvertible.swift in Sources */,
+				1DCC299F1DB74B1D602947C6E35EBED9 /* IntExtension.swift in Sources */,
+				5EF0BFB43EE92D1838A8CDFD252D52A3 /* MD5.swift in Sources */,
+				414604A8FF3FB72FBF340519531FEEC3 /* Multiplatform.swift in Sources */,
+				6123ADB98CC26A6548C591638658F13A /* NoPadding.swift in Sources */,
+				99AAB26FC666C78B690E49D04DBB0F4A /* NSData+Extension.swift in Sources */,
+				490CBB4DB25D195443D8F31D579BD28D /* OFB.swift in Sources */,
+				0D4362129DDF3D5E046EA4944EF95E65 /* Operators.swift in Sources */,
+				94E79413E4699AE8AE49374B5CAF920E /* Padding.swift in Sources */,
+				53B7502B7F416C87F06616AAEEBFB99F /* PBKDF2.swift in Sources */,
+				C5B8E98BD2A28B6A3A3552521213C5A0 /* PCBC.swift in Sources */,
+				60189F7AEDC4BD374DA8DD73BF0331FA /* PKCS5.swift in Sources */,
+				94C21E30D4C8975A8A782BAC99F53A92 /* PKCS7.swift in Sources */,
+				E327271A07075056388C3AF118F00DBB /* Poly1305.swift in Sources */,
+				01FCB52BE197C869A2CAD0E0848727C5 /* Rabbit+Foundation.swift in Sources */,
+				89ADAE99C17212EB3821672355CF4B70 /* Rabbit.swift in Sources */,
+				006D42B96A79F67A56DB1B6571BDEF51 /* SecureBytes.swift in Sources */,
+				8015C76DE8B09C84C4F402CA38728A87 /* SHA1.swift in Sources */,
+				AE9ABF1468EEF702F5109CB34FB68748 /* SHA2.swift in Sources */,
+				57ED9F0ADD910FA52C306C2B4CB20738 /* String+Extension.swift in Sources */,
+				B65773B0448A713786714269C30BB67C /* String+FoundationExtension.swift in Sources */,
+				AF6D510782C0E26296D850006AFBE110 /* String+LinuxFoundation.swift in Sources */,
+				8A82B31B817A4C4F1C480231DF217CD9 /* UInt32Extension.swift in Sources */,
+				EAC4CC44502358A00DA0AC03959A487F /* UInt64Extension.swift in Sources */,
+				688A401B2412607C7125E5FE11FBD22A /* UInt8Extension.swift in Sources */,
+				948302E37AAB9EC8B812EB369543C8CF /* Utils+Foundation.swift in Sources */,
+				F170870FC2FFC89E84F296D8B784B851 /* Utils.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		587FF2BC82905C1270BA370E60DA3A5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8381DE35951E36B59817B35041227790 /* SWRevealViewController-dummy.m in Sources */,
+				160CC66B31612A4B1597E3351A737A4C /* SWRevealViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67D5E78DD3559AE455DBAB0BD820215C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EDB380414B0E5EF1258D480A0C8B701 /* ChangePasscodeState.swift in Sources */,
+				E0111BB2402096122822D15CB1B72A89 /* ConfirmPasscodeState.swift in Sources */,
+				2F939CF983F67EB2902CC7E05CC26D78 /* EnterPasscodeState.swift in Sources */,
+				17AACDA4176BF53122DEE26E111B25BA /* Functions.swift in Sources */,
+				39148D23D5224E34F23101E605E6446E /* PasscodeLock-dummy.m in Sources */,
+				7ABFB401D28569E422CE656F7B16D85E /* PasscodeLock.swift in Sources */,
+				A3B06437EC5926482381251689914E76 /* PasscodeLockConfigurationType.swift in Sources */,
+				4715A472747706D3B189EBE61A88EBAB /* PasscodeLockPresenter.swift in Sources */,
+				B387995458AF0B6A16629D5743A37059 /* PasscodeLockStateType.swift in Sources */,
+				2F18AA2CC3416AEA6B7CAFBCEA74F58D /* PasscodeLockType.swift in Sources */,
+				094DC915B110D6B7018ABA03A5C0A046 /* PasscodeLockViewController.swift in Sources */,
+				0ED7D19B16C7F492A1B04EE62C195740 /* PasscodeRepositoryType.swift in Sources */,
+				0A2258B079C90FA54B04CD9C1E87093D /* PasscodeSignButton.swift in Sources */,
+				F1E66038537D98993633DB3320F8F5A1 /* PasscodeSignPlaceholderView.swift in Sources */,
+				5F4D35E6FE0D020D8E833454A229D585 /* SetPasscodeState.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		821DA97C88214C488E3A9CE2D78F7810 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E372FCEA5BFEEF4622E0EE642531FD05 /* KeychainWrapper.swift in Sources */,
+				884ECCA456E6B461B6ECE56F9DE5CF46 /* SwiftKeychainWrapper-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A6D53E24645D05FF8818166BE67D7A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16D54976470338197D432DD79688352C /* Pods-DonoUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1B7612D8CDF6F91A1ED23D499558038 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				015610A79F2857BCB55F198A40886A80 /* Dono.swift in Sources */,
+				F4BD78A2A1F22FCD33F781CB2CD0897D /* DonoCore-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA11B7ADA8CA645977900D1FF71B20CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A88D4C4F77418CB3B491578A178D6D1 /* Dodo-dummy.m in Sources */,
+				4A73FD15C96175B6558DDB35FA88486F /* Dodo.swift in Sources */,
+				C6F792A9E2C5B5B351FB189B18171B95 /* DodoAnimation.swift in Sources */,
+				3E163AA6138BFE7B2E0B334BFDCE6007 /* DodoAnimations.swift in Sources */,
+				1645B4FF92F66C970BAF9D92DEE0A3CE /* DodoAnimationsHide.swift in Sources */,
+				6038E28A5EA400E299135999065B125B /* DodoAnimationsShow.swift in Sources */,
+				9BF801BDE905EDD71F2FF86B98ED875E /* DodoBarDefaultStyles.swift in Sources */,
+				263485C204BECDBA0E912CCD4805CF63 /* DodoBarOnTap.swift in Sources */,
+				D27905158A2997EECE6EBA494E1A714C /* DodoBarStyle.swift in Sources */,
+				77C731C891802EF2134703E5CA86067D /* DodoButtonDefaultStyles.swift in Sources */,
+				B126C81E8C91CF669D0F7BF1761C9607 /* DodoButtonOnTap.swift in Sources */,
+				60CA9BB6066A71806902A1DD14D5492D /* DodoButtonStyle.swift in Sources */,
+				011DE9FF4FCCCD1A96E0D0DB765DACB3 /* DodoButtonView.swift in Sources */,
+				AB6E356426075448DB2F4B9C7D757699 /* DodoButtonViewDelegate.swift in Sources */,
+				1167D7E6F8AF70E0EF4FBCC671D159FB /* DodoColor.swift in Sources */,
+				CB0DFE17987B4008A4E756014C9D264A /* DodoIcons.swift in Sources */,
+				0C561C5F4232E7D73E8873FB3B967A8D /* DodoInterface.swift in Sources */,
+				548482C81BD72D94EEF6917FB97B94D6 /* DodoKeyboardListener.swift in Sources */,
+				F80F05EE8A7021C1D7981ECA70C5807E /* DodoLabelDefaultStyles.swift in Sources */,
+				8A23ABFB817043AEE905014E2C13981A /* DodoLabelStyle.swift in Sources */,
+				A9C83E29FA3ABC9275BCFA01C035B4E1 /* DodoMock.swift in Sources */,
+				9C1919AF375FBF0A21E2824AC355F840 /* DodoMockMessage.swift in Sources */,
+				FA28812BCD112CA60FB17A4347C7D718 /* DodoMockResults.swift in Sources */,
+				7CDF187A123E46B599934B4E5D76AF2E /* DodoPresets.swift in Sources */,
+				FEC214AB314AA94CE1F82513D4B0186A /* DodoStyle.swift in Sources */,
+				CF7AEF1F982206CAF36E4BB0A1CCDB1F /* DodoToolbar.swift in Sources */,
+				BB01C77D60CF2BA328C155E7CFB17433 /* DodoTouchTarget.swift in Sources */,
+				C8A868AED23A8EB9F03E8AE2EDEB2C83 /* MoaTimer.swift in Sources */,
+				ED55FBE6583F3FF7B654F868A3B8C792 /* OnTap.swift in Sources */,
+				16F96F3B98A173B8A36318C7B7331DB9 /* SpringAnimationCALayer.swift in Sources */,
+				560EBDC6D4EA6B9D9AE968C916B22E9B /* TegAutolayoutConstraints.swift in Sources */,
+				D3CEB23E162B167FB1D2BB458DE68D12 /* UIView+SwiftAlertBar.swift in Sources */,
+				5D0B5FF53A7881799D8425D95E49C25E /* UnderKeyboardDistrib.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1A36F91DE5D1754BAA5BB6A03E170959 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BigInt;
+			target = 6A2C92139F75AF379383A31D30DF10FE /* BigInt */;
+			targetProxy = C00AE217A08CF0271BA787436A183A04 /* PBXContainerItemProxy */;
+		};
+		55AFDE6F8604D0EE4E86DF14EA4A9EEB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftKeychainWrapper;
+			target = 314FFA1C2B82F6561AE370CA275F00D9 /* SwiftKeychainWrapper */;
+			targetProxy = 5CB982F4333D13CD8FEF736ED3163F63 /* PBXContainerItemProxy */;
+		};
+		6A12D76C835F44EDFC4BC97B7EC57991 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PasscodeLock;
+			target = 2A40BAC0F60288F9EE81B4B77874D321 /* PasscodeLock */;
+			targetProxy = 303C419AD3478CC19D38EBCDEB369706 /* PBXContainerItemProxy */;
+		};
+		6AF2485E3D12E0C72AABAB191ADE42F7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CryptoSwift;
+			target = 34C073D448A23CA3A97EA55CC489BD6F /* CryptoSwift */;
+			targetProxy = 98C32F4C1B3241DAA56C698681F35728 /* PBXContainerItemProxy */;
+		};
+		7497D019BA607C2A112460A4F679F278 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SWRevealViewController;
+			target = C67FAE781FB518310F1E47F1520243DB /* SWRevealViewController */;
+			targetProxy = 8754F949E2CC6C3C68E72D76EAE666EC /* PBXContainerItemProxy */;
+		};
+		A49867FF772A63155B61A6C05084730B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BigInt;
+			target = 6A2C92139F75AF379383A31D30DF10FE /* BigInt */;
+			targetProxy = DED8025BEC93C63260BF279E534618C9 /* PBXContainerItemProxy */;
+		};
+		B2196D4B6DFD4EE8E02A89D4C325FAEC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DonoCore;
+			target = 6FC05645E7F8E57E2FD197C4D1B2F874 /* DonoCore */;
+			targetProxy = 16C6F0BE62132A648DC8D721E119B179 /* PBXContainerItemProxy */;
+		};
+		CBF2DFF796FFB3AD3C131116036E2DF5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CryptoSwift;
+			target = 34C073D448A23CA3A97EA55CC489BD6F /* CryptoSwift */;
+			targetProxy = 49D56C8D3624386A63EB7082CA7EF94A /* PBXContainerItemProxy */;
+		};
+		EC44A244A4732119FB0CDC27B8FCF003 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Dodo;
+			target = AF0A80A51C0CE9C374A0A4983DCD43A7 /* Dodo */;
+			targetProxy = 3B9458118B76CB6CE669864A2C010DD7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C8F92E91998CB419B16ACE9AC3BE8045 /* PasscodeLock.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DFDF38ACBC765895D2F89F87B19CCC4D /* PasscodeLock.strings */,
+			);
+			name = PasscodeLock.strings;
+			path = PasscodeLock;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		034014829C1E4434983CF3A690C12017 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		2C7F7DBCCCE1B633424AD1096AF492F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 641C63A962658710BAB93B6A5104FAAE /* PasscodeLock.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/PasscodeLock/PasscodeLock-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PasscodeLock/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PasscodeLock/PasscodeLock.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = PasscodeLock;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3AB1CFA2E62369F136641600C5D6CEA1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C050AC17C03D45A138979FD95A258DE /* SwiftKeychainWrapper.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftKeychainWrapper/SwiftKeychainWrapper-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftKeychainWrapper/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftKeychainWrapper/SwiftKeychainWrapper.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SwiftKeychainWrapper;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3BFE94126C97C20DC357DDDC0884D689 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90707E787B8D601B7AAB03F0629D5A95 /* BigInt.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/BigInt/BigInt-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BigInt/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/BigInt/BigInt.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = BigInt;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3C566F19AA1E43843E02F7DB71A75736 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EFC1A04ADEDD3C7AA6B6C76222F02C89 /* SWRevealViewController.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SWRevealViewController/SWRevealViewController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SWRevealViewController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SWRevealViewController/SWRevealViewController.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SWRevealViewController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4897D75E45D7C550117579791684077E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C050AC17C03D45A138979FD95A258DE /* SwiftKeychainWrapper.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftKeychainWrapper/SwiftKeychainWrapper-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftKeychainWrapper/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftKeychainWrapper/SwiftKeychainWrapper.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SwiftKeychainWrapper;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		60D4F6B5C314EE068A5A87550DBBD730 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4FD9C84E039EC054DF1949E38204A54 /* Pods-DonoUITests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-DonoUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DonoUITests/Pods-DonoUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_DonoUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6129E774A4CB82CE46A0CDA626CA13D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EFC1A04ADEDD3C7AA6B6C76222F02C89 /* SWRevealViewController.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SWRevealViewController/SWRevealViewController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SWRevealViewController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SWRevealViewController/SWRevealViewController.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SWRevealViewController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6DBC9DEE986B8DAFE7B8FDC0944803A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE39811AFB259CF0754052A48B83911A /* CryptoSwift.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/CryptoSwift/CryptoSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CryptoSwift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CryptoSwift/CryptoSwift.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = CryptoSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6DF50CED7E59F85C3B16C1C08B10EA35 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D719F79D3D63A659BC2344F3520FFEEC /* Pods-Dono.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Dono/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Dono/Pods-Dono.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Dono;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		76CDC8F6D238B22BE6F9D44E079B8B31 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE39811AFB259CF0754052A48B83911A /* CryptoSwift.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/CryptoSwift/CryptoSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CryptoSwift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CryptoSwift/CryptoSwift.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = CryptoSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7B0EFF5D8842459F1F3AC74675ADB6B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D7E1B5EC3B8C0BFBFDE933939DDA43B /* Dodo.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Dodo/Dodo-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Dodo/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Dodo/Dodo.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Dodo;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		96C1B8E4A13E8F0A2D8F9EA6D6FF11D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D7E1B5EC3B8C0BFBFDE933939DDA43B /* Dodo.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Dodo/Dodo-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Dodo/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Dodo/Dodo.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Dodo;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9CEAB74A43567172A0F5340D156AF5EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BAC2D23F2E5F4EB4F643A681057463FA /* DonoCore.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/DonoCore/DonoCore-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DonoCore/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/DonoCore/DonoCore.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = DonoCore;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		ADB8411DA53015AFDB481346672E3707 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BAC2D23F2E5F4EB4F643A681057463FA /* DonoCore.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/DonoCore/DonoCore-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DonoCore/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/DonoCore/DonoCore.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = DonoCore;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C7E474A03CAE21F1CB6046E7344C59BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CB397678C6910C3742C99A97E395DD58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65A22161EEAA1F9FE599F1D36E944010 /* Pods-DonoUITests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-DonoUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DonoUITests/Pods-DonoUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_DonoUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D288D1EA4FEE2F1D0464B1EFC6545567 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90707E787B8D601B7AAB03F0629D5A95 /* BigInt.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/BigInt/BigInt-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BigInt/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/BigInt/BigInt.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = BigInt;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E1950DFE2087EFCC4EE34E606E380AD0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D09D570DB70BCFB00B894E2C8C74B4E2 /* Pods-DonoTests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-DonoTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DonoTests/Pods-DonoTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_DonoTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EB6EB9D2A78ED49DB6226867D8C9A11E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 641C63A962658710BAB93B6A5104FAAE /* PasscodeLock.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/PasscodeLock/PasscodeLock-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PasscodeLock/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PasscodeLock/PasscodeLock.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = PasscodeLock;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EEA3C3022924EE73D8F12B95E05B9391 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE0E58AB0B587007DEE5798FF05A587F /* Pods-DonoTests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-DonoTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DonoTests/Pods-DonoTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_DonoTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F20B11F317266C03000B369887A5067D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52D045C0559336B060D839CA7DA0B16D /* Pods-Dono.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Dono/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Dono/Pods-Dono.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Dono;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2CE2D93D29C8179D9EFA3EFAB29A86B1 /* Build configuration list for PBXNativeTarget "Pods-DonoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1950DFE2087EFCC4EE34E606E380AD0 /* Debug */,
+				EEA3C3022924EE73D8F12B95E05B9391 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				034014829C1E4434983CF3A690C12017 /* Debug */,
+				C7E474A03CAE21F1CB6046E7344C59BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		30F686D91DC1C66F21D9FED2310344DD /* Build configuration list for PBXNativeTarget "Pods-DonoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB397678C6910C3742C99A97E395DD58 /* Debug */,
+				60D4F6B5C314EE068A5A87550DBBD730 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		47C8051CD506CE17ECCF7632D5AD3F56 /* Build configuration list for PBXNativeTarget "SwiftKeychainWrapper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3AB1CFA2E62369F136641600C5D6CEA1 /* Debug */,
+				4897D75E45D7C550117579791684077E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5735D6BC44101A24E0F801C3AF9718FC /* Build configuration list for PBXNativeTarget "SWRevealViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C566F19AA1E43843E02F7DB71A75736 /* Debug */,
+				6129E774A4CB82CE46A0CDA626CA13D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84FC78FD9691329B21E9B6EAA84E3FE4 /* Build configuration list for PBXNativeTarget "PasscodeLock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB6EB9D2A78ED49DB6226867D8C9A11E /* Debug */,
+				2C7F7DBCCCE1B633424AD1096AF492F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		94E0D3F3995439C8804EED0103E8E680 /* Build configuration list for PBXNativeTarget "CryptoSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76CDC8F6D238B22BE6F9D44E079B8B31 /* Debug */,
+				6DBC9DEE986B8DAFE7B8FDC0944803A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		970394859346784B7A207479F0AE589E /* Build configuration list for PBXNativeTarget "Dodo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B0EFF5D8842459F1F3AC74675ADB6B4 /* Debug */,
+				96C1B8E4A13E8F0A2D8F9EA6D6FF11D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6BF5BB89A3737201B394382CE66ACFA /* Build configuration list for PBXNativeTarget "Pods-Dono" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DF50CED7E59F85C3B16C1C08B10EA35 /* Debug */,
+				F20B11F317266C03000B369887A5067D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BBF13199CC75B18384A2BDC99B6FB3EE /* Build configuration list for PBXNativeTarget "DonoCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CEAB74A43567172A0F5340D156AF5EA /* Debug */,
+				ADB8411DA53015AFDB481346672E3707 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C676AF50F4F5DDF06A668476E2F3DE0D /* Build configuration list for PBXNativeTarget "BigInt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D288D1EA4FEE2F1D0464B1EFC6545567 /* Debug */,
+				3BFE94126C97C20DC357DDDC0884D689 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

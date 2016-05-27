@@ -6,9 +6,8 @@
 //  Copyright © 2016 Panos Sakkos. All rights reserved.
 //
 
-import UIKit
-import LocalAuthentication
 import PasscodeLock
+import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate
@@ -25,7 +24,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate
     
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
-        passcodeLockPresenter.presentPasscodeLock()
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(passcodeFail(_:)), name: PasscodeLockIncorrectPasscodeNotification, object: nil)
+        
+        self.passcodeLockPresenter.presentPasscodeLock()
         
         return true
     }
@@ -59,8 +60,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
     
-    func loadLabels()
-    {
+    func passcodeFail(notification: NSNotification) {
+        
+        // Destroy sensitive stuff.
+        PersistableKey().delete()
+        PasscodeLockConfiguration().repository.deletePasscode()
+        
+        self.passcodeLockPresenter.dismissPasscodeLock()
+    
+        self.window?.rootViewController?.showError("Passcode was entered wrong 3 times. Your Key and your Passcode Pin were deleted")
     }
 }
 

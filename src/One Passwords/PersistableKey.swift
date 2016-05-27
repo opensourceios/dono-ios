@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import SwiftKeychainWrapper
 
 internal class PersistableKey
 {
@@ -39,7 +40,8 @@ internal class PersistableKey
     
     internal func delete()
     {
-        KeychainWrapper.standardKeychainAccess().removeObjectForKey(PersistableKey.KeyKeychainKey)
+        PersistableKey.Key = String()
+        KeychainWrapper.removeObjectForKey(PersistableKey.KeyKeychainKey)
     }
     
     internal func save()
@@ -49,28 +51,16 @@ internal class PersistableKey
     
     private func loadKey()
     {
-        do
+        let retrievedString: String? = KeychainWrapper.stringForKey(PersistableKey.KeyKeychainKey)
+        
+        if (retrievedString != nil)
         {
-            let retrievedString: String? = KeychainWrapper.standardKeychainAccess().stringForKey(PersistableKey.KeyKeychainKey)
-
-            if (retrievedString != nil)
-            {
-                PersistableKey.Key = retrievedString!
-            }
-        }
-        catch
-        {
+            PersistableKey.Key = retrievedString!
         }
     }
     
     private func saveKey()
     {
-        do
-        {
-            KeychainWrapper.standardKeychainAccess().setString(PersistableKey.Key, forKey: PersistableKey.KeyKeychainKey)
-        }
-        catch
-        {
-        }
+        KeychainWrapper.setString(PersistableKey.Key, forKey: PersistableKey.KeyKeychainKey)
     }
 }

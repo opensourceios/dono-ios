@@ -1,0 +1,6 @@
+framework module DonoCore {
+  umbrella header "DonoCore-umbrella.h"
+
+  export *
+  module * { export * }
+}
