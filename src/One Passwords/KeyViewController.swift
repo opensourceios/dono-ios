@@ -25,9 +25,9 @@ class KeyViewController : UIViewController
     {
         super.viewDidLoad()
         
-        self.keyTextField.text = self.persistableKey.getKey()
         self.keyTextField.becomeFirstResponder()
         
+        //RevealVC Boilerplate
         self.Open.target = self.revealViewController()
         self.Open.action = #selector(SWRevealViewController.revealToggle(_:))
         
@@ -39,6 +39,18 @@ class KeyViewController : UIViewController
         super.touchesBegan(touches, withEvent: event)
 
         self.view.endEditing(true)
+    }
+    
+    override func viewWillAppear(animated: Bool)
+    {
+        super.viewWillAppear(animated)
+        
+        self.updateKeyInView()
+    }
+    
+    func updateKeyInView()
+    {
+        self.keyTextField.text = self.persistableKey.getKey()
     }
     
     @IBAction func SaveKey(sender: AnyObject)

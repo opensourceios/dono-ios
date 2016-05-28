@@ -42,6 +42,7 @@ class SettingsViewController : UIViewController
     {
         super.viewDidLoad()
         
+        //RevealVC Boilerplate
         self.Open.target = self.revealViewController()
         self.Open.action = #selector(SWRevealViewController.revealToggle(_:))
         

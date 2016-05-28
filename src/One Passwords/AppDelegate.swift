@@ -15,12 +15,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate
     var window: UIWindow?
     
     lazy var passcodeLockPresenter: PasscodeLockPresenter = {
-        
+        self.initializePasscodeLockPresenter()
+    }()
+    
+    func initializePasscodeLockPresenter() -> PasscodeLockPresenter
+    {
         let configuration = PasscodeLockConfiguration()
         let presenter = PasscodeLockPresenter(mainWindow: self.window, configuration: configuration)
         
         return presenter
-    }()
+    }
     
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
@@ -60,8 +64,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
     
-    func passcodeFail(notification: NSNotification) {
-        
+    func passcodeFail(notification: NSNotification)
+    {
         // Destroy sensitive stuff.
         PersistableKey().delete()
         PasscodeLockConfiguration().repository.deletePasscode()
@@ -69,6 +73,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate
         self.passcodeLockPresenter.dismissPasscodeLock()
     
         self.window?.rootViewController?.showError("Passcode was entered wrong 3 times. Your Key and your Passcode Pin were deleted")
+        
+        self.passcodeLockPresenter = self.initializePasscodeLockPresenter()
     }
 }
 

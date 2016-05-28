@@ -34,7 +34,7 @@ class LabelsViewController: UIViewController, UITableViewDataSource, UITableView
         self.persistableLabels.getAll()
         self.setupTableView()
         
-        // Setup menu open button
+        //RevealVC Boilerplate
         self.Open.target = self.revealViewController()
         self.Open.action = #selector(SWRevealViewController.revealToggle(_:))
         
