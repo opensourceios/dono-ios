@@ -59,15 +59,18 @@ class LabelsViewController: UIViewController, UITableViewDataSource, UITableView
         if (key.isEmpty)
         {
             showError("You need to set your Key in order to derive passwords for your Labels!")
+
+            self.labelsTableView.reloadData()
+            
             return
         }
         
         let d = self.dono.computePassword(key, l: label)
+
         copyToPasteboard(d)
 
         self.showAlert("Your password for " + label + " is ready to be pasted!")
 
-        self.persistableLabels.add(label)
         self.labelsTableView.reloadData()
     }
         
