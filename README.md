@@ -3,6 +3,8 @@
 ## OSS used
 
 * [Dodo](https://github.com/marketplacer/Dodo)
+* [Material Design Icons](https://github.com/Templarian/MaterialDesign)
+* [Material Palette](https://www.materialpalette.com/)
 * [SwiftKeychainWrapper](https://github.com/jrendel/SwiftKeychainWrapper)
 * [SwiftPasscodeLock](https://github.com/velikanov/SwiftPasscodeLock)
 * [SWRevealViewController](https://github.com/John-Lluch/SWRevealViewController)
