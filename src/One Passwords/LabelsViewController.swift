@@ -58,7 +58,7 @@ class LabelsViewController: UIViewController, UITableViewDataSource, UITableView
         
         if (key.isEmpty)
         {
-            showError("You haven't entered your Key!")
+            showError("You need to set your Key in order to derive passwords for your Labels!")
             return
         }
         

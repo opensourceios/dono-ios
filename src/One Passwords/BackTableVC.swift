@@ -18,8 +18,6 @@ class BackTableVC : UITableViewController
         TableArray = ["Labels", "Add Label", "Key", "Settings"]
 
         self.tableView.tableFooterView = UIView(frame: CGRectZero)
-        self.tableView.separatorColor = UIColor.clearColor()
-        self.view.backgroundColor = DodoColor.fromHexString("#2196f3")
         UIApplication.sharedApplication().statusBarHidden = true
 }
     
@@ -33,8 +31,11 @@ class BackTableVC : UITableViewController
         let cell = tableView.dequeueReusableCellWithIdentifier(TableArray[indexPath.row], forIndexPath: indexPath) as UITableViewCell
      
         cell.backgroundColor = UIColor.clearColor()
-        cell.textLabel?.textColor = UIColor.whiteColor()
-        cell.textLabel?.text = TableArray[indexPath.row]
+        
+        // Set color when cell is tapped
+        let selectedBackgroundViewForCell = UIView()
+        selectedBackgroundViewForCell.backgroundColor = DodoColor.fromHexString("#1976d2")
+        cell.selectedBackgroundView = selectedBackgroundViewForCell;
         
         return cell
     }
