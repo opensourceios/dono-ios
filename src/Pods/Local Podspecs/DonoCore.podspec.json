@@ -1,6 +1,6 @@
 {
   "name": "DonoCore",
-  "summary": "Dono password derivation",
+  "summary": "Dono Password Derivation, as described here",
   "requires_arc": true,
   "version": "0.1.0",
   "license": {
@@ -15,6 +15,10 @@
     "git": "https://github.com/dono-app/dono-pod",
     "tag": "{s.version}"
   },
+  "platforms": {
+    "ios": "9.0",
+    "osx": "10.9"
+  },
   "frameworks": "Foundation",
   "dependencies": {
     "BigInt": [
@@ -24,11 +28,5 @@
       "~> 0.4.1"
     ]
   },
-  "source_files": "DonoCore/*.{swift}",
-  "platforms": {
-    "osx": null,
-    "ios": null,
-    "tvos": null,
-    "watchos": null
-  }
+  "source_files": "DonoCore/*.{swift}"
 }
