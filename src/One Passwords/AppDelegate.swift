@@ -72,7 +72,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate
         
         self.passcodeLockPresenter.dismissPasscodeLock()
     
-        (self.window?.rootViewController as! DonoViewController).showError("Passcode was entered wrong 3 times. Your Key and your Passcode Pin were deleted")
+        ((self.window?.rootViewController)! as UIViewController).showError("Passcode was entered wrong 3 times. Your Key and your Passcode Pin were deleted")
         
         self.passcodeLockPresenter = self.initializePasscodeLockPresenter()
     }

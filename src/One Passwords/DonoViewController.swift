@@ -28,7 +28,10 @@ class DonoViewController : UIViewController
         // Setup swipe right gesture to open menu
         self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
     }
-    
+}
+
+extension UIViewController
+{
     func showAlert(message: String)
     {
         self.view.dodo.topLayoutGuide = self.topLayoutGuide
