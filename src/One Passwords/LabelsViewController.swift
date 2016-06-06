@@ -11,8 +11,8 @@ import DonoCore
 import SWRevealViewController
 import UIKit
 
-class LabelsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UITextFieldDelegate, UISearchResultsUpdating {
-    
+class LabelsViewController: DonoViewController, UITableViewDataSource, UITableViewDelegate, UITextFieldDelegate, UISearchResultsUpdating
+{
     @IBOutlet weak var Open: UIBarButtonItem!
         
     @IBOutlet weak var lonelyLabel: UITableView!
@@ -36,10 +36,7 @@ class LabelsViewController: UIViewController, UITableViewDataSource, UITableView
         
         //RevealVC Boilerplate
         self.Open.target = self.revealViewController()
-        self.Open.action = #selector(SWRevealViewController.revealToggle(_:))
-        
-        // Setup swipe right gesture to open menu
-        self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+        self.Open.action = #selector(SWRevealViewController.revealToggle(_:))        
     }
     
     override func viewDidAppear(animated: Bool)
@@ -157,14 +154,14 @@ class LabelsViewController: UIViewController, UITableViewDataSource, UITableView
             controller.searchResultsUpdater = self
             controller.dimsBackgroundDuringPresentation = false
             controller.searchBar.sizeToFit()
-            controller.searchBar.translucent = true;
-            controller.searchBar.barTintColor = DodoColor.fromHexString("#2196f3")
+            controller.searchBar.translucent = false;
+            controller.searchBar.barTintColor = DonoViewController.PrimaryColor
             // White Cancel button
             (UIBarButtonItem.appearanceWhenContainedInInstancesOfClasses([UISearchBar.self])).tintColor = UIColor.whiteColor()
-            
+
             // Remove the white line that appears after dragging the cells down
             controller.searchBar.layer.borderWidth = 1
-            controller.searchBar.layer.borderColor = DodoColor.fromHexString("#2196f3").CGColor
+            controller.searchBar.layer.borderColor = DonoViewController.PrimaryColor.CGColor
             
             self.labelsTableView.tableHeaderView = controller.searchBar
             
@@ -182,15 +179,16 @@ class LabelsViewController: UIViewController, UITableViewDataSource, UITableView
     private func handleLonelyLabel()
     {
         self.persistableLabels.getAll()
-        if (self.persistableLabels.count() == 0)
+
+        if (self.persistableLabels.count() > 0)
         {
-            self.lonelyLabel.hidden = false
-            self.labelsTableView.hidden = true
+            self.lonelyLabel.hidden = true
         }
         else
         {
-            self.lonelyLabel.hidden = true
-            self.labelsTableView.hidden = false
+            self.lonelyLabel.hidden = false
         }
+
+        self.labelsTableView.hidden = !self.lonelyLabel.hidden
     }
 }

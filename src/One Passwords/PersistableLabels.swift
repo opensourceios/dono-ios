@@ -55,7 +55,6 @@ internal class PersistableLabels
         
         return ret;
     }
-
     
     internal func deleteAt(position: Int) -> String
     {

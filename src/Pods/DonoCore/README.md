@@ -1,4 +1,4 @@
-# Dono CocoaPod
+# Dono CocoaPod ![Build Status](https://travis-ci.org/dono-app/dono-pod.svg?branch=master) 
 
 CocoaPod for Dono password derivation
 

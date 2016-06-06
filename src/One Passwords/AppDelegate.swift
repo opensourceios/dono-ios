@@ -66,13 +66,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate
     
     func passcodeFail(notification: NSNotification)
     {
-        // Destroy sensitive stuff.
+        // Destroy sensitive data
         PersistableKey().delete()
         PasscodeLockConfiguration().repository.deletePasscode()
         
         self.passcodeLockPresenter.dismissPasscodeLock()
     
-        self.window?.rootViewController?.showError("Passcode was entered wrong 3 times. Your Key and your Passcode Pin were deleted")
+        (self.window?.rootViewController as! DonoViewController).showError("Passcode was entered wrong 3 times. Your Key and your Passcode Pin were deleted")
         
         self.passcodeLockPresenter = self.initializePasscodeLockPresenter()
     }

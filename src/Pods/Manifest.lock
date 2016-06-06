@@ -22,7 +22,7 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   DonoCore:
-    :commit: 53514983ddacd9797bf3a91305d3827a073f1dcf
+    :commit: dcd41f7096b240e9b7afe80eb9186f59e9899762
     :git: https://github.com/dono-app/dono-pod/
 
 SPEC CHECKSUMS:
@@ -36,4 +36,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: a46bee933baea5e387293c9655598c01145b5557
 
-COCOAPODS: 1.0.0
+COCOAPODS: 1.0.1

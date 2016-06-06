@@ -11,17 +11,17 @@ import Foundation
 import PasscodeLock
 import SWRevealViewController
 
-class SettingsViewController : UIViewController
+class SettingsViewController : DonoViewController
 {
-    var settings = Settings()
-    
     @IBOutlet weak var Open: UIBarButtonItem!
     
     @IBOutlet weak var rememberKey: UISwitch!
     
     @IBOutlet weak var passcodeLock: UISwitch!
-    
-    private let configuration: PasscodeLockConfigurationType
+
+    var settings = Settings()
+
+    let configuration: PasscodeLockConfigurationType
     
     init(configuration: PasscodeLockConfigurationType)
     {
@@ -45,8 +45,6 @@ class SettingsViewController : UIViewController
         //RevealVC Boilerplate
         self.Open.target = self.revealViewController()
         self.Open.action = #selector(SWRevealViewController.revealToggle(_:))
-        
-        self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
     }
     
     override func viewWillAppear(animated: Bool)
@@ -68,7 +66,6 @@ class SettingsViewController : UIViewController
         }
         else
         {
-            let key = PersistableKey()
             key.delete()
         }
     }

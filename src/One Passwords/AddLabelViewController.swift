@@ -11,14 +11,14 @@ import Foundation
 import SWRevealViewController
 import UIKit
 
-class AddLabelViewController : UIViewController
+class AddLabelViewController : DonoViewController
 {
-    var persistableLabels = PersistableLabels()
-    
     @IBOutlet weak var Open: UIBarButtonItem!
     
     @IBOutlet weak var newServiceTag: UITextField!
-    
+
+    var persistableLabels = PersistableLabels()
+
     override func viewDidLoad()
     {
         super.viewDidLoad()
@@ -30,8 +30,6 @@ class AddLabelViewController : UIViewController
         //RevealVC Boilerplate
         self.Open.target = self.revealViewController()
         self.Open.action = #selector(SWRevealViewController.revealToggle(_:))
-        
-        self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
     }
     
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?)
@@ -61,6 +59,6 @@ class AddLabelViewController : UIViewController
             }
         }
         
-        self.newServiceTag.text = ""
+        self.newServiceTag.text = String()
     }    
 }

@@ -15,12 +15,14 @@ class Settings
     func getRememberKeyValue() -> Bool
     {
         let defaults = NSUserDefaults.standardUserDefaults()
+
         return defaults.boolForKey(REMEMBER_KEY_KEY)
     }
     
     func setRememberKeyValue(value: Bool)
     {
         let defaults = NSUserDefaults.standardUserDefaults()
+
         defaults.setBool(value, forKey: REMEMBER_KEY_KEY)
     }    
 }

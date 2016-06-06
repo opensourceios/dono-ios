@@ -14,7 +14,7 @@
 		E618F7591C88F780004604F0 /* PersistableLabels.swift in Sources */ = {isa = PBXBuildFile; fileRef = E618F7511C88F780004604F0 /* PersistableLabels.swift */; };
 		E618F75B1C88F780004604F0 /* LabelsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E618F7531C88F780004604F0 /* LabelsViewController.swift */; };
 		E6492B791C90C97600BA77EA /* AddLabelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6492B781C90C97600BA77EA /* AddLabelViewController.swift */; };
-		E6A381F61CF4802F00EB71FE /* ViewControllerMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A381F51CF4802F00EB71FE /* ViewControllerMessages.swift */; };
+		E69326521D04BE4100FC0ECD /* DonoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69326511D04BE4100FC0ECD /* DonoViewController.swift */; };
 		E6B3CEBC1CDD0E320034A6EC /* BackTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B3CEBB1CDD0E320034A6EC /* BackTableVC.swift */; };
 		E6B3CEBE1CDE02B60034A6EC /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B3CEBD1CDE02B60034A6EC /* SettingsViewController.swift */; };
 		E6B3CEC21CDE06AD0034A6EC /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B3CEC11CDE06AD0034A6EC /* Settings.swift */; };
@@ -62,7 +62,7 @@
 		E618F7511C88F780004604F0 /* PersistableLabels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistableLabels.swift; sourceTree = "<group>"; };
 		E618F7531C88F780004604F0 /* LabelsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelsViewController.swift; sourceTree = "<group>"; };
 		E6492B781C90C97600BA77EA /* AddLabelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddLabelViewController.swift; sourceTree = "<group>"; };
-		E6A381F51CF4802F00EB71FE /* ViewControllerMessages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerMessages.swift; sourceTree = "<group>"; };
+		E69326511D04BE4100FC0ECD /* DonoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DonoViewController.swift; sourceTree = "<group>"; };
 		E6B3CEBB1CDD0E320034A6EC /* BackTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackTableVC.swift; sourceTree = "<group>"; };
 		E6B3CEBD1CDE02B60034A6EC /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		E6B3CEC11CDE06AD0034A6EC /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
@@ -138,7 +138,6 @@
 			isa = PBXGroup;
 			children = (
 				E618F74F1C88F780004604F0 /* Pasteboard.swift */,
-				E6A381F51CF4802F00EB71FE /* ViewControllerMessages.swift */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -151,6 +150,7 @@
 				E6EB4BB71C90B23E009EE7EF /* KeyViewController.swift */,
 				E6492B781C90C97600BA77EA /* AddLabelViewController.swift */,
 				E6B3CEBB1CDD0E320034A6EC /* BackTableVC.swift */,
+				E69326511D04BE4100FC0ECD /* DonoViewController.swift */,
 			);
 			name = VIewControllers;
 			sourceTree = "<group>";
@@ -192,13 +192,14 @@
 		E6CED9271C74DC1F00B7A642 /* Dono */ = {
 			isa = PBXGroup;
 			children = (
+				E6CED9341C74DC1F00B7A642 /* Info.plist */,
+				E6CED92F1C74DC1F00B7A642 /* Assets.xcassets */,
 				E63942921C8A2583001C87C1 /* Models */,
 				E63942911C8A2565001C87C1 /* VIewControllers */,
 				E639428F1C8A251D001C87C1 /* Utils */,
+				E6CED92C1C74DC1F00B7A642 /* Main.storyboard */,
+				E6CED9311C74DC1F00B7A642 /* LaunchScreen.storyboard */,
 				E6CED9281C74DC1F00B7A642 /* AppDelegate.swift */,
-				E6EFCF501C94742D00868B6B /* Storyboards */,
-				E6CED92F1C74DC1F00B7A642 /* Assets.xcassets */,
-				E6CED9341C74DC1F00B7A642 /* Info.plist */,
 			);
 			name = Dono;
 			path = "One Passwords";
@@ -224,15 +225,6 @@
 			path = "One PasswordsUITests";
 			sourceTree = "<group>";
 		};
-		E6EFCF501C94742D00868B6B /* Storyboards */ = {
-			isa = PBXGroup;
-			children = (
-				E6CED92C1C74DC1F00B7A642 /* Main.storyboard */,
-				E6CED9311C74DC1F00B7A642 /* LaunchScreen.storyboard */,
-			);
-			name = Storyboards;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -240,12 +232,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E6CED94D1C74DC1F00B7A642 /* Build configuration list for PBXNativeTarget "Dono" */;
 			buildPhases = (
-				778657397B8B4CFC8A7E7160 /* 📦 Check Pods Manifest.lock */,
+				778657397B8B4CFC8A7E7160 /* [CP] Check Pods Manifest.lock */,
 				E6CED9211C74DC1F00B7A642 /* Sources */,
 				E6CED9221C74DC1F00B7A642 /* Frameworks */,
 				E6CED9231C74DC1F00B7A642 /* Resources */,
-				17CDF381DEB088C03783803A /* 📦 Embed Pods Frameworks */,
-				6736FCBDE2256D4F0DEC9324 /* 📦 Copy Pods Resources */,
+				17CDF381DEB088C03783803A /* [CP] Embed Pods Frameworks */,
+				6736FCBDE2256D4F0DEC9324 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -260,12 +252,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E6CED9501C74DC1F00B7A642 /* Build configuration list for PBXNativeTarget "DonoTests" */;
 			buildPhases = (
-				DA1E7DCBBED15A68FAC84051 /* 📦 Check Pods Manifest.lock */,
+				DA1E7DCBBED15A68FAC84051 /* [CP] Check Pods Manifest.lock */,
 				E6CED9351C74DC1F00B7A642 /* Sources */,
 				E6CED9361C74DC1F00B7A642 /* Frameworks */,
 				E6CED9371C74DC1F00B7A642 /* Resources */,
-				4C68FCA226D75A9EB8DC2685 /* 📦 Embed Pods Frameworks */,
-				8590CF393AB90473178239A5 /* 📦 Copy Pods Resources */,
+				4C68FCA226D75A9EB8DC2685 /* [CP] Embed Pods Frameworks */,
+				8590CF393AB90473178239A5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -281,11 +273,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E6CED9531C74DC1F00B7A642 /* Build configuration list for PBXNativeTarget "DonoUITests" */;
 			buildPhases = (
-				33B06C27BE3861EAF2CD471A /* 📦 Check Pods Manifest.lock */,
+				33B06C27BE3861EAF2CD471A /* [CP] Check Pods Manifest.lock */,
 				E6CED9401C74DC1F00B7A642 /* Sources */,
 				E6CED9411C74DC1F00B7A642 /* Frameworks */,
 				E6CED9421C74DC1F00B7A642 /* Resources */,
-				3A04D7ED173ABFF6B1EF2CC3 /* 📦 Copy Pods Resources */,
+				3A04D7ED173ABFF6B1EF2CC3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -369,14 +361,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		17CDF381DEB088C03783803A /* 📦 Embed Pods Frameworks */ = {
+		17CDF381DEB088C03783803A /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -384,14 +376,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Dono/Pods-Dono-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		33B06C27BE3861EAF2CD471A /* 📦 Check Pods Manifest.lock */ = {
+		33B06C27BE3861EAF2CD471A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -399,14 +391,14 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		3A04D7ED173ABFF6B1EF2CC3 /* 📦 Copy Pods Resources */ = {
+		3A04D7ED173ABFF6B1EF2CC3 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -414,14 +406,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DonoUITests/Pods-DonoUITests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		4C68FCA226D75A9EB8DC2685 /* 📦 Embed Pods Frameworks */ = {
+		4C68FCA226D75A9EB8DC2685 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -429,14 +421,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DonoTests/Pods-DonoTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		6736FCBDE2256D4F0DEC9324 /* 📦 Copy Pods Resources */ = {
+		6736FCBDE2256D4F0DEC9324 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -444,14 +436,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Dono/Pods-Dono-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		778657397B8B4CFC8A7E7160 /* 📦 Check Pods Manifest.lock */ = {
+		778657397B8B4CFC8A7E7160 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -459,14 +451,14 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		8590CF393AB90473178239A5 /* 📦 Copy Pods Resources */ = {
+		8590CF393AB90473178239A5 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -474,14 +466,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DonoTests/Pods-DonoTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		DA1E7DCBBED15A68FAC84051 /* 📦 Check Pods Manifest.lock */ = {
+		DA1E7DCBBED15A68FAC84051 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -501,9 +493,9 @@
 				E6D157301CDE0F14000DD3A5 /* UserDefaultsPasscodeRepository.swift in Sources */,
 				E618F7581C88F780004604F0 /* PersistableKey.swift in Sources */,
 				E6B3CEBC1CDD0E320034A6EC /* BackTableVC.swift in Sources */,
-				E6A381F61CF4802F00EB71FE /* ViewControllerMessages.swift in Sources */,
 				E618F7571C88F780004604F0 /* Pasteboard.swift in Sources */,
 				E618F7591C88F780004604F0 /* PersistableLabels.swift in Sources */,
+				E69326521D04BE4100FC0ECD /* DonoViewController.swift in Sources */,
 				E6B3CEC21CDE06AD0034A6EC /* Settings.swift in Sources */,
 				E6B3CEBE1CDE02B60034A6EC /* SettingsViewController.swift in Sources */,
 				E6EB4BB81C90B23E009EE7EF /* KeyViewController.swift in Sources */,

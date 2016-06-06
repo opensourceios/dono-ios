@@ -12,14 +12,14 @@ import Foundation
 import SWRevealViewController
 import UIKit
 
-class KeyViewController : UIViewController
+class KeyViewController : DonoViewController
 {
-    var settings = Settings()
-    var persistableKey = PersistableKey()
-    
     @IBOutlet weak var keyTextField: UITextField!
     
     @IBOutlet weak var Open: UIBarButtonItem!
+
+    var settings = Settings()
+    var persistableKey = PersistableKey()
 
     override func viewDidLoad()
     {
@@ -29,9 +29,7 @@ class KeyViewController : UIViewController
         
         //RevealVC Boilerplate
         self.Open.target = self.revealViewController()
-        self.Open.action = #selector(SWRevealViewController.revealToggle(_:))
-        
-        self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+        self.Open.action = #selector(SWRevealViewController.revealToggle(_:))        
     }
     
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?)
@@ -60,7 +58,7 @@ class KeyViewController : UIViewController
     {
         let keyboardToolbar = UIToolbar()
         keyboardToolbar.sizeToFit()
-        keyboardToolbar.backgroundColor = DodoColor.fromHexString("#1976d2")
+        keyboardToolbar.backgroundColor = DonoViewController.DarkPrimaryColor
         self.keyTextField.inputAccessoryView = keyboardToolbar
     }
     

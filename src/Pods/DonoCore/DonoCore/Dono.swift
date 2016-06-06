@@ -12,7 +12,7 @@ import CryptoSwift
 public class Dono
 {
     public static var MIN_KEY_LENGTH = 17
-    
+
     private var rounds : [BigInt] =
         [
             BigInt("21688899074207999999999999999"),
@@ -37,30 +37,30 @@ public class Dono
             BigInt("27"),
             BigInt("0"),
             ]
-    
+
     private var EvaluatorCheat = "!A"
-    
+
     public init() { }
 
     public func computePassword(k: String, l: String) -> String
     {
         l.lowercaseString
         var s = "4a5e1e4baab89f3a32518a88c31bc87f618f76673e2cc77ab2127b7afdeda33b"
-        
+
         s = (k + l + s).sha256()
         var d = (k + l + s).sha256()
-        
+
         let rs = decideRounds(k)
-        
+
         for var i = BigInt(0); i < rs; i = i + BigInt(1)
         {
             s = (d + s).sha256()
             d = (d + s).sha256()
         }
-        
+
         return d + EvaluatorCheat
     }
-    
+
     private func decideRounds(k: String) -> BigInt
     {
         if (k.characters.count < rounds.count)
@@ -71,5 +71,5 @@ public class Dono
         {
             return rounds[rounds.count - 1]
         }
-    }    
+    }
 }

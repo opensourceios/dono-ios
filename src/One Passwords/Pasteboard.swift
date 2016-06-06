@@ -6,8 +6,6 @@
 //  Copyright © 2016 Panos Sakkos. All rights reserved.
 //
 
-import Foundation
-
 #if os(iOS)
   import UIKit
 #else
