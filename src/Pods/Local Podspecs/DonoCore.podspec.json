@@ -16,7 +16,7 @@
     "tag": "{s.version}"
   },
   "platforms": {
-    "ios": "9.0",
+    "ios": "8.0",
     "osx": "10.9"
   },
   "frameworks": "Foundation",

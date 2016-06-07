@@ -22,14 +22,14 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   DonoCore:
-    :commit: dcd41f7096b240e9b7afe80eb9186f59e9899762
+    :commit: 735044f1b418d9889b7b63a929a8b15c09dfa2a0
     :git: https://github.com/dono-app/dono-pod/
 
 SPEC CHECKSUMS:
   BigInt: 1ba4796c674f63a82132ea75cd2b4754608873ed
   CryptoSwift: 25b5aff3f260967391f8fff2e9abe4254d2c6fd5
   Dodo: 9c9a368ec6c869928429c691eecc926889882a2d
-  DonoCore: b37aa6aa1bbd6f58a16aacf6671ca13093781b63
+  DonoCore: bf68282ef363c49e67ffddb78e3e1bc59e9d38a1
   PasscodeLock: 4ae42c094224a01de3773fcd69ae33886394d959
   SwiftKeychainWrapper: 011a6946923948ffa49708014dd691164d7621d1
   SWRevealViewController: 6d3fd97f70112fd7cef9de14df4260eacce4c63a
