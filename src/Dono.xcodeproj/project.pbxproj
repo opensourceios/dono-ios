@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		76EBCDB4096C252FF1DAD961 /* Pods_DonoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B295025BFFE167C1C6FA3111 /* Pods_DonoUITests.framework */; };
 		800A2301B267EE4BCAFA7612 /* Pods_DonoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99466D8D38FDFDB8C990F5A7 /* Pods_DonoTests.framework */; };
+		E60618301D08A1250081B943 /* DonoPasscodeLockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E606182F1D08A1250081B943 /* DonoPasscodeLockViewController.swift */; };
+		E60618321D08A6A00081B943 /* PasscodeLockView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E60618311D08A6A00081B943 /* PasscodeLockView.xib */; };
+		E60618361D08B0780081B943 /* en.lproj in Resources */ = {isa = PBXBuildFile; fileRef = E60618351D08B0780081B943 /* en.lproj */; };
 		E618F7571C88F780004604F0 /* Pasteboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E618F74F1C88F780004604F0 /* Pasteboard.swift */; };
 		E618F7581C88F780004604F0 /* PersistableKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = E618F7501C88F780004604F0 /* PersistableKey.swift */; };
 		E618F7591C88F780004604F0 /* PersistableLabels.swift in Sources */ = {isa = PBXBuildFile; fileRef = E618F7511C88F780004604F0 /* PersistableLabels.swift */; };
@@ -57,6 +60,9 @@
 		99466D8D38FDFDB8C990F5A7 /* Pods_DonoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DonoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B295025BFFE167C1C6FA3111 /* Pods_DonoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DonoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3AE7F8069A51D892D2ACD71 /* Pods-Dono.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dono.release.xcconfig"; path = "Pods/Target Support Files/Pods-Dono/Pods-Dono.release.xcconfig"; sourceTree = "<group>"; };
+		E606182F1D08A1250081B943 /* DonoPasscodeLockViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DonoPasscodeLockViewController.swift; sourceTree = "<group>"; };
+		E60618311D08A6A00081B943 /* PasscodeLockView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PasscodeLockView.xib; sourceTree = "<group>"; };
+		E60618351D08B0780081B943 /* en.lproj */ = {isa = PBXFileReference; lastKnownFileType = folder; path = en.lproj; sourceTree = "<group>"; };
 		E618F74F1C88F780004604F0 /* Pasteboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pasteboard.swift; sourceTree = "<group>"; };
 		E618F7501C88F780004604F0 /* PersistableKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistableKey.swift; sourceTree = "<group>"; };
 		E618F7511C88F780004604F0 /* PersistableLabels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistableLabels.swift; sourceTree = "<group>"; };
@@ -134,6 +140,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		E606182E1D08A0EB0081B943 /* VIews */ = {
+			isa = PBXGroup;
+			children = (
+				E60618311D08A6A00081B943 /* PasscodeLockView.xib */,
+			);
+			name = VIews;
+			sourceTree = "<group>";
+		};
 		E639428F1C8A251D001C87C1 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -151,6 +165,7 @@
 				E6492B781C90C97600BA77EA /* AddLabelViewController.swift */,
 				E6B3CEBB1CDD0E320034A6EC /* BackTableVC.swift */,
 				E69326511D04BE4100FC0ECD /* DonoViewController.swift */,
+				E606182F1D08A1250081B943 /* DonoPasscodeLockViewController.swift */,
 			);
 			name = VIewControllers;
 			sourceTree = "<group>";
@@ -194,7 +209,9 @@
 			children = (
 				E6CED9341C74DC1F00B7A642 /* Info.plist */,
 				E6CED92F1C74DC1F00B7A642 /* Assets.xcassets */,
+				E60618351D08B0780081B943 /* en.lproj */,
 				E63942921C8A2583001C87C1 /* Models */,
+				E606182E1D08A0EB0081B943 /* VIews */,
 				E63942911C8A2565001C87C1 /* VIewControllers */,
 				E639428F1C8A251D001C87C1 /* Utils */,
 				E6CED92C1C74DC1F00B7A642 /* Main.storyboard */,
@@ -341,6 +358,8 @@
 				E6CED9331C74DC1F00B7A642 /* LaunchScreen.storyboard in Resources */,
 				E6CED9301C74DC1F00B7A642 /* Assets.xcassets in Resources */,
 				E6CED92E1C74DC1F00B7A642 /* Main.storyboard in Resources */,
+				E60618361D08B0780081B943 /* en.lproj in Resources */,
+				E60618321D08A6A00081B943 /* PasscodeLockView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -499,6 +518,7 @@
 				E6B3CEC21CDE06AD0034A6EC /* Settings.swift in Sources */,
 				E6B3CEBE1CDE02B60034A6EC /* SettingsViewController.swift in Sources */,
 				E6EB4BB81C90B23E009EE7EF /* KeyViewController.swift in Sources */,
+				E60618301D08A1250081B943 /* DonoPasscodeLockViewController.swift in Sources */,
 				E6D1572E1CDE0EF8000DD3A5 /* PasscodeLockConfiguration.swift in Sources */,
 				E6CED9291C74DC1F00B7A642 /* AppDelegate.swift in Sources */,
 			);
