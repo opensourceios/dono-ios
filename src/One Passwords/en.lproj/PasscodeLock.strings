@@ -24,7 +24,7 @@
 
 /* Passcode Mismatch State */
 "PasscodeLockMismatchTitle" = "Try again";
-"PasscodeLockMismatchDescription" = "Passcodes didn\'t match";
+"PasscodeLockMismatchDescription" = "Passcodes didn\'t match!";
 
 /* Touch ID Reason */
 "PasscodeLockTouchIDReason" = "Let's make sure that's you";

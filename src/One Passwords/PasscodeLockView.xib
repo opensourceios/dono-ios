@@ -377,20 +377,20 @@
                         <action selector="passcodeSignButtonTap:" destination="-1" eventType="touchUpInside" id="lGc-z4-PyQ"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="etg-x7-Mx1">
-                    <rect key="frame" x="202" y="447" width="56" height="26"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="etg-x7-Mx1">
+                    <rect key="frame" x="206" y="436" width="48" height="48"/>
                     <inset key="contentEdgeInsets" minX="4" minY="4" maxX="4" maxY="4"/>
-                    <state key="normal" title="Cancel">
+                    <state key="normal" image="close-circle">
                         <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
                     <connections>
                         <action selector="cancelButtonTap:" destination="-1" eventType="touchUpInside" id="zLU-i4-B3I"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H78-kl-y6L">
-                    <rect key="frame" x="344" y="447" width="53" height="26"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H78-kl-y6L">
+                    <rect key="frame" x="346" y="436" width="48" height="48"/>
                     <inset key="contentEdgeInsets" minX="4" minY="4" maxX="4" maxY="4"/>
-                    <state key="normal" title="Delete">
+                    <state key="normal" image="backspace">
                         <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
                     <state key="disabled">
@@ -400,10 +400,10 @@
                         <action selector="deleteSignButtonTap:" destination="-1" eventType="touchUpInside" id="uXY-lj-GdX"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Ph-dj-v7R" userLabel="TouchID Button">
-                    <rect key="frame" x="252" y="558" width="96" height="26"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Ph-dj-v7R" userLabel="TouchID Button">
+                    <rect key="frame" x="276" y="536" width="48" height="48"/>
                     <inset key="contentEdgeInsets" minX="4" minY="4" maxX="4" maxY="4"/>
-                    <state key="normal" title="Use TouchID">
+                    <state key="normal" image="fingerprint">
                         <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
                     <connections>
@@ -550,4 +550,9 @@
             <point key="canvasLocation" x="191" y="485"/>
         </view>
     </objects>
+    <resources>
+        <image name="backspace" width="40" height="40"/>
+        <image name="close-circle" width="40" height="40"/>
+        <image name="fingerprint" width="40" height="40"/>
+    </resources>
 </document>
