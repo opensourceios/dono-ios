@@ -49,49 +49,6 @@ class KeyViewController : DonoViewController
         self.addRevealButton()
     }
     
-    func updateKeyInView()
-    {
-        self.keyTextField.text = self.persistableKey.getKey()
-    }
-    
-    func addKeyboardToolbar()
-    {
-        let keyboardToolbar = UIToolbar()
-        keyboardToolbar.sizeToFit()
-        keyboardToolbar.backgroundColor = DonoViewController.DarkPrimaryColor
-        self.keyTextField.inputAccessoryView = keyboardToolbar
-    }
-    
-    func addRevealButton()
-    {
-        let flexBarButton = UIBarButtonItem(barButtonSystemItem: .FlexibleSpace, target: nil, action: nil)
-        let doneBarButton = UIBarButtonItem(image: UIImage(named: "eye"), style: .Done, target: self, action: #selector(KeyViewController.hideShowKey(_:)))
-        
-        (self.keyTextField.inputAccessoryView as! UIToolbar).items = [flexBarButton, doneBarButton]
-    }
-    
-    func addHideButton()
-    {
-        let flexBarButton = UIBarButtonItem(barButtonSystemItem: .FlexibleSpace, target: nil, action: nil)
-        let doneBarButton = UIBarButtonItem(image: UIImage(named: "eye-off"), style: .Done, target: self, action: #selector(KeyViewController.hideShowKey(_:)))
-        
-        (self.keyTextField.inputAccessoryView as! UIToolbar).items = [flexBarButton, doneBarButton]
-    }
-    
-    @IBAction func hideShowKey(barButtonItem: UIBarButtonItem)
-    {
-        self.keyTextField.secureTextEntry = !self.keyTextField.secureTextEntry
-        
-        if (self.keyTextField.secureTextEntry)
-        {
-            self.addRevealButton()
-        }
-        else
-        {
-            self.addHideButton()
-        }
-    }
-    
     @IBAction func SaveKey(sender: AnyObject)
     {
         let key = self.keyTextField.text!
@@ -113,5 +70,59 @@ class KeyViewController : DonoViewController
         self.persistableKey.setkey(key, remember: self.settings.getRememberKeyValue())
 
         self.showAlert("Your Key was updated!")
+    }
+    
+    private func updateKeyInView()
+    {
+        self.keyTextField.text = self.persistableKey.getKey()
+    }
+    
+    private func addKeyboardToolbar()
+    {
+        let keyboardToolbar = UIToolbar()
+        keyboardToolbar.sizeToFit()
+        keyboardToolbar.translucent = false
+        keyboardToolbar.backgroundColor = UIColor.clearColor()
+        keyboardToolbar.barTintColor = DonoViewController.PrimaryColor
+        
+        self.keyTextField.inputAccessoryView = keyboardToolbar
+    }
+    
+    private func addRevealButton()
+    {
+        let flexBarButton = UIBarButtonItem(barButtonSystemItem: .FlexibleSpace, target: nil, action: nil)
+
+        var revealImage = UIImage(named: "eye")
+        revealImage = revealImage?.imageWithRenderingMode(.AlwaysOriginal)
+        
+        let revealKeyButton = UIBarButtonItem(image: revealImage, style: .Plain, target: self, action: #selector(KeyViewController.hideShowKey(_:)))
+        
+        (self.keyTextField.inputAccessoryView as! UIToolbar).items = [flexBarButton, revealKeyButton]
+    }
+    
+    private func addHideButton()
+    {
+        let flexBarButton = UIBarButtonItem(barButtonSystemItem: .FlexibleSpace, target: nil, action: nil)
+
+        var hideImage = UIImage(named: "eye-off")
+        hideImage = hideImage?.imageWithRenderingMode(.AlwaysOriginal)
+        
+        let hideKeyButton = UIBarButtonItem(image: hideImage, style: .Done, target: self, action: #selector(KeyViewController.hideShowKey(_:)))
+        
+        (self.keyTextField.inputAccessoryView as! UIToolbar).items = [flexBarButton, hideKeyButton]
+    }
+    
+    @IBAction func hideShowKey(barButtonItem: UIBarButtonItem)
+    {
+        self.keyTextField.secureTextEntry = !self.keyTextField.secureTextEntry
+        
+        if (self.keyTextField.secureTextEntry)
+        {
+            self.addRevealButton()
+        }
+        else
+        {
+            self.addHideButton()
+        }
     }
 }
