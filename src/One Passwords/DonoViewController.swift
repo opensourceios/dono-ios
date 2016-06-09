@@ -8,8 +8,9 @@
 
 import Dodo
 import UIKit
+import SWRevealViewController
 
-class DonoViewController : UIViewController
+class DonoViewController : UIViewController, SWRevealViewControllerDelegate
 {
     static var DarkPrimaryColor = DodoColor.fromHexString("#1976d2")
     
@@ -27,6 +28,14 @@ class DonoViewController : UIViewController
 
         // Setup swipe right gesture to open menu
         self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+        
+        // Hide keyboard when the menu appears
+        revealViewController().delegate = self
+    }
+    
+    func revealController(revealController: SWRevealViewController!, willMoveToPosition position: FrontViewPosition)
+    {
+        self.view.endEditing(true)
     }
 }
 
