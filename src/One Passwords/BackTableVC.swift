@@ -9,13 +9,18 @@
 import Dodo
 import Foundation
 
-class BackTableVC : UITableViewController
+class BackTableViewController : UITableViewController
 {
+    private static let LabelsMenuItem = "Labels"
+    private static let AddLabelMenuItem = "Add Label"
+    private static let KeyMenuItem = "Key"
+    private static let SettingsMenuItem = "Settings"
+    
     var TableArray  = [String]()
     
     override func viewDidLoad()
     {
-        TableArray = ["Labels", "Add Label", "Key", "Settings"]
+        TableArray = [BackTableViewController.LabelsMenuItem, BackTableViewController.AddLabelMenuItem, BackTableViewController.KeyMenuItem, BackTableViewController.SettingsMenuItem]
 
         self.tableView.tableFooterView = UIView(frame: CGRectZero)
     }
@@ -33,7 +38,7 @@ class BackTableVC : UITableViewController
         
         // Set color when cell is tapped
         let selectedBackgroundViewForCell = UIView()
-        selectedBackgroundViewForCell.backgroundColor = DodoColor.fromHexString("#1976d2")
+        selectedBackgroundViewForCell.backgroundColor = DonoViewController.DarkPrimaryColor
         cell.selectedBackgroundView = selectedBackgroundViewForCell;
         
         return cell
@@ -51,27 +56,27 @@ class BackTableVC : UITableViewController
         navigationController.pushViewController(destinationViewController, animated: true)
     }
     
-    func getViewControllerFromMenu(menuItem: String) -> String
+    private func getViewControllerFromMenu(menuItem: String) -> String
     {
-        if (menuItem == "Labels")
+        if (menuItem == BackTableViewController.LabelsMenuItem)
         {
             return "LabelsViewController"
         }
-        else if (menuItem == "Add Label")
+        else if (menuItem == BackTableViewController.AddLabelMenuItem)
         {
             return "AddLabelViewController"
         }
-        else if (menuItem == "Key")
+        else if (menuItem == BackTableViewController.KeyMenuItem)
         {
             return "KeyViewController"
         }
-        else if (menuItem == "Settings")
+        else if (menuItem == BackTableViewController.SettingsMenuItem)
         {
             return "SettingsViewController"
         }
         else
         {
-            return ""
+            return String()
         }
     }
 }

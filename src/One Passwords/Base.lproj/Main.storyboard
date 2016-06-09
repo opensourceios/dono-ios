@@ -309,10 +309,10 @@
             </objects>
             <point key="canvasLocation" x="-1617" y="1901"/>
         </scene>
-        <!--Back TableVC-->
+        <!--Back Table View Controller-->
         <scene sceneID="kxC-tI-v6M">
             <objects>
-                <tableViewController id="PbW-cB-xVW" customClass="BackTableVC" customModule="Dono" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="PbW-cB-xVW" customClass="BackTableViewController" customModule="Dono" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="48" sectionHeaderHeight="28" sectionFooterHeight="28" id="OZE-zI-fpE">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
