@@ -6,8 +6,8 @@
 //  Copyright © 2016 Panos Sakkos. All rights reserved.
 //
 
-import Foundation
 import Dodo
+import Foundation
 
 class BackTableVC : UITableViewController
 {
@@ -18,8 +18,7 @@ class BackTableVC : UITableViewController
         TableArray = ["Labels", "Add Label", "Key", "Settings"]
 
         self.tableView.tableFooterView = UIView(frame: CGRectZero)
-        UIApplication.sharedApplication().statusBarHidden = true
-}
+    }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {

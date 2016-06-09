@@ -26,13 +26,27 @@ class AppDelegate: UIResponder, UIApplicationDelegate
         return presenter
     }
     
-    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        
+    func application(application: UIApplication, willFinishLaunchingWithOptions launchOptions: [NSObject : AnyObject]?) -> Bool
+    {
+        self.colorStatusBar(application)
+
         NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(passcodeFail(_:)), name: PasscodeLockIncorrectPasscodeNotification, object: nil)
+        
+        return true
+    }
+    
+    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool
+    {
         
         self.passcodeLockPresenter.presentPasscodeLock()
         
         return true
+    }
+    
+    func colorStatusBar(application: UIApplication)
+    {
+        self.setStatusBarBackgroundColor(DonoViewController.DarkPrimaryColor)
+        application.setStatusBarStyle(.LightContent, animated: false)
     }
     
     func applicationWillResignActive(application: UIApplication)
@@ -66,15 +80,29 @@ class AppDelegate: UIResponder, UIApplicationDelegate
     
     func passcodeFail(notification: NSNotification)
     {
-        // Destroy sensitive data
-        PersistableKey().delete()
-        PasscodeLockConfiguration().repository.deletePasscode()
+        self.destroySensitiveData()
         
         self.passcodeLockPresenter.dismissPasscodeLock()
-    
+        
         ((self.window?.rootViewController)! as UIViewController).showError("Passcode was entered wrong 3 times. Your Key and your Passcode Pin were deleted")
         
         self.passcodeLockPresenter = self.initializePasscodeLockPresenter()
+    }
+    
+    private func setStatusBarBackgroundColor(color: UIColor)
+    {
+        
+        guard  let statusBar = UIApplication.sharedApplication().valueForKey("statusBarWindow")?.valueForKey("statusBar") as? UIView else {
+            return
+        }
+        
+        statusBar.backgroundColor = color
+    }
+
+    private func destroySensitiveData()
+    {
+        PersistableKey().delete()
+        PasscodeLockConfiguration().repository.deletePasscode()
     }
 }
 
