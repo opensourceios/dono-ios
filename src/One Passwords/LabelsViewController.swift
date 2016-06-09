@@ -163,6 +163,8 @@ class LabelsViewController: DonoViewController, UITableViewDataSource, UITableVi
             controller.searchBar.layer.borderWidth = 1
             controller.searchBar.layer.borderColor = DonoViewController.PrimaryColor.CGColor
             
+            controller.searchBar.placeholder = "Search you Labels"
+            
             self.labelsTableView.tableHeaderView = controller.searchBar
             
             // Remove black line from Navigation Bar

@@ -5,7 +5,7 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Your labels-->
+        <!--Your Labels-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController storyboardIdentifier="LabelsViewController" extendedLayoutIncludesOpaqueBars="YES" automaticallyAdjustsScrollViewInsets="NO" id="BYZ-38-t0r" customClass="LabelsViewController" customModule="Dono" customModuleProvider="target" sceneMemberID="viewController">
@@ -72,7 +72,7 @@
                             <constraint firstAttribute="trailingMargin" secondItem="GOM-4X-zcA" secondAttribute="trailing" constant="-20" id="sKv-9i-Ocx"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Your labels" id="3xv-Ma-tsj">
+                    <navigationItem key="navigationItem" title="Your Labels" id="3xv-Ma-tsj">
                         <barButtonItem key="leftBarButtonItem" image="menu" id="LZ9-Rv-Ru8"/>
                     </navigationItem>
                     <connections>
