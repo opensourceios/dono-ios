@@ -163,7 +163,7 @@ class LabelsViewController: DonoViewController, UITableViewDataSource, UITableVi
             controller.searchBar.layer.borderWidth = 1
             controller.searchBar.layer.borderColor = DonoViewController.PrimaryColor.CGColor
             
-            controller.searchBar.placeholder = "Search you Labels"
+            controller.searchBar.placeholder = "Search your Labels"
             
             self.labelsTableView.tableHeaderView = controller.searchBar
             
