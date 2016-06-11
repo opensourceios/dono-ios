@@ -15,33 +15,37 @@ class AddLabelViewController : DonoViewController
 {
     @IBOutlet weak var newLabelTextField: UITextField!
 
-    var persistableLabels = PersistableLabels()
-
     override func viewDidLoad()
     {
         super.viewDidLoad()
         
         self.persistableLabels.getAll()
         
-        self.newLabelTextField.becomeFirstResponder();        
+        self.newLabelTextField.becomeFirstResponder()
+
+        self.createKeyboardToolbar()
     }
     
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?)
     {
         super.touchesBegan(touches, withEvent: event)
         
+        self.newLabelTextField.text = String()
+        
         self.view.endEditing(true)
     }
 
-    @IBAction func AddServiceTag(sender: AnyObject)
+    @IBAction func addLabel(sender: AnyObject)
     {
+        self.view.endEditing(true)
+        
         var newLabelTextField = self.newLabelTextField.text!
         
         newLabelTextField = self.persistableLabels.add(newLabelTextField)
         
         if (!newLabelTextField.isEmpty)
         {
-            showAlert(newLabelTextField + " was added to your Labels!")
+            self.showAlert(newLabelTextField + " was added to your Labels!")
         }
         else
         {
@@ -49,10 +53,24 @@ class AddLabelViewController : DonoViewController
 
             if (!canonicalLabel.isEmpty)
             {
-                showError(canonicalLabel + " is already added to your Labels")
+                self.showError(canonicalLabel + " is already added to your Labels")
             }
         }
         
         self.newLabelTextField.text = String()
-    }    
+    }
+    
+    private func createKeyboardToolbar()
+    {
+        self.newLabelTextField.inputAccessoryView = self.donoViewFactory.makeKeyboardToolbar()
+        
+        let flexBarButton = self.donoViewFactory.makeFlexBarButton()
+        
+        let addButton = self.donoViewFactory.makeKeyboardToolbarButton(
+            DonoViewController.PlusImage!,
+            target: self,
+            action: #selector(AddLabelViewController.addLabel(_:)))
+        
+        (self.newLabelTextField.inputAccessoryView as! UIToolbar).items = [flexBarButton, addButton]
+    }
 }

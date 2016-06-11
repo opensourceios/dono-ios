@@ -18,8 +18,6 @@ class LabelsViewController: DonoViewController, UITableViewDataSource, UITableVi
     
     @IBOutlet weak var labelsTableView: UITableView!
     
-    var persistableKey = PersistableKey()
-    var persistableLabels = PersistableLabels()
     var dono = Dono()
     
     // TableView Search

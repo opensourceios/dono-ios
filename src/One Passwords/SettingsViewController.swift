@@ -13,12 +13,10 @@ import SWRevealViewController
 
 class SettingsViewController : DonoViewController
 {
+    @IBOutlet weak var passcodeLock: UISwitch!
+    
     @IBOutlet weak var rememberKey: UISwitch!
     
-    @IBOutlet weak var passcodeLock: UISwitch!
-
-    var settings = Settings()
-
     let configuration: PasscodeLockConfigurationType
     
     init(configuration: PasscodeLockConfigurationType)

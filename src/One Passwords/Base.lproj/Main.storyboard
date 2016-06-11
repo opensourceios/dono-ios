@@ -186,10 +186,6 @@
                                 <variation key="heightClass=compact-widthClass=compact" ambiguous="YES" misplaced="YES">
                                     <rect key="frame" x="20" y="224" width="280" height="30"/>
                                 </variation>
-                                <connections>
-                                    <action selector="AddServiceTag:" destination="NPX-yU-qiu" eventType="editingDidEndOnExit" id="PlJ-ku-fEB"/>
-                                    <action selector="AddServiceTag:" destination="NPX-yU-qiu" eventType="editingDidEnd" id="xXh-p0-u6r"/>
-                                </connections>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

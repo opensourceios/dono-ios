@@ -15,42 +15,32 @@ import UIKit
 class KeyViewController : DonoViewController
 {
     @IBOutlet weak var keyTextField: UITextField!
-    
-    var settings = Settings()
-    
-    var persistableKey = PersistableKey()
-    
-    var donoViewFactory = DonoViewFactory()
-
+        
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        
-        self.keyTextField.becomeFirstResponder()        
-    }
-    
-    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?)
-    {
-        super.touchesBegan(touches, withEvent: event)
-        
-        self.keyTextField.secureTextEntry = true
-
-        self.addRevealButton()
-        
-        self.updateKeyTextField()
-        
-        self.view.endEditing(true)
     }
     
     override func viewWillAppear(animated: Bool)
     {
         super.viewWillAppear(animated)
-
+        
         self.updateKeyTextField()
         
-        self.keyTextField.inputAccessoryView = self.donoViewFactory.makeKeyboardToolbar()
+        self.keyTextField.becomeFirstResponder()
+        
+        self.createKeyboardToolbar()
+    }
 
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?)
+    {
+        super.touchesBegan(touches, withEvent: event)
+        
+        self.updateKeyTextField()
+        
         self.addRevealButton()
+
+        self.view.endEditing(true)
     }
     
     @IBAction func saveKey(sender: AnyObject)
@@ -94,7 +84,15 @@ class KeyViewController : DonoViewController
     
     private func updateKeyTextField()
     {
+        self.keyTextField.secureTextEntry = true
         self.keyTextField.text = self.persistableKey.getKey()
+    }
+    
+    private func createKeyboardToolbar()
+    {
+        self.keyTextField.inputAccessoryView = self.donoViewFactory.makeKeyboardToolbar()
+        
+        self.addRevealButton()
     }
     
     // TODO: Don't recreate all the buttons

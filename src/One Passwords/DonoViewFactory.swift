@@ -10,6 +10,18 @@ import UIKit
 
 class DonoViewFactory
 {
+    internal func makeFlexBarButton() -> UIBarButtonItem
+    {
+        return UIBarButtonItem(barButtonSystemItem: .FlexibleSpace, target: nil, action: nil)
+    }
+    
+    internal func makeKeyboardToolbarButton(image: UIImage, target: AnyObject?, action: Selector) -> UIBarButtonItem
+    {
+        let img = image.imageWithRenderingMode(.AlwaysOriginal)
+        
+        return UIBarButtonItem(image: img, style: .Plain, target: target, action: action)
+    }
+
     internal func makeKeyboardToolbar() -> UIToolbar
     {
         let keyboardToolbar = UIToolbar()
@@ -20,17 +32,5 @@ class DonoViewFactory
         keyboardToolbar.barTintColor = DonoViewController.PrimaryColor
 
         return keyboardToolbar
-    }
-    
-    internal func makeFlexBarButton() -> UIBarButtonItem
-    {
-        return UIBarButtonItem(barButtonSystemItem: .FlexibleSpace, target: nil, action: nil)
-    }
-    
-    internal func makeKeyboardToolbarButton(var image: UIImage, target: AnyObject?, action: Selector) -> UIBarButtonItem
-    {
-        image = image.imageWithRenderingMode(.AlwaysOriginal)
-        
-        return UIBarButtonItem(image: image, style: .Plain, target: target, action: action)
     }
 }

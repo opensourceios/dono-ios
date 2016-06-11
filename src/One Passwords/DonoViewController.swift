@@ -32,25 +32,30 @@ class DonoViewController : UIViewController, SWRevealViewControllerDelegate
 
     static var CheckCircleImage = UIImage(named: "check-circle")
 
+    static var PlusImage = UIImage(named: "plus")
+
+    // Outlets
     @IBOutlet weak var Open: UIBarButtonItem!
+    
+    // Dono classes
+    var settings = Settings()
+    
+    var persistableKey = PersistableKey()
+
+    var persistableLabels = PersistableLabels()
+
+    var donoViewFactory = DonoViewFactory()
     
     override func viewDidLoad()
     {
         super.viewDidLoad()
 
-        //RevealVC Boilerplate
-        self.Open.target = self.revealViewController()
-        self.Open.action = #selector(SWRevealViewController.revealToggle(_:))
-
-        // Setup swipe right gesture to open menu
-        self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
-        
-        // Hide keyboard when the menu appears
-        revealViewController().delegate = self
+        self.createRevealViewController()
     }
     
     func revealController(revealController: SWRevealViewController!, willMoveToPosition position: FrontViewPosition)
     {
+        // Hide Keyboard when Reveal View opens
         self.view.endEditing(true)
     }
     
@@ -64,6 +69,19 @@ class DonoViewController : UIViewController, SWRevealViewControllerDelegate
     {
         let pasteboard = UIPasteboard.generalPasteboard()
         pasteboard.string = text
+    }
+    
+    private func createRevealViewController()
+    {
+        //RevealVC Boilerplate
+        self.Open.target = self.revealViewController()
+        self.Open.action = #selector(SWRevealViewController.revealToggle(_:))
+        
+        // Setup swipe right gesture to open menu
+        self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+        
+        // Hide keyboard when the menu appears
+        revealViewController().delegate = self
     }
 }
 
