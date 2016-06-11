@@ -19,7 +19,7 @@ class DonoViewController : UIViewController, SWRevealViewControllerDelegate
     
     static var AccentColor = DodoColor.fromHexString("#03a9f4")
     
-    static var SecondaryText = DodoColor.fromHexString("#E3E3E3")
+    static var SecondaryText = DodoColor.fromHexString("#e3e3e3")
 
     static var Red = DodoColor.fromHexString("#f44336")
 

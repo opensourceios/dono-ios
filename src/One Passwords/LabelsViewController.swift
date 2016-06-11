@@ -101,7 +101,6 @@ class LabelsViewController: DonoViewController, UITableViewDataSource, UITableVi
         // setup
         cell!.separatorInset = UIEdgeInsetsZero
         cell!.layoutMargins = UIEdgeInsetsZero
-        cell!.selectionStyle = .None
         cell!.defaultColor = DonoViewController.PrimaryColor
         cell!.firstTrigger = 0.2;
 
