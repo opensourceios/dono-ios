@@ -29,10 +29,18 @@ class DonoViewController : UIViewController, SWRevealViewControllerDelegate
     static var EyeImage = UIImage(named: "eye")
     
     static var EyeOffImage = UIImage(named: "eye-off")
+
+    static var CheckCircleImage = UIImage(named: "check-circle")
+
+    @IBOutlet weak var Open: UIBarButtonItem!
     
     override func viewDidLoad()
     {
         super.viewDidLoad()
+
+        //RevealVC Boilerplate
+        self.Open.target = self.revealViewController()
+        self.Open.action = #selector(SWRevealViewController.revealToggle(_:))
 
         // Setup swipe right gesture to open menu
         self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
@@ -44,6 +52,18 @@ class DonoViewController : UIViewController, SWRevealViewControllerDelegate
     func revealController(revealController: SWRevealViewController!, willMoveToPosition position: FrontViewPosition)
     {
         self.view.endEditing(true)
+    }
+    
+    func getPasteboardContents() -> String?
+    {
+        let pasteboard = UIPasteboard.generalPasteboard()
+        return pasteboard.string
+    }
+    
+    func copyToPasteboard(text: String)
+    {
+        let pasteboard = UIPasteboard.generalPasteboard()
+        pasteboard.string = text
     }
 }
 

@@ -13,8 +13,6 @@ import UIKit
 
 class AddLabelViewController : DonoViewController
 {
-    @IBOutlet weak var Open: UIBarButtonItem!
-    
     @IBOutlet weak var newLabelTextField: UITextField!
 
     var persistableLabels = PersistableLabels()
@@ -25,11 +23,7 @@ class AddLabelViewController : DonoViewController
         
         self.persistableLabels.getAll()
         
-        self.newLabelTextField.becomeFirstResponder();
-        
-        //RevealVC Boilerplate
-        self.Open.target = self.revealViewController()
-        self.Open.action = #selector(SWRevealViewController.revealToggle(_:))
+        self.newLabelTextField.becomeFirstResponder();        
     }
     
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?)

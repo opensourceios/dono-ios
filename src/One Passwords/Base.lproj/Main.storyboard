@@ -76,7 +76,7 @@
                         <barButtonItem key="leftBarButtonItem" image="menu" id="LZ9-Rv-Ru8"/>
                     </navigationItem>
                     <connections>
-                        <outlet property="Open" destination="LZ9-Rv-Ru8" id="eb9-6P-KSr"/>
+                        <outlet property="Open" destination="LZ9-Rv-Ru8" id="CxW-uG-sFS"/>
                         <outlet property="labelsTableView" destination="GOM-4X-zcA" id="Fkc-bn-qn3"/>
                         <outlet property="lonelyLabel" destination="GOM-4X-zcA" id="D5h-Jh-zy9"/>
                     </connections>
@@ -154,7 +154,7 @@
                         <barButtonItem key="leftBarButtonItem" image="menu" id="mXd-Gn-DBp"/>
                     </navigationItem>
                     <connections>
-                        <outlet property="Open" destination="mXd-Gn-DBp" id="X7g-sv-Yit"/>
+                        <outlet property="Open" destination="mXd-Gn-DBp" id="ahF-rh-HOq"/>
                         <outlet property="passcodeLock" destination="M6F-tu-RrY" id="ir1-ve-eBl"/>
                         <outlet property="rememberKey" destination="JI0-58-21W" id="mzQ-to-C0L"/>
                     </connections>
@@ -202,7 +202,7 @@
                         <barButtonItem key="leftBarButtonItem" image="menu" id="JLq-mQ-hMZ"/>
                     </navigationItem>
                     <connections>
-                        <outlet property="Open" destination="JLq-mQ-hMZ" id="Ke8-qi-LAV"/>
+                        <outlet property="Open" destination="JLq-mQ-hMZ" id="qay-Q6-fJe"/>
                         <outlet property="newLabelTextField" destination="0JE-48-Q6D" id="8wQ-dF-knZ"/>
                     </connections>
                 </viewController>
@@ -234,10 +234,6 @@
                                 <variation key="heightClass=compact-widthClass=regular" ambiguous="YES" misplaced="YES">
                                     <rect key="frame" x="97" y="-61" width="473" height="30"/>
                                 </variation>
-                                <connections>
-                                    <action selector="SaveKey:" destination="Vcu-fU-m0z" eventType="editingDidEnd" id="5Sg-aF-5cT"/>
-                                    <action selector="SaveKey:" destination="Vcu-fU-m0z" eventType="editingDidEndOnExit" id="FDR-hz-Toa"/>
-                                </connections>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -250,7 +246,7 @@
                         <barButtonItem key="leftBarButtonItem" image="menu" id="cUy-CT-6pu"/>
                     </navigationItem>
                     <connections>
-                        <outlet property="Open" destination="cUy-CT-6pu" id="97g-lK-ezD"/>
+                        <outlet property="Open" destination="cUy-CT-6pu" id="6f1-ST-OxM"/>
                         <outlet property="keyTextField" destination="r8Z-ph-h5u" id="EOi-UI-wGJ"/>
                     </connections>
                 </viewController>

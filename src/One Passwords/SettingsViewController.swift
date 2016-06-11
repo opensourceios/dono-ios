@@ -13,8 +13,6 @@ import SWRevealViewController
 
 class SettingsViewController : DonoViewController
 {
-    @IBOutlet weak var Open: UIBarButtonItem!
-    
     @IBOutlet weak var rememberKey: UISwitch!
     
     @IBOutlet weak var passcodeLock: UISwitch!
@@ -37,16 +35,7 @@ class SettingsViewController : DonoViewController
         
         super.init(coder: aDecoder)
     }
-    
-    override func viewDidLoad()
-    {
-        super.viewDidLoad()
         
-        //RevealVC Boilerplate
-        self.Open.target = self.revealViewController()
-        self.Open.action = #selector(SWRevealViewController.revealToggle(_:))
-    }
-    
     override func viewWillAppear(animated: Bool)
     {
         super.viewWillAppear(animated)
@@ -54,6 +43,34 @@ class SettingsViewController : DonoViewController
         self.updateViewWithSettings()
     }
     
+    @IBAction func passcodeLockValueChanged(sender: AnyObject)
+    {
+        let passcodeVC: PasscodeLockViewController
+        
+        if (self.passcodeLock.on)
+        {
+            passcodeVC = PasscodeLockViewController(state: .SetPasscode, configuration: configuration)
+            
+            passcodeVC.successCallback = { lock in
+                
+                self.updateViewWithSettings()
+            }
+        }
+        else
+        {
+            passcodeVC = PasscodeLockViewController(state: .RemovePasscode, configuration: configuration)
+            
+            passcodeVC.successCallback = { lock in
+                
+                lock.repository.deletePasscode()
+                
+                self.updateViewWithSettings()
+            }
+        }
+        
+        presentViewController(passcodeVC, animated: true, completion: { self.updateViewWithSettings() } )
+    }
+
     @IBAction func rememberKeyValueChanged(sender: AnyObject)
     {
         self.settings.setRememberKeyValue(self.rememberKey.on)
@@ -70,35 +87,7 @@ class SettingsViewController : DonoViewController
         }
     }
     
-    @IBAction func passcodeLockValueChanged(sender: AnyObject)
-    {
-        let passcodeVC: PasscodeLockViewController
-        
-        if (self.passcodeLock.on)
-        {
-            passcodeVC = PasscodeLockViewController(state: .SetPasscode, configuration: configuration)
-
-            passcodeVC.successCallback = { lock in
-                
-                self.updateViewWithSettings()
-            }
-        }
-        else
-        {
-            passcodeVC = PasscodeLockViewController(state: .RemovePasscode, configuration: configuration)
-            
-            passcodeVC.successCallback = { lock in
-                
-                lock.repository.deletePasscode()
-
-                self.updateViewWithSettings()
-            }
-        }
-        
-        presentViewController(passcodeVC, animated: true, completion: { self.updateViewWithSettings() } )
-    }
-    
-    func updateViewWithSettings()
+    private func updateViewWithSettings()
     {
         self.rememberKey.on = self.settings.getRememberKeyValue()
         self.passcodeLock.on = self.configuration.repository.hasPasscode

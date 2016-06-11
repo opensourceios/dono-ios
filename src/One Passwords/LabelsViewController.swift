@@ -14,8 +14,6 @@ import UIKit
 
 class LabelsViewController: DonoViewController, UITableViewDataSource, UITableViewDelegate, UITextFieldDelegate, UISearchResultsUpdating
 {
-    @IBOutlet weak var Open: UIBarButtonItem!
-        
     @IBOutlet weak var lonelyLabel: UITableView!
     
     @IBOutlet weak var labelsTableView: UITableView!
@@ -34,10 +32,6 @@ class LabelsViewController: DonoViewController, UITableViewDataSource, UITableVi
         
         self.persistableLabels.getAll()
         self.setupTableView()
-        
-        //RevealVC Boilerplate
-        self.Open.target = self.revealViewController()
-        self.Open.action = #selector(SWRevealViewController.revealToggle(_:))        
     }
     
     override func viewWillAppear(animated: Bool)
