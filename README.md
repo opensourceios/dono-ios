@@ -4,6 +4,7 @@
 
 * [Dodo](https://github.com/marketplacer/Dodo)
 * [DonoCore](https://github.com/dono-app/dono-pod/)
+* [IQKeyboardManagerSwift](https://github.com/hackiftekhar/IQKeyboardManager)
 * [Material Design Icons](https://github.com/Templarian/MaterialDesign)
 * [MCSwipeTableViewCell](https://github.com/alikaragoz/MCSwipeTableViewCell)
 * [SwiftKeychainWrapper](https://github.com/jrendel/SwiftKeychainWrapper)

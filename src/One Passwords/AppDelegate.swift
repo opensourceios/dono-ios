@@ -6,6 +6,7 @@
 //  Copyright © 2016 Panos Sakkos. All rights reserved.
 //
 
+import IQKeyboardManagerSwift
 import PasscodeLock
 import UIKit
 
@@ -37,9 +38,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate
     
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool
     {
-        
         self.passcodeLockPresenter.presentPasscodeLock()
-        
+      
+        IQKeyboardManager.sharedManager().enable = true
+
         return true
     }
     
@@ -93,7 +95,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate
     
     private func setStatusBarBackgroundColor(color: UIColor)
     {
-        
         guard  let statusBar = UIApplication.sharedApplication().valueForKey("statusBarWindow")?.valueForKey("statusBar") as? UIView else {
             return
         }
