@@ -92,7 +92,7 @@ class KeyViewController : DonoViewController
     {
         let flexBarButton = UIBarButtonItem(barButtonSystemItem: .FlexibleSpace, target: nil, action: nil)
 
-        var revealImage = UIImage(named: "eye")
+        var revealImage = DonoViewController.EyeImage
         revealImage = revealImage?.imageWithRenderingMode(.AlwaysOriginal)
         
         let revealKeyButton = UIBarButtonItem(image: revealImage, style: .Plain, target: self, action: #selector(KeyViewController.hideShowKey(_:)))
@@ -104,7 +104,7 @@ class KeyViewController : DonoViewController
     {
         let flexBarButton = UIBarButtonItem(barButtonSystemItem: .FlexibleSpace, target: nil, action: nil)
 
-        var hideImage = UIImage(named: "eye-off")
+        var hideImage = DonoViewController.EyeOffImage
         hideImage = hideImage?.imageWithRenderingMode(.AlwaysOriginal)
         
         let hideKeyButton = UIBarButtonItem(image: hideImage, style: .Done, target: self, action: #selector(KeyViewController.hideShowKey(_:)))

@@ -10,6 +10,7 @@ target 'Dono' do
   pod 'PasscodeLock', '~> 1.0'
   pod 'Dodo', '~> 2.2'
   pod 'DonoCore', :git => "https://github.com/dono-app/dono-pod/"
+  pod 'MCSwipeTableViewCell', '~> 2.1'
   pod 'SWRevealViewController', '~> 2.3'
   pod 'SwiftKeychainWrapper', '~> 1.0'
 
