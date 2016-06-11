@@ -30,7 +30,7 @@
                                 <color key="separatorColor" red="0.71372549019607845" green="0.71372549019607845" blue="0.71372549019607845" alpha="1" colorSpace="calibratedRGB"/>
                                 <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="gray" hidesAccessoryWhenEditing="NO" indentationWidth="0.0" reuseIdentifier="Service Tag Cell" textLabel="A5U-fS-HeU" imageView="Pao-RW-dsz" style="IBUITableViewCellStyleDefault" id="0Al-4b-x6D">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="gray" hidesAccessoryWhenEditing="NO" indentationWidth="0.0" reuseIdentifier="Label Cell" textLabel="A5U-fS-HeU" imageView="Pao-RW-dsz" style="IBUITableViewCellStyleDefault" id="0Al-4b-x6D" customClass="MCSwipeTableViewCell">
                                         <rect key="frame" x="0.0" y="1" width="600" height="62"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0Al-4b-x6D" id="TcF-rT-LbZ">

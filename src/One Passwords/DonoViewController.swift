@@ -12,6 +12,7 @@ import SWRevealViewController
 
 class DonoViewController : UIViewController, SWRevealViewControllerDelegate
 {
+    // Palette
     static var DarkPrimaryColor = DodoColor.fromHexString("#1976d2")
     
     static var PrimaryColor = DodoColor.fromHexString("#2196f3")
@@ -22,6 +23,13 @@ class DonoViewController : UIViewController, SWRevealViewControllerDelegate
 
     static var Red = DodoColor.fromHexString("#f44336")
 
+    // Images
+    static var DeleteSweepImage = UIImage(named: "delete-sweep")
+    
+    static var EyeImage = UIImage(named: "eye")
+    
+    static var EyeOffImage = UIImage(named: "eye-off")
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()

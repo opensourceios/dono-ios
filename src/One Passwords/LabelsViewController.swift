@@ -8,6 +8,7 @@
 
 import Dodo
 import DonoCore
+import MCSwipeTableViewCell
 import SWRevealViewController
 import UIKit
 
@@ -39,12 +40,11 @@ class LabelsViewController: DonoViewController, UITableViewDataSource, UITableVi
         self.Open.action = #selector(SWRevealViewController.revealToggle(_:))        
     }
     
-    override func viewDidAppear(animated: Bool)
+    override func viewWillAppear(animated: Bool)
     {
         super.viewDidAppear(animated)
         
-        self.persistableLabels.getAll()
-        self.labelsTableView.reloadData()
+        self.updateTableView()
     }
         
     internal func getPassword(label: String)
@@ -91,19 +91,38 @@ class LabelsViewController: DonoViewController, UITableViewDataSource, UITableVi
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
     {
-        let cell = tableView.dequeueReusableCellWithIdentifier("Service Tag Cell", forIndexPath: indexPath);
+        var cell = tableView.dequeueReusableCellWithIdentifier("Label Cell", forIndexPath: indexPath) as? MCSwipeTableViewCell
+
+        if (cell == nil)
+        {
+            cell = MCSwipeTableViewCell(style: .Default, reuseIdentifier: "cell")
+        }
+        
+        // setup
+        cell!.separatorInset = UIEdgeInsetsZero
+        cell!.layoutMargins = UIEdgeInsetsZero
+        cell!.selectionStyle = .None
+        cell!.defaultColor = DonoViewController.PrimaryColor
+        cell!.firstTrigger = 0.2;
+
+        cell!.setSwipeGestureWithView(UIImageView(image: DonoViewController.DeleteSweepImage!), color: DonoViewController.Red, mode: .Exit, state: .State3, completionBlock: { (cell: MCSwipeTableViewCell!, state: MCSwipeTableViewCellState!, mode: MCSwipeTableViewCellMode!) -> Void in
+
+            self.persistableLabels.deleteAt(indexPath.row);
+
+            self.updateTableView()
+        })
         
         if (self.resultSearchController.active)
         {
-            cell.textLabel?.text = filteredTableData[indexPath.row]
+            cell!.textLabel?.text = filteredTableData[indexPath.row]
         }
         else
         {
             let serviceTag = self.persistableLabels.getAt(indexPath.row)
-            cell.textLabel?.text = serviceTag
+            cell!.textLabel?.text = serviceTag
         }
         
-        return cell
+        return cell!
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath)
@@ -124,20 +143,12 @@ class LabelsViewController: DonoViewController, UITableViewDataSource, UITableVi
         
         self.labelsTableView.reloadData()
     }
-    
-    // TableView Delete Action
-    func tableView(tableView: UITableView, editActionsForRowAtIndexPath indexPath: NSIndexPath) -> [UITableViewRowAction]?
+
+    private func updateTableView()
     {
-        let deleteAction = UITableViewRowAction(style: .Normal, title: "Delete" , handler: { (action:UITableViewRowAction, indexPath:NSIndexPath) -> Void in
-            
-            self.persistableLabels.deleteAt(indexPath.row);
-            self.labelsTableView.reloadData();
-            self.handleLonelyLabel()
-        })
-        
-        deleteAction.backgroundColor = UIColor.redColor()
-        
-        return [deleteAction]
+        self.persistableLabels.getAll()
+        self.labelsTableView.reloadData()
+        self.handleLonelyLabel()
     }
     
     private func hideSearchAndKeyboard()
@@ -154,8 +165,9 @@ class LabelsViewController: DonoViewController, UITableViewDataSource, UITableVi
             controller.searchResultsUpdater = self
             controller.dimsBackgroundDuringPresentation = false
             controller.searchBar.sizeToFit()
-            controller.searchBar.translucent = false;
+            controller.searchBar.translucent = false
             controller.searchBar.barTintColor = DonoViewController.PrimaryColor
+            
             // White Cancel button
             (UIBarButtonItem.appearanceWhenContainedInInstancesOfClasses([UISearchBar.self])).tintColor = UIColor.whiteColor()
 
@@ -165,17 +177,16 @@ class LabelsViewController: DonoViewController, UITableViewDataSource, UITableVi
             
             controller.searchBar.placeholder = "Search your Labels"
             
-            self.labelsTableView.tableHeaderView = controller.searchBar
-            
             // Remove black line from Navigation Bar
             self.navigationController?.navigationBar.shadowImage = UIImage()
             self.navigationController?.navigationBar.setBackgroundImage(UIImage(), forBarMetrics: .Default)
             
+            self.labelsTableView.tableHeaderView = controller.searchBar
+
             return controller
         })()
-        
-        self.labelsTableView.reloadData()
-        self.handleLonelyLabel()
+
+        self.updateTableView()
     }
     
     private func handleLonelyLabel()
