@@ -230,6 +230,9 @@
                                 <variation key="heightClass=compact-widthClass=regular" ambiguous="YES" misplaced="YES">
                                     <rect key="frame" x="97" y="-61" width="473" height="30"/>
                                 </variation>
+                                <connections>
+                                    <action selector="keyTextFieldEditingEnd:" destination="Vcu-fU-m0z" eventType="editingDidEnd" id="hvg-Dc-pQo"/>
+                                </connections>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
