@@ -7,11 +7,11 @@ target 'Dono' do
 
   # Pods for Dono
 
-  pod 'PasscodeLock', '~> 1.0.2'
-  pod 'Dodo', '~> 2.2.1'
+  pod 'PasscodeLock', '~> 1.0'
+  pod 'Dodo', '~> 2.2'
   pod 'DonoCore', :git => "https://github.com/dono-app/dono-pod/"
-  pod 'SWRevealViewController', '~> 2.3.0'
-  pod 'SwiftKeychainWrapper', '~> 1.0.11'
+  pod 'SWRevealViewController', '~> 2.3'
+  pod 'SwiftKeychainWrapper', '~> 1.0'
 
 target 'DonoTests' do
     inherit! :search_paths

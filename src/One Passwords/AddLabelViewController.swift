@@ -1,5 +1,5 @@
 //
-//  NewServiceTagViewController.swift
+//  newLabelTextFieldViewController.swift
 //  One Passwords
 //
 //  Created by Ghost on 3/9/16.
@@ -15,7 +15,7 @@ class AddLabelViewController : DonoViewController
 {
     @IBOutlet weak var Open: UIBarButtonItem!
     
-    @IBOutlet weak var newServiceTag: UITextField!
+    @IBOutlet weak var newLabelTextField: UITextField!
 
     var persistableLabels = PersistableLabels()
 
@@ -25,7 +25,7 @@ class AddLabelViewController : DonoViewController
         
         self.persistableLabels.getAll()
         
-        self.newServiceTag.becomeFirstResponder();
+        self.newLabelTextField.becomeFirstResponder();
         
         //RevealVC Boilerplate
         self.Open.target = self.revealViewController()
@@ -41,17 +41,17 @@ class AddLabelViewController : DonoViewController
 
     @IBAction func AddServiceTag(sender: AnyObject)
     {
-        var newServiceTag = self.newServiceTag.text!
+        var newLabelTextField = self.newLabelTextField.text!
         
-        newServiceTag = self.persistableLabels.add(newServiceTag)
+        newLabelTextField = self.persistableLabels.add(newLabelTextField)
         
-        if (!newServiceTag.isEmpty)
+        if (!newLabelTextField.isEmpty)
         {
-            showAlert(newServiceTag + " was added to your Labels!")
+            showAlert(newLabelTextField + " was added to your Labels!")
         }
         else
         {
-            let canonicalLabel = self.persistableLabels.canonical(self.newServiceTag.text!)
+            let canonicalLabel = self.persistableLabels.canonical(self.newLabelTextField.text!)
 
             if (!canonicalLabel.isEmpty)
             {
@@ -59,6 +59,6 @@ class AddLabelViewController : DonoViewController
             }
         }
         
-        self.newServiceTag.text = String()
+        self.newLabelTextField.text = String()
     }    
 }

@@ -203,7 +203,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="Open" destination="JLq-mQ-hMZ" id="Ke8-qi-LAV"/>
-                        <outlet property="newServiceTag" destination="0JE-48-Q6D" id="b44-ug-8mH"/>
+                        <outlet property="newLabelTextField" destination="0JE-48-Q6D" id="8wQ-dF-knZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZaK-hz-0Hu" userLabel="First Responder" sceneMemberID="firstResponder"/>
