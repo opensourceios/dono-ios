@@ -1,5 +1,9 @@
 # iOS App ![Build Status](https://travis-ci.org/dono-app/ios.svg?branch=master) [![Join the chat at https://gitter.im/dono-app/ios](https://badges.gitter.im/dono-app/ios.svg)](https://gitter.im/dono-app/ios?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
+## License
+
+GNU GPLv3 
+
 ## OSS used
 
 * [Dodo](https://github.com/marketplacer/Dodo)
