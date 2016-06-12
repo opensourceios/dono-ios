@@ -41,4 +41,26 @@ class DonoViewFactory
 
         return keyboardToolbar
     }
+    
+    internal func makeSearchController(resultsUpdater: UISearchResultsUpdating?) -> UISearchController
+    {
+        let controller = UISearchController(searchResultsController: nil)
+        
+        controller.searchResultsUpdater = resultsUpdater
+        controller.dimsBackgroundDuringPresentation = false
+        controller.searchBar.sizeToFit()
+        controller.searchBar.translucent = false
+        controller.searchBar.barTintColor = DonoViewController.PrimaryColor
+        
+        // White Cancel button
+        (UIBarButtonItem.appearanceWhenContainedInInstancesOfClasses([UISearchBar.self])).tintColor = UIColor.whiteColor()
+        
+        // Remove the white line that appears after dragging the cells down
+        controller.searchBar.layer.borderWidth = 1
+        controller.searchBar.layer.borderColor = DonoViewController.PrimaryColor.CGColor
+        
+        controller.searchBar.placeholder = "Search your Labels"
+
+        return controller
+    }
 }

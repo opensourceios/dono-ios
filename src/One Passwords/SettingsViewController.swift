@@ -19,7 +19,7 @@ import Foundation
 import PasscodeLock
 import SWRevealViewController
 
-class SettingsViewController : DonoViewController
+class SettingsViewController : DonoTableViewController
 {
     @IBOutlet weak var passcodeLock: UISwitch!
     
@@ -27,6 +27,8 @@ class SettingsViewController : DonoViewController
     
     let configuration: PasscodeLockConfigurationType
     
+    var settings = Settings()
+
     init(configuration: PasscodeLockConfigurationType)
     {
         self.configuration = configuration

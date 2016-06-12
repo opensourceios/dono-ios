@@ -27,6 +27,7 @@
 		E6CED9491C74DC1F00B7A642 /* DonoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CED9481C74DC1F00B7A642 /* DonoUITests.swift */; };
 		E6D1572E1CDE0EF8000DD3A5 /* PasscodeLockConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D1572D1CDE0EF8000DD3A5 /* PasscodeLockConfiguration.swift */; };
 		E6D157301CDE0F14000DD3A5 /* UserDefaultsPasscodeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D1572F1CDE0F14000DD3A5 /* UserDefaultsPasscodeRepository.swift */; };
+		E6DC991C1D0D6B3A000707F2 /* DonoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6DC991B1D0D6B3A000707F2 /* DonoTableViewController.swift */; };
 		E6EB4BB81C90B23E009EE7EF /* KeyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EB4BB71C90B23E009EE7EF /* KeyViewController.swift */; };
 		E6F01D401D0C034300CCB6BC /* DonoViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F01D3F1D0C034300CCB6BC /* DonoViewFactory.swift */; };
 		FCB12F0142689143A47FFDD4 /* Pods_Dono.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90A644B9F23A12D4E84110B7 /* Pods_Dono.framework */; };
@@ -83,6 +84,7 @@
 		E6CED94A1C74DC1F00B7A642 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E6D1572D1CDE0EF8000DD3A5 /* PasscodeLockConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasscodeLockConfiguration.swift; sourceTree = "<group>"; };
 		E6D1572F1CDE0F14000DD3A5 /* UserDefaultsPasscodeRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultsPasscodeRepository.swift; sourceTree = "<group>"; };
+		E6DC991B1D0D6B3A000707F2 /* DonoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DonoTableViewController.swift; sourceTree = "<group>"; };
 		E6EB4BB71C90B23E009EE7EF /* KeyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyViewController.swift; sourceTree = "<group>"; };
 		E6F01D3F1D0C034300CCB6BC /* DonoViewFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DonoViewFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -156,6 +158,7 @@
 				E6492B781C90C97600BA77EA /* AddLabelViewController.swift */,
 				E6B3CEBB1CDD0E320034A6EC /* BackTableViewController.swift */,
 				E69326511D04BE4100FC0ECD /* DonoViewController.swift */,
+				E6DC991B1D0D6B3A000707F2 /* DonoTableViewController.swift */,
 			);
 			name = VIewControllers;
 			sourceTree = "<group>";
@@ -499,6 +502,7 @@
 				E618F75B1C88F780004604F0 /* LabelsViewController.swift in Sources */,
 				E6492B791C90C97600BA77EA /* AddLabelViewController.swift in Sources */,
 				E6D157301CDE0F14000DD3A5 /* UserDefaultsPasscodeRepository.swift in Sources */,
+				E6DC991C1D0D6B3A000707F2 /* DonoTableViewController.swift in Sources */,
 				E618F7581C88F780004604F0 /* PersistableKey.swift in Sources */,
 				E6B3CEBC1CDD0E320034A6EC /* BackTableViewController.swift in Sources */,
 				E618F7591C88F780004604F0 /* PersistableLabels.swift in Sources */,
