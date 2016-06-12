@@ -1,6 +1,10 @@
-# Dono CocoaPod ![Build Status](https://travis-ci.org/dono-app/dono-pod.svg?branch=master) 
+# Dono CocoaPod ![Build Status](https://travis-ci.org/dono-app/dono-pod.svg?branch=master)
 
-CocoaPod for Dono password derivation
+CocoaPod for Dono Key Derivation Function
+
+## License
+
+GNU GPLv3
 
 ## OSS used
 

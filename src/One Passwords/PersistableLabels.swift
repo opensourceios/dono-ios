@@ -25,20 +25,20 @@ internal class PersistableLabels
 {
     var labels = [String]()
     
-    internal func add(var label: String) -> String
+    internal func add(label: String) -> String
     {
-        label = self.canonical(label)
+        let l = self.canonical(label)
         
-        if (self.labels.contains(label))
+        if (self.labels.contains(l))
         {
-            return ""
+            return String()
         }
         
-        self.labels.insert(label, atIndex: self.labels.count)
+        self.labels.insert(l, atIndex: self.labels.count)
         self.labels.sortInPlace()
         self.saveLabels()
         
-        return label
+        return l
     }
     
     internal func getAll() -> [String]
@@ -51,7 +51,7 @@ internal class PersistableLabels
     
     internal func getAt(position: Int) -> String
     {
-        var ret = "";
+        var ret = String();
         
         for (i, label) in self.labels.enumerate()
         {
@@ -78,17 +78,17 @@ internal class PersistableLabels
         return self.labels.count;
     }
     
-    internal func canonical(var label: String) -> String
+    internal func canonical(label: String) -> String
     {
-        label = label.lowercaseString
-        label = label.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
+        var l = label.lowercaseString
+        l = l.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
         
-        return label
+        return l
     }
     
     private func saveLabels()
     {
-        var dump = ""
+        var dump = String()
         
         for (_, label) in self.labels.enumerate()
         {

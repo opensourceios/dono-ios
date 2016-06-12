@@ -59,6 +59,8 @@ class DonoViewController : UIViewController, SWRevealViewControllerDelegate
         super.viewDidLoad()
 
         self.createRevealViewController()
+        
+        self.setupNavigationBar()
     }
     
     func revealController(revealController: SWRevealViewController!, willMoveToPosition position: FrontViewPosition)
@@ -66,13 +68,7 @@ class DonoViewController : UIViewController, SWRevealViewControllerDelegate
         // Hide Keyboard when Reveal View opens
         self.view.endEditing(true)
     }
-    
-    func getPasteboardContents() -> String?
-    {
-        let pasteboard = UIPasteboard.generalPasteboard()
-        return pasteboard.string
-    }
-    
+        
     func copyToPasteboard(text: String)
     {
         let pasteboard = UIPasteboard.generalPasteboard()
@@ -90,6 +86,13 @@ class DonoViewController : UIViewController, SWRevealViewControllerDelegate
         
         // Hide keyboard when the menu appears
         revealViewController().delegate = self
+    }
+    
+    private func setupNavigationBar()
+    {
+        // Remove black line from Navigation Bar
+        self.navigationController?.navigationBar.shadowImage = UIImage()
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), forBarMetrics: .Default)
     }
 }
 

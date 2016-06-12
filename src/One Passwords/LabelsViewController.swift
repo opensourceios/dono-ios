@@ -37,6 +37,7 @@ class LabelsViewController: DonoViewController, UITableViewDataSource, UITableVi
         super.viewDidLoad()
         
         self.persistableLabels.getAll()
+        
         self.setupTableView()
     }
     
@@ -160,26 +161,7 @@ class LabelsViewController: DonoViewController, UITableViewDataSource, UITableVi
     {
         self.resultSearchController =
         ({
-            let controller = UISearchController(searchResultsController: nil)
-            controller.searchResultsUpdater = self
-            controller.dimsBackgroundDuringPresentation = false
-            controller.searchBar.sizeToFit()
-            controller.searchBar.translucent = false
-            controller.searchBar.barTintColor = DonoViewController.PrimaryColor
-            
-            // White Cancel button
-            (UIBarButtonItem.appearanceWhenContainedInInstancesOfClasses([UISearchBar.self])).tintColor = UIColor.whiteColor()
-
-            // Remove the white line that appears after dragging the cells down
-            controller.searchBar.layer.borderWidth = 1
-            controller.searchBar.layer.borderColor = DonoViewController.PrimaryColor.CGColor
-            
-            controller.searchBar.placeholder = "Search your Labels"
-            
-            // Remove black line from Navigation Bar
-            self.navigationController?.navigationBar.shadowImage = UIImage()
-            self.navigationController?.navigationBar.setBackgroundImage(UIImage(), forBarMetrics: .Default)
-            
+            let controller = self.donoViewFactory.makeSearchController(self)
             self.labelsTableView.tableHeaderView = controller.searchBar
 
             return controller

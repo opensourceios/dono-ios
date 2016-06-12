@@ -90,6 +90,11 @@ class KeyViewController : DonoViewController
         }
     }
     
+    @IBAction func keyTextFieldEditingEnd(sender: AnyObject)
+    {
+        self.keyTextField.secureTextEntry = true
+    }
+    
     private func updateKeyTextField()
     {
         self.keyTextField.secureTextEntry = true
