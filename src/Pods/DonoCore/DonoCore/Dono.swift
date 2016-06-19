@@ -21,63 +21,101 @@ public class Dono
 {
     public static var MIN_KEY_LENGTH = 17
 
-    private var rounds : [BigInt] =
-        [
-            BigInt("21688899074207999999999999999"),
-            BigInt("834188425931076923076923075"),
-            BigInt("32084170228118343195266271"),
-            BigInt("1234006547235320892125624"),
-            BigInt("47461790278281572774061"),
-            BigInt("1825453472241598952847"),
-            BigInt("70209748932369190493"),
-            BigInt("2700374958937276556"),
-            BigInt("103860575343741405"),
-            BigInt("3994637513220822"),
-            BigInt("153639904354646"),
-            BigInt("5909227090562"),
-            BigInt("227277965020"),
-            BigInt("8741460192"),
-            BigInt("336210006"),
-            BigInt("12931153"),
-            BigInt("497351"),
-            BigInt("19127"),
-            BigInt("734"),
-            BigInt("27"),
-            BigInt("0"),
-            ]
+    public static var MAX_DK_LEN = 64
 
-    private var EvaluatorCheat = "!A"
+    private static var Iterations : [BigInt] =
+        [
+            BigInt("56641855831775999999999999999"),
+            BigInt("2178532916606769230769230768"),
+            BigInt("83789727561798816568047336"),
+            BigInt("3222681829299954483386435"),
+            BigInt("123949301126921326284092"),
+            BigInt("4767280812573897164771"),
+            BigInt("183356954329765275567"),
+            BigInt("7052190551144818290"),
+            BigInt("271238098120954548"),
+            BigInt("10432234543113635"),
+            BigInt("401239790119754"),
+            BigInt("15432299619989"),
+            BigInt("593549985383"),
+            BigInt("22828845590"),
+            BigInt("878032521"),
+            BigInt("33770480"),
+            BigInt("1298863"),
+            BigInt("49955"),
+            BigInt("1920"),
+            BigInt("72"),
+            BigInt("1"),
+        ]
+    
+    private static var MagicSalt = "4a5e1e4baab89f3a32518a88c31bc87f618f76673e2cc77ab2127b7afdeda33b"
+    
+    private static var MagicSymbol = "!"
+
+    private static var MagicCapital = "A"
 
     public init() { }
-
-    public func computePassword(k: String, l: String) -> String
+    
+    public func computePassword(k: String, l: String, passwordLen: Int = Dono.MAX_DK_LEN, addFixedSymbol: Bool = false, addFixedCapital: Bool = false) -> String?
     {
-        l.lowercaseString
-        var s = "4a5e1e4baab89f3a32518a88c31bc87f618f76673e2cc77ab2127b7afdeda33b"
-
-        s = (k + l + s).sha256()
-        var d = (k + l + s).sha256()
-
-        let rs = decideRounds(k)
-
-        for var i = BigInt(0); i < rs; i = i + BigInt(1)
+        if (k.characters.count < Dono.MIN_KEY_LENGTH)
         {
-            s = (d + s).sha256()
-            d = (d + s).sha256()
+            return nil
+        }
+        
+        if (passwordLen > Dono.MAX_DK_LEN)
+        {
+            return nil
+        }
+        
+        l.lowercaseString
+        
+        let c = getIterations(k)
+
+        var dkLen = passwordLen
+        dkLen = addFixedSymbol ? dkLen - 1 : dkLen
+        dkLen = addFixedCapital ? dkLen - 1 : dkLen
+        
+        var d = derivePassword(k, l: l, c: c, dkLen: dkLen)
+        
+        if (addFixedSymbol)
+        {
+            d += Dono.MagicSymbol
         }
 
-        return d + EvaluatorCheat
+        if (addFixedCapital)
+        {
+            d += Dono.MagicCapital
+        }
+        
+        return d
+    }
+    
+    private func derivePassword(k: String, l: String, c: Int, dkLen: Int) -> String
+    {
+        let password: [UInt8] = k.utf8.map {$0}
+        
+        let s = (k + l + Dono.MagicSalt).sha256()
+        
+        let salt: [UInt8] = s.utf8.map {$0}
+        
+        let d = try! PKCS5.PBKDF2(password: password, salt: salt, iterations: c, keyLength: 256, variant: .sha256)
+                            .calculate()
+                            .toHexString()
+                            .characters
+        
+        return String(d.dropLast(d.count - dkLen))
     }
 
-    private func decideRounds(k: String) -> BigInt
+    private func getIterations(k: String) -> Int
     {
-        if (k.characters.count < rounds.count)
+        if (k.characters.count < Dono.Iterations.count)
         {
-            return rounds[k.characters.count]
+            return Int(Dono.Iterations[k.characters.count].description)!
         }
         else
         {
-            return rounds[rounds.count - 1]
+            return Int(Dono.Iterations[Dono.Iterations.count - 1].description)!
         }
     }
 }

@@ -65,7 +65,7 @@ class LabelsViewController: DonoViewController, UITableViewDataSource, UITableVi
         
         let d = self.dono.computePassword(key, l: label)
 
-        copyToPasteboard(d)
+        copyToPasteboard(d!)
 
         self.showAlert("Your password for " + label + " is ready to be pasted!")
 
