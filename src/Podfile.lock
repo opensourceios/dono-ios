@@ -28,7 +28,7 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   DonoCore:
-    :commit: 66846dbb8556cb20d3270dcf989a79522bbd8e51
+    :commit: f7fe08263f5f697455894ea9ab73d68e06ddfbd7
     :git: https://github.com/dono-app/dono-pod/
 
 SPEC CHECKSUMS:

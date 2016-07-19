@@ -39,14 +39,14 @@
 			containerPortal = E6CED91D1C74DC1F00B7A642 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = E6CED9241C74DC1F00B7A642;
-			remoteInfo = "One Passwords";
+			remoteInfo = "Dono";
 		};
 		E6CED9451C74DC1F00B7A642 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = E6CED91D1C74DC1F00B7A642 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = E6CED9241C74DC1F00B7A642;
-			remoteInfo = "One Passwords";
+			remoteInfo = "Dono";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -211,7 +211,7 @@
 				E6CED9281C74DC1F00B7A642 /* AppDelegate.swift */,
 			);
 			name = Dono;
-			path = "One Passwords";
+			path = "Dono";
 			sourceTree = "<group>";
 		};
 		E6CED93C1C74DC1F00B7A642 /* Dono Tests */ = {
@@ -221,7 +221,7 @@
 				E6CED93F1C74DC1F00B7A642 /* Info.plist */,
 			);
 			name = "Dono Tests";
-			path = "One PasswordsTests";
+			path = "DonoTests";
 			sourceTree = "<group>";
 		};
 		E6CED9471C74DC1F00B7A642 /* Dono UITests */ = {
@@ -231,7 +231,7 @@
 				E6CED94A1C74DC1F00B7A642 /* Info.plist */,
 			);
 			name = "Dono UITests";
-			path = "One PasswordsUITests";
+			path = "DonoUITests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,7 +253,7 @@
 			dependencies = (
 			);
 			name = Dono;
-			productName = "One Passwords";
+			productName = "Dono";
 			productReference = E6CED9251C74DC1F00B7A642 /* Dono.app */;
 			productType = "com.apple.product-type.application";
 		};
@@ -274,7 +274,7 @@
 				E6CED93B1C74DC1F00B7A642 /* PBXTargetDependency */,
 			);
 			name = DonoTests;
-			productName = "One PasswordsTests";
+			productName = "DonoTests";
 			productReference = E6CED9391C74DC1F00B7A642 /* Dono.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
@@ -294,7 +294,7 @@
 				E6CED9461C74DC1F00B7A642 /* PBXTargetDependency */,
 			);
 			name = DonoUITests;
-			productName = "One PasswordsUITests";
+			productName = "DonoUITests";
 			productReference = E6CED9441C74DC1F00B7A642 /* Dono.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
@@ -661,7 +661,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = "One Passwords/Info.plist";
+				INFOPLIST_FILE = "Dono/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dono.ios;
@@ -682,7 +682,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = "One Passwords/Info.plist";
+				INFOPLIST_FILE = "Dono/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dono.ios;
@@ -697,9 +697,9 @@
 			baseConfigurationReference = 5E338423E74FC715A6839CDC /* Pods-DonoTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = "One PasswordsTests/Info.plist";
+				INFOPLIST_FILE = "DonoTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "OnePasswords.One-PasswordsTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "Dono.One-PasswordsTests";
 				PRODUCT_NAME = Dono;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dono.app/Dono";
 			};
@@ -710,9 +710,9 @@
 			baseConfigurationReference = 647E1332B920A8D50A4A5459 /* Pods-DonoTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = "One PasswordsTests/Info.plist";
+				INFOPLIST_FILE = "DonoTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "OnePasswords.One-PasswordsTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "Dono.One-PasswordsTests";
 				PRODUCT_NAME = Dono;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dono.app/Dono";
 			};
@@ -722,11 +722,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3C143D2776BAF3EA2E32D5A2 /* Pods-DonoUITests.debug.xcconfig */;
 			buildSettings = {
-				INFOPLIST_FILE = "One PasswordsUITests/Info.plist";
+				INFOPLIST_FILE = "DonoUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "OnePasswords.One-PasswordsUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = "Dono.One-PasswordsUITests";
 				PRODUCT_NAME = Dono;
-				TEST_TARGET_NAME = "One Passwords";
+				TEST_TARGET_NAME = "Dono";
 				USES_XCTRUNNER = YES;
 			};
 			name = Debug;
@@ -735,11 +735,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5929B9314FBA949C219797CD /* Pods-DonoUITests.release.xcconfig */;
 			buildSettings = {
-				INFOPLIST_FILE = "One PasswordsUITests/Info.plist";
+				INFOPLIST_FILE = "DonoUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "OnePasswords.One-PasswordsUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = "Dono.One-PasswordsUITests";
 				PRODUCT_NAME = Dono;
-				TEST_TARGET_NAME = "One Passwords";
+				TEST_TARGET_NAME = "Dono";
 				USES_XCTRUNNER = YES;
 			};
 			name = Release;

@@ -1,5 +1,5 @@
 // Dono iOS - Password Derivation Tool
-// Copyright (C) 2016  Panos Sakkos
+// Copyright (C) 2016  Dono - Password Derivation Tool
 //
 // This program is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -16,22 +16,34 @@
 
 import Foundation
 import PasscodeLock
+import SwiftKeychainWrapper
 
-struct PasscodeLockConfiguration : PasscodeLockConfigurationType
-{    
-    let repository: PasscodeRepositoryType
-    let passcodeLength = 6
-    var isTouchIDAllowed = true
-    let shouldRequestTouchIDImmediately = true
-    let maximumInccorectPasscodeAttempts = 3
+class UserDefaultsPasscodeRepository: PasscodeRepositoryType
+{
+    private let PasscodeKey = "dono.passcode"
     
-    init(repository: PasscodeRepositoryType) {
+    var hasPasscode: Bool
+    {
+        if (passcode != nil)
+        {
+            return true
+        }
         
-        self.repository = repository
+        return false
     }
     
-    init() {
-        
-        self.repository = UserDefaultsPasscodeRepository()
+    var passcode: [String]?
+    {
+        return KeychainWrapper.objectForKey(PasscodeKey) as? [String] ?? nil
+    }
+    
+    func savePasscode(passcode: [String])
+    {
+        KeychainWrapper.setObject(passcode, forKey: PasscodeKey)
+    }
+    
+    func deletePasscode()
+    {
+        KeychainWrapper.removeObjectForKey(PasscodeKey)
     }
 }
