@@ -23,11 +23,6 @@ import UIKit
 class KeyViewController : DonoViewController
 {
     @IBOutlet weak var keyTextField: UITextField!
-        
-    override func viewDidLoad()
-    {
-        super.viewDidLoad()
-    }
     
     override func viewWillAppear(animated: Bool)
     {
@@ -46,8 +41,6 @@ class KeyViewController : DonoViewController
         
         self.updateKeyTextField()
         
-        self.addRevealButton()
-
         self.view.endEditing(true)
     }
     
@@ -59,7 +52,7 @@ class KeyViewController : DonoViewController
         
         if (key.characters.count < Dono.MIN_KEY_LENGTH)
         {
-            showError("Your Key has to be longer than 16 characters")
+            showError("Your Key has to be longer than " + String(Dono.MIN_KEY_LENGTH - 1) + " characters")
 
             self.keyTextField.text = self.persistableKey.getKey()
             
@@ -78,26 +71,30 @@ class KeyViewController : DonoViewController
     
     @IBAction func hideShowKey(barButtonItem: UIBarButtonItem)
     {
+        // Update the text of the TextField in order to update
+        // the font of the Text as well
+        let currentKey = self.keyTextField.text
+        self.keyTextField.text = String()
+        
         self.keyTextField.secureTextEntry = !self.keyTextField.secureTextEntry
         
-        if (self.keyTextField.secureTextEntry)
-        {
-            self.addRevealButton()
-        }
-        else
-        {
-            self.addHideButton()
-        }
+        // Restore the Key in order to update its font as well
+        self.keyTextField.text = currentKey
+        
+        self.updateVisibilityButtonImage()
     }
     
     @IBAction func keyTextFieldEditingEnd(sender: AnyObject)
     {
         self.keyTextField.secureTextEntry = true
+        
+        self.updateVisibilityButtonImage()
     }
     
     private func updateKeyTextField()
     {
         self.keyTextField.secureTextEntry = true
+        
         self.keyTextField.text = self.persistableKey.getKey()
     }
     
@@ -105,38 +102,36 @@ class KeyViewController : DonoViewController
     {
         self.keyTextField.inputAccessoryView = self.donoViewFactory.makeKeyboardToolbar()
         
-        self.addRevealButton()
-    }
-    
-    // TODO: Don't recreate all the buttons
-    private func addRevealButton()
-    {
         let flexBarButton = self.donoViewFactory.makeFlexBarButton()
-
+        
         let doneButton = self.donoViewFactory.makeKeyboardToolbarButton(
             DonoViewController.CheckCircleImage!,
             target: self,
             action: #selector(KeyViewController.saveKey(_:)))
 
-        let revealKeyButton = self.donoViewFactory.makeKeyboardToolbarButton(
+        let keyVisibilityButton = self.donoViewFactory.makeKeyboardToolbarButton(
             DonoViewController.EyeImage!,
             target: self,
             action: #selector(KeyViewController.hideShowKey(_:)))
-        
-        (self.keyTextField.inputAccessoryView as! UIToolbar).items = [flexBarButton, doneButton, revealKeyButton]
+
+        (self.keyTextField.inputAccessoryView as! UIToolbar).items = [flexBarButton, doneButton, keyVisibilityButton]
     }
     
-    // TODO: Don't recreate all the buttons
-    private func addHideButton()
+    private func updateVisibilityButtonImage()
     {
-        let flexBarButton = self.donoViewFactory.makeFlexBarButton()
+        let button = (self.keyTextField.inputAccessoryView as! UIToolbar).items?.last
         
-        let hideKeyButton = self.donoViewFactory.makeKeyboardToolbarButton(
-            DonoViewController.EyeOffImage!,
-            target: self,
-            action: #selector(KeyViewController.hideShowKey(_:)))
+        if (self.keyTextField.secureTextEntry)
+        {
+            let img = DonoViewController.EyeImage!.imageWithRenderingMode(.AlwaysOriginal)
+            
+            button?.image = img
+        }
+        else
+        {
+            let img = DonoViewController.EyeOffImage!.imageWithRenderingMode(.AlwaysOriginal)
 
-        
-        (self.keyTextField.inputAccessoryView as! UIToolbar).items = [flexBarButton, hideKeyButton]
+            button?.image = img
+        }
     }
 }
