@@ -103,12 +103,6 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JI0-58-21W">
-                                                    <rect key="frame" x="543" y="8" width="51" height="31"/>
-                                                    <connections>
-                                                        <action selector="rememberKeyValueChanged:" destination="Uru-so-W3D" eventType="valueChanged" id="nfo-9n-cpr"/>
-                                                    </connections>
-                                                </switch>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Remember my Key" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yX5-EA-5lN">
                                                     <rect key="frame" x="14" y="11" width="527" height="24"/>
                                                     <constraints>
@@ -118,6 +112,13 @@
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JI0-58-21W">
+                                                    <rect key="frame" x="543" y="8" width="51" height="31"/>
+                                                    <color key="onTintColor" red="0.12941176470588234" green="0.58823529411764708" blue="0.95294117647058818" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <connections>
+                                                        <action selector="rememberKeyValueChanged:" destination="Uru-so-W3D" eventType="valueChanged" id="nfo-9n-cpr"/>
+                                                    </connections>
+                                                </switch>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="JI0-58-21W" firstAttribute="trailing" secondItem="KrZ-Dv-dU3" secondAttribute="trailingMargin" id="0f5-TC-taK"/>
@@ -140,6 +141,7 @@
                                             <subviews>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="M6F-tu-RrY">
                                                     <rect key="frame" x="543" y="7" width="51" height="31"/>
+                                                    <color key="onTintColor" red="0.12941176470588234" green="0.58823529411764708" blue="0.95294117647058818" alpha="1" colorSpace="calibratedRGB"/>
                                                     <connections>
                                                         <action selector="passcodeLockValueChanged:" destination="Uru-so-W3D" eventType="valueChanged" id="3iu-yI-wnF"/>
                                                     </connections>

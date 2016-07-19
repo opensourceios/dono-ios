@@ -14,7 +14,6 @@ target 'Dono' do
   pod 'MCSwipeTableViewCell', '~> 2.1'
   pod 'SWRevealViewController', '~> 2.3'
   pod 'SwiftKeychainWrapper', '~> 1.0'
-  pod 'MBSwitch', '~> 0.0'
 
 target 'DonoTests' do
     inherit! :search_paths

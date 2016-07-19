@@ -1,6 +1,0 @@
-framework module MBSwitch {
-  umbrella header "MBSwitch-umbrella.h"
-
-  export *
-  module * { export * }
-}
