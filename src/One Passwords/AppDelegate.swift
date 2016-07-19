@@ -56,7 +56,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate
     func colorStatusBar(application: UIApplication)
     {
         self.setStatusBarBackgroundColor(DonoViewController.DarkPrimaryColor)
-        application.setStatusBarStyle(.LightContent, animated: false)
     }
     
     func applicationWillResignActive(application: UIApplication)
