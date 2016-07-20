@@ -44,6 +44,8 @@ class DonoViewController : UIViewController, SWRevealViewControllerDelegate
 
     static var Copyright = "Copyright Dono - Password Derivation Tool\nLicensed under the GPLv3"
 
+    static var PasscodeRepository = UserDefaultsPasscodeRepository()
+    
     // Outlets
     @IBOutlet weak var Open: UIBarButtonItem!
     

@@ -96,7 +96,7 @@
                         <sections>
                             <tableViewSection headerTitle="Key" id="1SH-qW-7Wb">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="r9v-uz-00b">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="RememberKey" id="r9v-uz-00b">
                                         <rect key="frame" x="0.0" y="49.5" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="r9v-uz-00b" id="KrZ-Dv-dU3">
@@ -130,7 +130,7 @@
                             </tableViewSection>
                             <tableViewSection headerTitle="Passcode Lock" id="ELZ-1y-cxg">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="DO9-Jj-250">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="PasscodeEnabled" id="DO9-Jj-250">
                                         <rect key="frame" x="0.0" y="143.5" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="DO9-Jj-250" id="OEA-cF-aqL">
@@ -160,12 +160,33 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="ChangePasscode" id="rIc-0B-aaj" customClass="ChangePinTableViewCell" customModule="Dono" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="187.5" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rIc-0B-aaj" id="Rnm-Bo-VdR">
+                                            <rect key="frame" x="0.0" y="0.0" width="567" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Change PIN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B5M-tk-XnN">
+                                                    <rect key="frame" x="15" y="11" width="544" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="B5M-tk-XnN" secondAttribute="trailing" id="47W-nT-9iV"/>
+                                                <constraint firstItem="B5M-tk-XnN" firstAttribute="centerY" secondItem="Rnm-Bo-VdR" secondAttribute="centerY" id="FQC-u0-x6q"/>
+                                                <constraint firstItem="B5M-tk-XnN" firstAttribute="leading" secondItem="Rnm-Bo-VdR" secondAttribute="leadingMargin" constant="7" id="nHC-iO-XMw"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                             <tableViewSection headerTitle="About" id="224-bF-bFu">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="Version" textLabel="itk-Tq-7bp" detailTextLabel="yeM-ug-gju" style="IBUITableViewCellStyleValue1" id="LhH-NQ-ytm" customClass="VersionTableViewCell" customModule="Dono" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="237.5" width="600" height="44"/>
+                                        <rect key="frame" x="0.0" y="281.5" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LhH-NQ-ytm" id="joM-yn-qhB">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
@@ -189,7 +210,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="PrivacyPolicy" id="zNh-hS-F1t" customClass="PrivacyPolicyTableViewCell" customModule="Dono" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="281.5" width="600" height="44"/>
+                                        <rect key="frame" x="0.0" y="325.5" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zNh-hS-F1t" id="0zc-gp-ZmS">
                                             <rect key="frame" x="0.0" y="0.0" width="567" height="43.5"/>
@@ -210,7 +231,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="ContactUs" id="k4R-6H-g74" customClass="ContactUsTableViewCell" customModule="Dono" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="325.5" width="600" height="44"/>
+                                        <rect key="frame" x="0.0" y="369.5" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="k4R-6H-g74" id="S4K-7M-ql5">
                                             <rect key="frame" x="0.0" y="0.0" width="567" height="43.5"/>
@@ -243,6 +264,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="Open" destination="tfD-Te-kG8" id="gNq-N9-BMf"/>
+                        <outlet property="changePinCell" destination="rIc-0B-aaj" id="6NK-hf-BnB"/>
                         <outlet property="passcodeLock" destination="M6F-tu-RrY" id="j76-Zi-fe6"/>
                         <outlet property="rememberKey" destination="JI0-58-21W" id="0EX-pg-tW5"/>
                     </connections>

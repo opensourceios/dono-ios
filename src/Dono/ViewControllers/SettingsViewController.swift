@@ -24,6 +24,8 @@ class SettingsViewController : DonoTableViewController
     @IBOutlet weak var passcodeLock: UISwitch!
     
     @IBOutlet weak var rememberKey: UISwitch!
+        
+    @IBOutlet weak var changePinCell: ChangePinTableViewCell!
     
     let configuration: PasscodeLockConfigurationType
     
@@ -38,7 +40,7 @@ class SettingsViewController : DonoTableViewController
     
     required init?(coder aDecoder: NSCoder)
     {
-        let repository = UserDefaultsPasscodeRepository()
+        let repository = DonoViewController.PasscodeRepository
         configuration = PasscodeLockConfiguration(repository: repository)
         
         super.init(coder: aDecoder)
@@ -47,6 +49,8 @@ class SettingsViewController : DonoTableViewController
     override func viewWillAppear(animated: Bool)
     {
         super.viewWillAppear(animated)
+        
+        self.changePinCell.hidden = !self.configuration.repository.hasPasscode
         
         self.updateViewWithSettings()
     }
@@ -108,6 +112,18 @@ class SettingsViewController : DonoTableViewController
     private func updateViewWithSettings()
     {
         self.rememberKey.on = self.settings.getRememberKeyValue()
-        self.passcodeLock.on = self.configuration.repository.hasPasscode
+
+        let hasPasscode = self.configuration.repository.hasPasscode
+        
+        self.passcodeLock.on = hasPasscode
+        
+        if (hasPasscode)
+        {
+            self.changePinCell.showWithAnimation()
+        }
+        else
+        {
+            self.changePinCell.hideWithAnimation()
+        }
     }
 }

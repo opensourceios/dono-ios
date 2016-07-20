@@ -28,6 +28,7 @@
 		E6999BF41D3FFBB500E53FAC /* PrivacyPolicyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6999BF31D3FFBB500E53FAC /* PrivacyPolicyTableViewCell.swift */; };
 		E6999BF81D4003A900E53FAC /* ContactUsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6999BF71D4003A900E53FAC /* ContactUsTableViewCell.swift */; };
 		E6999BFC1D40167200E53FAC /* FooterLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6999BFB1D40167200E53FAC /* FooterLabel.swift */; };
+		E6999BFE1D401C8400E53FAC /* ChangePinTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6999BFD1D401C8400E53FAC /* ChangePinTableViewCell.swift */; };
 		E6CED9291C74DC1F00B7A642 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CED9281C74DC1F00B7A642 /* AppDelegate.swift */; };
 		E6CED92E1C74DC1F00B7A642 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6CED92C1C74DC1F00B7A642 /* Main.storyboard */; };
 		E6CED9301C74DC1F00B7A642 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6CED92F1C74DC1F00B7A642 /* Assets.xcassets */; };
@@ -83,6 +84,7 @@
 		E6999BF31D3FFBB500E53FAC /* PrivacyPolicyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrivacyPolicyTableViewCell.swift; sourceTree = "<group>"; };
 		E6999BF71D4003A900E53FAC /* ContactUsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactUsTableViewCell.swift; sourceTree = "<group>"; };
 		E6999BFB1D40167200E53FAC /* FooterLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FooterLabel.swift; sourceTree = "<group>"; };
+		E6999BFD1D401C8400E53FAC /* ChangePinTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangePinTableViewCell.swift; sourceTree = "<group>"; };
 		E6CED9251C74DC1F00B7A642 /* Dono.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dono.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6CED9281C74DC1F00B7A642 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E6CED92D1C74DC1F00B7A642 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -171,6 +173,7 @@
 				E6999BF31D3FFBB500E53FAC /* PrivacyPolicyTableViewCell.swift */,
 				E6999BF71D4003A900E53FAC /* ContactUsTableViewCell.swift */,
 				E6999BFB1D40167200E53FAC /* FooterLabel.swift */,
+				E6999BFD1D401C8400E53FAC /* ChangePinTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -511,6 +514,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E6999BF81D4003A900E53FAC /* ContactUsTableViewCell.swift in Sources */,
+				E6999BFE1D401C8400E53FAC /* ChangePinTableViewCell.swift in Sources */,
 				E696B7211D3E961E00D3339E /* DonoTableViewController.swift in Sources */,
 				E696B7291D3E964800D3339E /* DonoViewFactory.swift in Sources */,
 				E696B7341D3E967D00D3339E /* Settings.swift in Sources */,
