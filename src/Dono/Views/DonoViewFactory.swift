@@ -62,5 +62,5 @@ class DonoViewFactory
         controller.searchBar.placeholder = "Search your Labels"
 
         return controller
-    }
+    }    
 }

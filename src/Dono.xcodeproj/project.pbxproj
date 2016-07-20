@@ -10,6 +10,7 @@
 		76EBCDB4096C252FF1DAD961 /* Pods_DonoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B295025BFFE167C1C6FA3111 /* Pods_DonoUITests.framework */; };
 		800A2301B267EE4BCAFA7612 /* Pods_DonoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99466D8D38FDFDB8C990F5A7 /* Pods_DonoTests.framework */; };
 		E60618361D08B0780081B943 /* en.lproj in Resources */ = {isa = PBXBuildFile; fileRef = E60618351D08B0780081B943 /* en.lproj */; };
+		E67689331D3FF89C00536FB2 /* VersionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67689321D3FF89C00536FB2 /* VersionTableViewCell.swift */; };
 		E696B71F1D3E961E00D3339E /* AddLabelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E696B7181D3E961E00D3339E /* AddLabelViewController.swift */; };
 		E696B7201D3E961E00D3339E /* BackTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E696B7191D3E961E00D3339E /* BackTableViewController.swift */; };
 		E696B7211D3E961E00D3339E /* DonoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E696B71A1D3E961E00D3339E /* DonoTableViewController.swift */; };
@@ -24,6 +25,9 @@
 		E696B7331D3E967D00D3339E /* PersistableLabels.swift in Sources */ = {isa = PBXBuildFile; fileRef = E696B72E1D3E967D00D3339E /* PersistableLabels.swift */; };
 		E696B7341D3E967D00D3339E /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = E696B72F1D3E967D00D3339E /* Settings.swift */; };
 		E696B7351D3E967D00D3339E /* UserDefaultsPasscodeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E696B7301D3E967D00D3339E /* UserDefaultsPasscodeRepository.swift */; };
+		E6999BF41D3FFBB500E53FAC /* PrivacyPolicyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6999BF31D3FFBB500E53FAC /* PrivacyPolicyTableViewCell.swift */; };
+		E6999BF81D4003A900E53FAC /* ContactUsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6999BF71D4003A900E53FAC /* ContactUsTableViewCell.swift */; };
+		E6999BFC1D40167200E53FAC /* FooterLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6999BFB1D40167200E53FAC /* FooterLabel.swift */; };
 		E6CED9291C74DC1F00B7A642 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CED9281C74DC1F00B7A642 /* AppDelegate.swift */; };
 		E6CED92E1C74DC1F00B7A642 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6CED92C1C74DC1F00B7A642 /* Main.storyboard */; };
 		E6CED9301C74DC1F00B7A642 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6CED92F1C74DC1F00B7A642 /* Assets.xcassets */; };
@@ -61,6 +65,7 @@
 		B295025BFFE167C1C6FA3111 /* Pods_DonoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DonoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3AE7F8069A51D892D2ACD71 /* Pods-Dono.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dono.release.xcconfig"; path = "Pods/Target Support Files/Pods-Dono/Pods-Dono.release.xcconfig"; sourceTree = "<group>"; };
 		E60618351D08B0780081B943 /* en.lproj */ = {isa = PBXFileReference; lastKnownFileType = folder; path = en.lproj; sourceTree = "<group>"; };
+		E67689321D3FF89C00536FB2 /* VersionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VersionTableViewCell.swift; sourceTree = "<group>"; };
 		E696B7181D3E961E00D3339E /* AddLabelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddLabelViewController.swift; sourceTree = "<group>"; };
 		E696B7191D3E961E00D3339E /* BackTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackTableViewController.swift; sourceTree = "<group>"; };
 		E696B71A1D3E961E00D3339E /* DonoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DonoTableViewController.swift; sourceTree = "<group>"; };
@@ -75,6 +80,9 @@
 		E696B72E1D3E967D00D3339E /* PersistableLabels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistableLabels.swift; sourceTree = "<group>"; };
 		E696B72F1D3E967D00D3339E /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		E696B7301D3E967D00D3339E /* UserDefaultsPasscodeRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultsPasscodeRepository.swift; sourceTree = "<group>"; };
+		E6999BF31D3FFBB500E53FAC /* PrivacyPolicyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrivacyPolicyTableViewCell.swift; sourceTree = "<group>"; };
+		E6999BF71D4003A900E53FAC /* ContactUsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactUsTableViewCell.swift; sourceTree = "<group>"; };
+		E6999BFB1D40167200E53FAC /* FooterLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FooterLabel.swift; sourceTree = "<group>"; };
 		E6CED9251C74DC1F00B7A642 /* Dono.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dono.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6CED9281C74DC1F00B7A642 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E6CED92D1C74DC1F00B7A642 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -159,6 +167,10 @@
 			children = (
 				E696B7271D3E964800D3339E /* DonoViewFactory.swift */,
 				E696B7281D3E964800D3339E /* PasscodeLockView.xib */,
+				E67689321D3FF89C00536FB2 /* VersionTableViewCell.swift */,
+				E6999BF31D3FFBB500E53FAC /* PrivacyPolicyTableViewCell.swift */,
+				E6999BF71D4003A900E53FAC /* ContactUsTableViewCell.swift */,
+				E6999BFB1D40167200E53FAC /* FooterLabel.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -201,8 +213,8 @@
 			isa = PBXGroup;
 			children = (
 				E6CED9341C74DC1F00B7A642 /* Info.plist */,
-				E60618351D08B0780081B943 /* en.lproj */,
 				E6CED92F1C74DC1F00B7A642 /* Assets.xcassets */,
+				E60618351D08B0780081B943 /* en.lproj */,
 				E696B72B1D3E967D00D3339E /* Models */,
 				E696B7261D3E964800D3339E /* Views */,
 				E696B7171D3E961E00D3339E /* ViewControllers */,
@@ -498,13 +510,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6999BF81D4003A900E53FAC /* ContactUsTableViewCell.swift in Sources */,
 				E696B7211D3E961E00D3339E /* DonoTableViewController.swift in Sources */,
 				E696B7291D3E964800D3339E /* DonoViewFactory.swift in Sources */,
 				E696B7341D3E967D00D3339E /* Settings.swift in Sources */,
 				E696B7241D3E961E00D3339E /* LabelsViewController.swift in Sources */,
+				E67689331D3FF89C00536FB2 /* VersionTableViewCell.swift in Sources */,
 				E696B7321D3E967D00D3339E /* PersistableKey.swift in Sources */,
 				E696B7311D3E967D00D3339E /* PasscodeLockConfiguration.swift in Sources */,
 				E696B7351D3E967D00D3339E /* UserDefaultsPasscodeRepository.swift in Sources */,
+				E6999BF41D3FFBB500E53FAC /* PrivacyPolicyTableViewCell.swift in Sources */,
 				E6CED9291C74DC1F00B7A642 /* AppDelegate.swift in Sources */,
 				E696B7251D3E961E00D3339E /* SettingsViewController.swift in Sources */,
 				E696B7221D3E961E00D3339E /* DonoViewController.swift in Sources */,
@@ -512,6 +527,7 @@
 				E696B7231D3E961E00D3339E /* KeyViewController.swift in Sources */,
 				E696B71F1D3E961E00D3339E /* AddLabelViewController.swift in Sources */,
 				E696B7331D3E967D00D3339E /* PersistableLabels.swift in Sources */,
+				E6999BFC1D40167200E53FAC /* FooterLabel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -656,10 +672,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Dono/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -677,10 +690,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Dono/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

@@ -51,6 +51,16 @@ class SettingsViewController : DonoTableViewController
         self.updateViewWithSettings()
     }
     
+    override func tableView(tableView: UITableView, viewForFooterInSection section: Int) -> UIView?
+    {
+        return section == tableView.numberOfSections - 1 ? FooterLabel() : nil
+    }
+    
+    override func tableView(tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat
+    {
+        return section == tableView.numberOfSections - 1 ? 60.0 : 0
+    }
+
     @IBAction func passcodeLockValueChanged(sender: AnyObject)
     {
         let passcodeVC: PasscodeLockViewController
@@ -94,7 +104,7 @@ class SettingsViewController : DonoTableViewController
             key.delete()
         }
     }
-    
+        
     private func updateViewWithSettings()
     {
         self.rememberKey.on = self.settings.getRememberKeyValue()

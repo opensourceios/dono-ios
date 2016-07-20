@@ -23,6 +23,8 @@ class DonoTableViewController : UITableViewController, SWRevealViewControllerDel
 {
     @IBOutlet weak var Open: UIBarButtonItem!
 
+    var donoViewFactory = DonoViewFactory()
+
     override func viewDidLoad()
     {
         super.viewDidLoad()

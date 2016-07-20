@@ -15,8 +15,8 @@
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 import Dodo
-import UIKit
 import SWRevealViewController
+import UIKit
 
 class DonoViewController : UIViewController, SWRevealViewControllerDelegate
 {
@@ -41,6 +41,8 @@ class DonoViewController : UIViewController, SWRevealViewControllerDelegate
     static var CheckCircleImage = UIImage(named: "check-circle")
 
     static var PlusImage = UIImage(named: "plus")
+
+    static var Copyright = "Copyright Dono - Password Derivation Tool\nLicensed under the GPLv3"
 
     // Outlets
     @IBOutlet weak var Open: UIBarButtonItem!
