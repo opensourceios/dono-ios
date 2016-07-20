@@ -94,7 +94,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                         <sections>
-                            <tableViewSection headerTitle="Key" id="1SH-qW-7Wb">
+                            <tableViewSection headerTitle="Key" footerTitle="When disabled, your Key will never be stored on the device" id="1SH-qW-7Wb">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="RememberKey" id="r9v-uz-00b">
                                         <rect key="frame" x="0.0" y="49.5" width="600" height="44"/>
@@ -131,7 +131,7 @@
                             <tableViewSection headerTitle="Passcode Lock" id="ELZ-1y-cxg">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="PasscodeEnabled" id="DO9-Jj-250">
-                                        <rect key="frame" x="0.0" y="143.5" width="600" height="44"/>
+                                        <rect key="frame" x="0.0" y="160" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="DO9-Jj-250" id="OEA-cF-aqL">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
@@ -161,7 +161,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="ChangePasscode" id="rIc-0B-aaj" customClass="ChangePinTableViewCell" customModule="Dono" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="187.5" width="600" height="44"/>
+                                        <rect key="frame" x="0.0" y="204" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rIc-0B-aaj" id="Rnm-Bo-VdR">
                                             <rect key="frame" x="0.0" y="0.0" width="567" height="43.5"/>
@@ -186,7 +186,7 @@
                             <tableViewSection headerTitle="About" id="224-bF-bFu">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="Version" textLabel="itk-Tq-7bp" detailTextLabel="yeM-ug-gju" style="IBUITableViewCellStyleValue1" id="LhH-NQ-ytm" customClass="VersionTableViewCell" customModule="Dono" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="281.5" width="600" height="44"/>
+                                        <rect key="frame" x="0.0" y="298" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LhH-NQ-ytm" id="joM-yn-qhB">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
@@ -210,7 +210,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="PrivacyPolicy" id="zNh-hS-F1t" customClass="PrivacyPolicyTableViewCell" customModule="Dono" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="325.5" width="600" height="44"/>
+                                        <rect key="frame" x="0.0" y="342" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zNh-hS-F1t" id="0zc-gp-ZmS">
                                             <rect key="frame" x="0.0" y="0.0" width="567" height="43.5"/>
@@ -231,7 +231,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="ContactUs" id="k4R-6H-g74" customClass="ContactUsTableViewCell" customModule="Dono" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="369.5" width="600" height="44"/>
+                                        <rect key="frame" x="0.0" y="386" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="k4R-6H-g74" id="S4K-7M-ql5">
                                             <rect key="frame" x="0.0" y="0.0" width="567" height="43.5"/>

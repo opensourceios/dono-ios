@@ -62,7 +62,7 @@ class SettingsViewController : DonoTableViewController
     
     override func tableView(tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat
     {
-        return section == tableView.numberOfSections - 1 ? 60.0 : 0
+        return section == tableView.numberOfSections - 1 ? 60.0 : 50
     }
 
     @IBAction func passcodeLockValueChanged(sender: AnyObject)
