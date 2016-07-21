@@ -30,8 +30,8 @@ struct PasscodeLockConfiguration : PasscodeLockConfigurationType
         self.repository = repository
     }
     
-    init() {
-        
-        self.repository = UserDefaultsPasscodeRepository()
+    init()
+    {
+        self.repository = DonoViewController.PasscodeRepository
     }
 }
