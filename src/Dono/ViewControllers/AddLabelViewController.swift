@@ -19,10 +19,14 @@ import Foundation
 import SWRevealViewController
 import UIKit
 
-class AddLabelViewController : DonoViewController
+class AddLabelViewController : UIViewController
 {
     @IBOutlet weak var newLabelTextField: UITextField!
 
+    var persistableLabels = PersistableLabels()
+    
+    var donoViewFactory = DonoViewFactory()
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()
@@ -53,7 +57,7 @@ class AddLabelViewController : DonoViewController
         
         if (!newLabelTextField.isEmpty)
         {
-            self.showAlert(newLabelTextField + " was added to your Labels!")
+            self.close(self)
         }
         else
         {
@@ -64,8 +68,13 @@ class AddLabelViewController : DonoViewController
                 self.showError(canonicalLabel + " is already added to your Labels")
             }
         }
-        
-        self.newLabelTextField.text = String()
+    }
+    
+    @IBAction func close(sender: AnyObject)
+    {
+        self.dismissViewControllerAnimated(true, completion: nil)
+
+        self.view.endEditing(true)
     }
     
     private func createKeyboardToolbar()

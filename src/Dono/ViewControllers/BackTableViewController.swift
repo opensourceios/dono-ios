@@ -20,7 +20,6 @@ import Foundation
 class BackTableViewController : UITableViewController
 {
     private static let LabelsMenuItem = "Labels"
-    private static let AddLabelMenuItem = "Add Label"
     private static let KeyMenuItem = "Key"
     private static let SettingsMenuItem = "Settings"
     
@@ -28,7 +27,7 @@ class BackTableViewController : UITableViewController
     
     override func viewDidLoad()
     {
-        TableArray = [BackTableViewController.LabelsMenuItem, BackTableViewController.AddLabelMenuItem, BackTableViewController.KeyMenuItem, BackTableViewController.SettingsMenuItem]
+        TableArray = [BackTableViewController.LabelsMenuItem, BackTableViewController.KeyMenuItem, BackTableViewController.SettingsMenuItem]
 
         self.tableView.tableFooterView = UIView(frame: CGRectZero)
     }
@@ -69,10 +68,6 @@ class BackTableViewController : UITableViewController
         if (menuItem == BackTableViewController.LabelsMenuItem)
         {
             return "LabelsViewController"
-        }
-        else if (menuItem == BackTableViewController.AddLabelMenuItem)
-        {
-            return "AddLabelViewController"
         }
         else if (menuItem == BackTableViewController.KeyMenuItem)
         {

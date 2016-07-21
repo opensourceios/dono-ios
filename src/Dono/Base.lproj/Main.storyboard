@@ -5,7 +5,7 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Your Labels-->
+        <!--Labels View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController storyboardIdentifier="LabelsViewController" extendedLayoutIncludesOpaqueBars="YES" automaticallyAdjustsScrollViewInsets="NO" id="BYZ-38-t0r" customClass="LabelsViewController" customModule="Dono" customModuleProvider="target" sceneMemberID="viewController">
@@ -72,8 +72,13 @@
                             <constraint firstAttribute="trailingMargin" secondItem="GOM-4X-zcA" secondAttribute="trailing" constant="-20" id="sKv-9i-Ocx"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Your Labels" id="3xv-Ma-tsj">
+                    <navigationItem key="navigationItem" id="3xv-Ma-tsj">
                         <barButtonItem key="leftBarButtonItem" image="menu" id="LZ9-Rv-Ru8"/>
+                        <barButtonItem key="rightBarButtonItem" image="plus" id="5wN-gX-YTO">
+                            <connections>
+                                <segue destination="pEl-X4-ZXO" kind="presentation" id="quD-aK-08l"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="Open" destination="LZ9-Rv-Ru8" id="CxW-uG-sFS"/>
@@ -271,7 +276,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nao-44-IaM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-163" y="3089"/>
+            <point key="canvasLocation" x="-449" y="3265"/>
         </scene>
         <!--Add Label-->
         <scene sceneID="hXl-pn-Gsx">
@@ -305,16 +310,19 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Add Label" id="zYf-uh-b4y">
-                        <barButtonItem key="leftBarButtonItem" image="menu" id="JLq-mQ-hMZ"/>
+                        <barButtonItem key="leftBarButtonItem" image="window-close" id="ckr-9H-CXD">
+                            <connections>
+                                <action selector="close:" destination="NPX-yU-qiu" id="lHh-tC-81e"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="Open" destination="JLq-mQ-hMZ" id="qay-Q6-fJe"/>
                         <outlet property="newLabelTextField" destination="0JE-48-Q6D" id="8wQ-dF-knZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZaK-hz-0Hu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-797" y="3089"/>
+            <point key="canvasLocation" x="1501" y="2305"/>
         </scene>
         <!--Your Key-->
         <scene sceneID="Cp5-j3-LUB">
@@ -361,7 +369,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B9j-id-hMH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1617" y="3089"/>
+            <point key="canvasLocation" x="-1153" y="3265"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Mqz-Je-J1a">
@@ -383,7 +391,7 @@
                     </toolbar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Ort-8Q-ciK"/>
-                        <segue destination="NPX-yU-qiu" kind="show" identifier="AddLabelSegue" id="klz-Kw-D9t"/>
+                        <segue destination="pEl-X4-ZXO" kind="show" identifier="AddLabelSegue" id="klz-Kw-D9t"/>
                         <segue destination="Vcu-fU-m0z" kind="show" identifier="KeySegue" id="EsO-Oc-ot1"/>
                         <segue destination="Uru-so-W3D" kind="show" identifier="SettingsSegue" id="SdJ-Sr-Chm"/>
                     </connections>
@@ -460,45 +468,8 @@
                                     <segue destination="uVx-IJ-cGB" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="8gG-zw-RSD"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Add Label" id="oln-4l-RIs">
-                                <rect key="frame" x="0.0" y="76" width="600" height="48"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="oln-4l-RIs" id="Oq8-Za-bos">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="48"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p1S-Ec-k2R">
-                                            <rect key="frame" x="40" y="13" width="552" height="21"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" constant="552" id="YZU-0H-3ch"/>
-                                                <constraint firstAttribute="height" constant="21" id="yRc-32-djo"/>
-                                            </constraints>
-                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
-                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="plus" translatesAutoresizingMaskIntoConstraints="NO" id="zaD-9S-BNL">
-                                            <rect key="frame" x="8" y="12" width="24" height="24"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" constant="24" id="BNd-eD-IBo"/>
-                                                <constraint firstAttribute="height" constant="24" id="zGO-iW-IJx"/>
-                                            </constraints>
-                                        </imageView>
-                                    </subviews>
-                                    <color key="backgroundColor" red="0.12941176470588234" green="0.58823529411764708" blue="0.95294117647058818" alpha="1" colorSpace="calibratedRGB"/>
-                                    <constraints>
-                                        <constraint firstItem="zaD-9S-BNL" firstAttribute="top" secondItem="Oq8-Za-bos" secondAttribute="topMargin" constant="4" id="0LL-cn-BFk"/>
-                                        <constraint firstItem="zaD-9S-BNL" firstAttribute="leading" secondItem="Oq8-Za-bos" secondAttribute="leadingMargin" id="DhW-jE-twN"/>
-                                        <constraint firstItem="p1S-Ec-k2R" firstAttribute="top" secondItem="Oq8-Za-bos" secondAttribute="topMargin" constant="5" id="QId-Ow-feh"/>
-                                        <constraint firstItem="p1S-Ec-k2R" firstAttribute="leading" secondItem="zaD-9S-BNL" secondAttribute="trailing" constant="8" id="WYJ-Kx-ljd"/>
-                                    </constraints>
-                                </tableViewCellContentView>
-                                <connections>
-                                    <segue destination="uVx-IJ-cGB" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="9Eb-7K-qQe"/>
-                                </connections>
-                            </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Key" id="Z4i-Rp-ovy">
-                                <rect key="frame" x="0.0" y="124" width="600" height="48"/>
+                                <rect key="frame" x="0.0" y="76" width="600" height="48"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Z4i-Rp-ovy" id="Tjd-fU-2ab">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="48"/>
@@ -539,7 +510,7 @@
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Settings" id="HcQ-Hh-7jV">
-                                <rect key="frame" x="0.0" y="172" width="600" height="48"/>
+                                <rect key="frame" x="0.0" y="124" width="600" height="48"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="HcQ-Hh-7jV" id="JYC-Ux-SOa">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="48"/>
@@ -590,6 +561,29 @@
             </objects>
             <point key="canvasLocation" x="-797" y="1501"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="FZ9-Oq-jl6">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="pEl-X4-ZXO" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="zxe-2t-BY5">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.12941176469999999" green="0.58823529409999997" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="NPX-yU-qiu" kind="relationship" relationship="rootViewController" id="bBk-Ys-L2P"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TJ0-dd-gli" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="751" y="1593"/>
+        </scene>
     </scenes>
     <resources>
         <image name="key" width="24" height="24"/>
@@ -598,8 +592,10 @@
         <image name="settings" width="24" height="24"/>
         <image name="tag" width="24" height="24"/>
         <image name="tag-blue" width="24" height="24"/>
+        <image name="window-close" width="24" height="24"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="iZu-mj-1ug"/>
+        <segue reference="g7f-rc-NP8"/>
+        <segue reference="quD-aK-08l"/>
     </inferredMetricsTieBreakers>
 </document>

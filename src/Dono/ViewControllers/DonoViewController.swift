@@ -32,6 +32,8 @@ class DonoViewController : UIViewController, SWRevealViewControllerDelegate
     static var Red = DodoColor.fromHexString("#f44336")
 
     // Images
+    static var IconImage = UIImage(named: "icon")
+
     static var DeleteSweepImage = UIImage(named: "delete-sweep")
     
     static var EyeImage = UIImage(named: "eye")
@@ -40,10 +42,12 @@ class DonoViewController : UIViewController, SWRevealViewControllerDelegate
 
     static var CheckCircleImage = UIImage(named: "check-circle")
 
-    static var PlusImage = UIImage(named: "plus")
+    static var PlusImage = UIImage(named: "plus-circle")
 
+    // Copyright text
     static var Copyright = "Copyright Dono - Password Derivation Tool\nLicensed under the GPLv3"
 
+    // PasscodeLock settings
     static var PasscodeRepository = UserDefaultsPasscodeRepository()
     
     // Outlets
