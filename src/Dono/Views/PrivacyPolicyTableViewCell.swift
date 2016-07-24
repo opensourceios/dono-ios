@@ -14,11 +14,14 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+import PDFReader
 import UIKit
 
 class PrivacyPolicyTableViewCell : UITableViewCell
 {
-    private static var PrivacyPolicyUrl = "https://dono-app.github.io/privacy-policy.pdf"
+    private static var PrivacyUrl = "privacy-policy"
+    
+    private static var PdfExtension = "pdf"
     
     override func setSelected(selected: Bool, animated: Bool)
     {
@@ -30,6 +33,14 @@ class PrivacyPolicyTableViewCell : UITableViewCell
     
     internal func openPrivacyPolicyUrl()
     {
-        UIApplication.sharedApplication().openURL(NSURL(string:PrivacyPolicyTableViewCell.PrivacyPolicyUrl)!)
+        let documentURL = NSBundle.mainBundle().URLForResource(PrivacyPolicyTableViewCell.PrivacyUrl, withExtension: PrivacyPolicyTableViewCell.PdfExtension)!
+        let document = PDFDocument(fileURL: documentURL)
+        
+        let storyboard = UIStoryboard(name: "PDFReader", bundle: NSBundle(forClass: PDFViewController.self))
+        let controller = storyboard.instantiateInitialViewController() as! PDFViewController
+        controller.document = document
+        controller.title = document.fileName
+        
+        self.viewController()!.navigationController?.pushViewController(controller, animated: true)
     }
 }

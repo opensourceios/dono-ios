@@ -9,6 +9,7 @@ PODS:
   - IQKeyboardManagerSwift (4.0.4)
   - MCSwipeTableViewCell (2.1.4)
   - PasscodeLock (1.0.2)
+  - PDFReader (1.0.2)
   - SwiftKeychainWrapper (1.0.11)
   - SWRevealViewController (2.3.0)
 
@@ -19,6 +20,7 @@ DEPENDENCIES:
   - IQKeyboardManagerSwift (~> 4.0)
   - MCSwipeTableViewCell (~> 2.1)
   - PasscodeLock (~> 1.0)
+  - PDFReader (~> 1.0)
   - SwiftKeychainWrapper (~> 1.0)
   - SWRevealViewController (~> 2.3)
 
@@ -40,9 +42,10 @@ SPEC CHECKSUMS:
   IQKeyboardManagerSwift: e0964d04d6a29b71016fd346dca13ecb80a2823a
   MCSwipeTableViewCell: 1b303e16c3a26b1982f3a68386e9b8c5fc8344c3
   PasscodeLock: 4ae42c094224a01de3773fcd69ae33886394d959
+  PDFReader: e358ef25068428d82260852edc7c970064b98a10
   SwiftKeychainWrapper: 011a6946923948ffa49708014dd691164d7621d1
   SWRevealViewController: 6d3fd97f70112fd7cef9de14df4260eacce4c63a
 
-PODFILE CHECKSUM: 6caba477f1c80dde1025422d418278f51f955221
+PODFILE CHECKSUM: db5dab12c9d37924f83cd949369b0a122776db65
 
 COCOAPODS: 1.0.1
