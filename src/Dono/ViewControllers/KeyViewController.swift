@@ -20,7 +20,7 @@ import Foundation
 import SWRevealViewController
 import UIKit
 
-class KeyViewController : DonoViewController
+class KeyViewController : DonoViewController, UITextFieldDelegate
 {
     @IBOutlet weak var keyTextField: UITextField!
     
@@ -91,6 +91,13 @@ class KeyViewController : DonoViewController
         self.updateVisibilityButtonImage()
     }
     
+    func textFieldShouldReturn(textField: UITextField) -> Bool
+    {
+        self.saveKey(self)
+        
+        return true
+    }
+
     private func updateKeyTextField()
     {
         self.keyTextField.secureTextEntry = true

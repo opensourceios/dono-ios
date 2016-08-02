@@ -19,7 +19,7 @@ import Foundation
 import SWRevealViewController
 import UIKit
 
-class AddLabelViewController : UIViewController
+class AddLabelViewController : UIViewController, UITextFieldDelegate
 {
     @IBOutlet weak var newLabelTextField: UITextField!
 
@@ -75,6 +75,13 @@ class AddLabelViewController : UIViewController
         self.dismissViewControllerAnimated(true, completion: nil)
 
         self.view.endEditing(true)
+    }
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool
+    {
+        self.addLabel(self)
+
+        return true
     }
     
     private func createKeyboardToolbar()
