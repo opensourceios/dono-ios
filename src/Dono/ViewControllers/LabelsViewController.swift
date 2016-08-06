@@ -41,7 +41,9 @@ class LabelsViewController: DonoViewController, UITableViewDataSource, UITableVi
         self.setupTableView()
         
         // show image in navigationbar
-        self.navigationItem.titleView = UIImageView(image: DonoViewController.IconImage)
+        let iconImage = UIImageView(image: DonoViewController.IconImage)
+        
+        self.navigationItem.titleView = iconImage
     }
     
     override func viewWillAppear(animated: Bool)

@@ -1,10 +1,7 @@
-# iOS App ![Build Status](https://travis-ci.org/dono-app/ios.svg?branch=master) [![codecov](https://codecov.io/gh/dono-app/ios/branch/master/graph/badge.svg)](https://codecov.io/gh/dono-app/ios) [![Join the chat at https://gitter.im/dono-app/ios](https://badges.gitter.im/dono-app/ios.svg)](https://gitter.im/dono-app/ios?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+# Dono for iOS
+![travis](https://travis-ci.org/dono-app/ios.svg?branch=master) [![codecov](https://codecov.io/gh/dono-app/ios/branch/master/graph/badge.svg)](https://codecov.io/gh/dono-app/ios) ![license](https://img.shields.io/badge/license-GPLv3-blue.svg) [![gitter](https://badges.gitter.im/dono-app/ios.svg)](https://gitter.im/dono-app/ios?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 <img src="https://github.com/dono-app/ux/raw/master/gifs/ios-demo.mov.gif" height="480">
-
-## License
-
-GNU GPLv3
 
 ## OSS used
 
@@ -18,3 +15,7 @@ GNU GPLv3
 * [SwiftKeychainWrapper](https://github.com/jrendel/SwiftKeychainWrapper)
 * [SwiftPasscodeLock](https://github.com/velikanov/SwiftPasscodeLock)
 * [SWRevealViewController](https://github.com/John-Lluch/SWRevealViewController)
+
+## License
+
+GNU GPLv3

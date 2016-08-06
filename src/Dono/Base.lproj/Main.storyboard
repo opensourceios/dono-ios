@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Xiy-MX-0Tt">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Xiy-MX-0Tt">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -338,8 +338,8 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
-                                <variation key="heightClass=compact-widthClass=compact" ambiguous="YES" misplaced="YES">
-                                    <rect key="frame" x="20" y="224" width="280" height="30"/>
+                                <variation key="heightClass=compact-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="20" y="224" width="280" height="45"/>
                                 </variation>
                                 <connections>
                                     <outlet property="delegate" destination="NPX-yU-qiu" id="xjM-kz-cGe"/>
@@ -401,10 +401,18 @@
                                     <outlet property="delegate" destination="Vcu-fU-m0z" id="qII-XQ-FNa"/>
                                 </connections>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Your Key needs to be longer than 16 characters" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MLL-TZ-Akq" userLabel="footnote">
+                                <rect key="frame" x="160" y="153" width="280" height="21"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                                <color key="textColor" red="0.45882352939999999" green="0.45882352939999999" blue="0.45882352939999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="r8Z-ph-h5u" firstAttribute="top" secondItem="zXD-38-1H9" secondAttribute="bottom" constant="100" id="7MX-Y1-CzA"/>
+                            <constraint firstItem="MLL-TZ-Akq" firstAttribute="top" secondItem="r8Z-ph-h5u" secondAttribute="bottom" constant="8" id="JxF-Uh-3dG"/>
+                            <constraint firstItem="MLL-TZ-Akq" firstAttribute="centerX" secondItem="aTM-qR-P3F" secondAttribute="centerX" id="SqR-0m-Y86"/>
                             <constraint firstItem="r8Z-ph-h5u" firstAttribute="centerX" secondItem="aTM-qR-P3F" secondAttribute="centerX" id="t7y-q5-F8w"/>
                         </constraints>
                     </view>
@@ -669,7 +677,7 @@
         <image name="window-close" width="24" height="24"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="klz-Kw-D9t"/>
         <segue reference="g7f-rc-NP8"/>
+        <segue reference="quD-aK-08l"/>
     </inferredMetricsTieBreakers>
 </document>
