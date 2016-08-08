@@ -67,16 +67,16 @@ internal class PersistableLabels
     
     internal func deleteAt(position: Int) -> String
     {
-        let ret = self.labels.removeAtIndex(position);
+        let ret = labels.removeAtIndex(position);
         
-        self.saveLabels();
+        saveLabels()
         
         return ret;
     }
 
     internal func count() -> Int
     {
-        return self.labels.count;
+        return self.labels.count
     }
     
     internal func canonical(label: String) -> String
