@@ -111,12 +111,14 @@ class LabelsViewController: DonoViewController, UITableViewDataSource, UITableVi
         cell!.firstTrigger = 0.2;
 
         cell!.setSwipeGestureWithView(UIImageView(image: DonoViewController.DeleteSweepImage!), color: DonoViewController.Red, mode: .Exit, state: .State3, completionBlock: {[unowned self] (cell: MCSwipeTableViewCell!, state: MCSwipeTableViewCellState!, mode: MCSwipeTableViewCellMode!) -> Void in
-        
             let labelToDelete = self.resultSearchController.active ? self.filteredTableData[indexPath.row] : self.persistableLabels.getAt(indexPath.row)
+            
             guard let indexOfItemToDelete = self.persistableLabels.labels.indexOf(labelToDelete) else { return }
+            
             if self.resultSearchController.active {
                 self.filteredTableData.removeAtIndex(indexPath.row)
             }
+            
             self.persistableLabels.deleteAt(indexOfItemToDelete)
             self.updateTableView()
         })
