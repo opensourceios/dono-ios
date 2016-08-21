@@ -232,8 +232,29 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="PrivacyPolicy" id="zNh-hS-F1t" userLabel="SourceCode" customClass="SourceCodeTableViewCell" customModule="Dono" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="ContactUs" id="dm4-Me-iXA" userLabel="HowItWorks" customClass="HowItWorksTableViewCell" customModule="Dono" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="342" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dm4-Me-iXA" id="sqo-nB-z40">
+                                            <rect key="frame" x="0.0" y="0.0" width="567" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How it Works" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vpe-c3-UIf">
+                                                    <rect key="frame" x="15" y="11" width="544" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Vpe-c3-UIf" firstAttribute="centerY" secondItem="sqo-nB-z40" secondAttribute="centerY" id="Ewp-jM-mXj"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="Vpe-c3-UIf" secondAttribute="trailing" id="Pvn-7n-00I"/>
+                                                <constraint firstItem="Vpe-c3-UIf" firstAttribute="leading" secondItem="sqo-nB-z40" secondAttribute="leadingMargin" constant="7" id="Qgc-IA-YrR"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="PrivacyPolicy" id="zNh-hS-F1t" userLabel="SourceCode" customClass="SourceCodeTableViewCell" customModule="Dono" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="386" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zNh-hS-F1t" id="0zc-gp-ZmS">
                                             <rect key="frame" x="0.0" y="0.0" width="567" height="43.5"/>
@@ -253,8 +274,8 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="ContactUs" id="k4R-6H-g74" userLabel="PrivacyPolicy" customClass="PrivacyPolicyTableViewCell" customModule="Dono" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="386" width="600" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="k4R-6H-g74" userLabel="PrivacyPolicy" customClass="PrivacyPolicyTableViewCell" customModule="Dono" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="430" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="k4R-6H-g74" id="S4K-7M-ql5">
                                             <rect key="frame" x="0.0" y="0.0" width="567" height="43.5"/>
@@ -275,7 +296,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="ContactUs" id="Sj6-Eg-7U1" customClass="ContactUsTableViewCell" customModule="Dono" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="430" width="600" height="44"/>
+                                        <rect key="frame" x="0.0" y="474" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Sj6-Eg-7U1" id="qdX-is-3Wu">
                                             <rect key="frame" x="0.0" y="0.0" width="567" height="43.5"/>
